@@ -6,6 +6,7 @@
     width: 25%;
     position: relative;
     transition: all 0.5s ease;
+    // filter: brightness(85%);
 
     &:hover .contentFeature {
       opacity: 1;
@@ -17,7 +18,10 @@
     }
 
     &:hover .btnView {
-        opacity: 1;
+      opacity: 1;
+    }
+
+    &:hover {
     }
   }
 
@@ -82,10 +86,9 @@
     transition: all 0.5s ease;
 
     &:hover {
-        background-color: white;
-        color: black;
-        cursor: pointer;
+      background-color: white;
+      color: black;
+      cursor: pointer;
     }
-
   }
 }
