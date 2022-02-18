@@ -8,7 +8,7 @@ const MendGrid = () => {
       {dataMend.map((_data, index) => {
         return (
           <div className={styles.gridItem} key={index}>
-            <i class={_data.iconName}></i>
+            <i aria-hidden className={_data.iconName}></i>
             {_data.nameMend}
           </div>
         );
