@@ -18,9 +18,7 @@ const Vision = () => {
       <div className={styles.visionWrapper}>
         <div className={styles.vision}>
           <p className={styles.titleVision}>{dataVision.title}</p>
-          <p className={styles.contentVision}>
-          {dataVision.content}
-          </p>
+          <p className={styles.contentVision}>{dataVision.content}</p>
           <div className={styles.videoSpeech}>
             <figure className={styles.video}>
               <img src={dataVision.urlPic1.src} alt='Vision' />
@@ -28,12 +26,12 @@ const Vision = () => {
                 className={styles.btnPlay}
                 onClick={() => handleIsPlay()}
               >
-                <i className='fas fa-caret-right'></i>
+                <i aria-hidden className='fas fa-caret-right'></i>
               </figcaption>
               {isPlay && (
                 <div className={styles.embedVideo}>
                   <iframe
-                    src= {dataVision.urlAudio}
+                    src={dataVision.urlAudio}
                     width='inherit'
                     height='inherit'
                     frameborder='0'
@@ -46,15 +44,13 @@ const Vision = () => {
             </figure>
             <div className={styles.speech}>
               {dataVision.proverb}
-              <span className={styles.author}>
-              {dataVision.author}
-              </span>
+              <span className={styles.author}>{dataVision.author}</span>
             </div>
           </div>
         </div>
-            <figure className={styles.meditation}>
-              <img src={dataVision.urlPic2.src} alt="Vision 2" />
-            </figure>
+        <figure className={styles.meditation}>
+          <img src={dataVision.urlPic2.src} alt='Vision 2' />
+        </figure>
       </div>
     </div>
   );

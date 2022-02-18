@@ -12,13 +12,13 @@ const NavBar = () => {
       <div className={styles.rightSide}>
         <div className={styles.title}>
           <p>
-            <i class='fas fa-calendar-alt'></i>
+            <i aria-hidden className='fas fa-calendar-alt'></i>
             Calender
           </p>
         </div>
         <div className={styles.title}>
           <p>
-            <i className='fa fa-heart'></i>
+            <i aria-hidden className='fa fa-heart'></i>
             Donate
           </p>
         </div>
