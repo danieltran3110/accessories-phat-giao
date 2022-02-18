@@ -1,0 +1,98 @@
+.navigationBar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.281);
+  align-items: center;
+
+  .leftSide {
+    .title {
+      position: relative;
+      display: inline-block;
+      padding: 40px 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: bold;
+
+      &:hover {
+        cursor: pointer;
+        color: #f16f23;
+      }
+
+      .dropdownContent {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+
+        &:hover .dropdownContent__2 {
+          display: block;
+        }
+      }
+
+      &:hover .dropdownContent {
+        display: block;
+        color: black;
+      }
+
+      .dropdownContent__2 {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        right: -160px;
+        top: 0;
+
+        &:hover .dropdownContent__3 {
+          display: block;
+        }
+      }
+
+      .dropdownContent__3 {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        right: -160px;
+        top: 0;
+      }
+    }
+  }
+  .rightSide {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    .title {
+      color: black;
+      font-weight: bolder;
+      margin-right: 15px;
+      letter-spacing: 2px;
+
+      &:hover {
+        color: #f16f23;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+
+      > p {
+        font-size: 13px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+
+        > i {
+          padding-right: 10px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

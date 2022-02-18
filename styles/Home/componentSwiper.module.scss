@@ -1,0 +1,127 @@
+// .swiper {
+//   width: 100%;
+//   height: 100%;
+// }
+.sliderWrapper {
+  :global(.swiper-pagination-bullet) {
+    background: none;
+    width: 3rem;
+    height: 3rem;
+    opacity: 1;
+    color: white;
+    padding-top: 15px;
+    letter-spacing: 2px;
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    background-color: #f16f23;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    letter-spacing: 2px;
+
+  }
+}
+
+// .swiper-pagination-bullet {
+//   padding: 5px 10px;
+//   border-radius: 0;
+//   width: auto;
+//   height: 30px;
+//   text-align: center;
+//   line-height: 30px;
+//   font-size: 12px;
+//   color: #000;
+//   opacity: 1;
+//   background: rgba(0, 0, 0, 0.2);
+// }
+
+// .swiper-pagination-bullet-active {
+//   color: #fff !important ;
+//   background: #f16f23 !important ;
+// }
+
+.mySwiperSlide {
+  height: 800px;
+  // width: 1025px;
+  left: 0;
+  position: relative;
+
+  .slide {
+    .logo {
+      margin: 0;
+      width: 110px;
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .placeName {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'reforma';
+
+      .place {
+        height: auto;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        white-space: normal;
+        width: 100%;
+        min-height: 0px;
+        min-width: 0px;
+        max-height: none;
+        max-width: none;
+        text-align: center;
+        line-height: 100px;
+        letter-spacing: 0px;
+        font-weight: 600;
+        font-size: 70px;
+        padding-bottom: 9px;
+        transform-origin: 50% 50%;
+        opacity: 1;
+        transform: translate(0px, 0px);
+      }
+
+      .learnMore {
+        text-transform: uppercase;
+        color: #fff;
+        background-color: rgb(255, 172, 75);
+        padding: 32px 76px;
+        font-size: 14px;
+        font-weight: bolder;
+        line-height: 20px;
+        letter-spacing: 2px;
+        z-index: 6;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #fff;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .picSlider {
+    margin: 0;
+    width: 100%;
+  }
+
+  .picSlider img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
