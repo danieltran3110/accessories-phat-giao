@@ -1,9 +1,6 @@
-.container {
-  background-color: #f2f1ef;
-}
+@import 'assets/scss/mixin.module';
+
 .event {
-  width: 1110px;
-  margin: 0 auto;
   padding-bottom: 150px;
 
   .titleEvent {
@@ -14,20 +11,28 @@
     line-height: 1.45em;
     text-decoration: none;
     text-transform: none;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     margin-bottom: 0.87em;
     color: black;
     text-align: center;
     padding-top: 120px;
 
+    @include Responsive(L) {
+      font-size: 2.0rem;
+    }
+
     .seeComingEvent {
-      font-size: 0.778rem !important;
+      font-size: 0.778rem;
       line-height: normal !important;
       font-style: normal !important;
       text-transform: uppercase !important;
       letter-spacing: 0.08rem !important;
       color: #f16f23;
       font-weight: 700;
+
+      @include Responsive(L) {
+        font-size: 0.678rem;
+      }
     }
   }
   .dateEvent {
@@ -37,19 +42,40 @@
     background-color: #fff;
     margin-bottom: 5px;
 
+    @include Responsive(L) {
+      padding: 30px 30px;
+    }
+
+    @include Responsive(S) {
+      flex-direction: column;
+    }
+
     .dateMonth {
       color: #f16f23;
       font-weight: 400;
       margin-right: 50px;
 
+      @include Responsive(S) {
+        margin-bottom: 15px;
+      }
+
       .date {
         font-size: 40px;
+
+        @include Responsive(L) {
+          font-size: 30px;
+        }
       }
     }
 
     .picEvent {
       margin: 0;
       width: 400px;
+
+      @include Responsive(S) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
     }
 
     .picEvent img {
@@ -62,19 +88,29 @@
       color: black;
       margin-left: 50px;
 
+      @include Responsive(S) {
+        margin-left: 0;
+      }
+
       .title {
         font-size: 1.778rem;
         margin-bottom: 15px;
+
+        @include Responsive(L) {
+          font-size: 1.278rem;
+        }
       }
 
       .timeCost {
-        font-size: 0.778rem;
         letter-spacing: 0.15rem;
         line-height: normal;
         text-transform: uppercase;
         display: inline-block;
         font-size: 15px;
 
+        @include Responsive(L) {
+          font-size: 10px;
+        }
         .cost {
           display: inline;
           margin-left: 30px;
@@ -85,7 +121,10 @@
         margin-top: 20px;
         font-size: 17px;
         color: #7e7e7e;
-        // font-weight: 600;
+
+        @include Responsive(L) {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -97,13 +136,16 @@
     letter-spacing: 0.124rem;
     color: #fff;
     font-weight: bold;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin: 50px auto 0;
 
     &:hover {
       cursor: pointer;
       background-color: black;
       transition: all 0.5s ease;
+    }
+
+    @include Responsive(S) {
+      padding: 20px 50px;
     }
   }
 }

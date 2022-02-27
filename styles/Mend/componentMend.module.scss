@@ -1,10 +1,10 @@
-.container {
+@import 'assets/scss/mixin.module';
+
+.backgroundColor {
   background-color: #282828;
 
   .mend {
-    width: 1110px;
     margin: 0 auto;
-    // position: relative;
 
     .videoMend {
       position: relative;
@@ -35,6 +35,13 @@
           color: black;
           cursor: pointer;
         }
+
+        @include Responsive(S) {
+          width: 70px;
+          height: 70px;
+          font-size: 0.6rem;
+          padding-top: 30px;
+        }
       }
     }
 
@@ -50,22 +57,32 @@
       width: 100%;
       display: grid;
       grid-template-columns: 25% 25% 25% 25%;
-      // background-color: #f16f23;
       border: none;
       font-family: 'reforma';
 
+      @include Responsive(S) {
+        grid-template-columns: 50% 50% ;
+      }
+
       .gridItem {
         background-color: #ffac4b;
-        //   border: 3px solid rgba(0, 0, 0, 0.8);
         border: none;
-        padding: 20px;
         font-size: 30px;
-        text-align: center;
         margin: 3px;
         color: white;
         text-align: start;
         padding: 30px 50px;
         transition: 0.5s;
+
+        @include Responsive(M) {
+          padding: 15px 20px;
+          font-size: 22px;
+        }
+
+        @include Responsive(XXS) {
+          padding: 10px 15px;
+          font-size: 17px;
+        }
 
         > i {
           display: block;

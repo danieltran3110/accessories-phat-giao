@@ -1,24 +1,53 @@
+@import 'assets/scss/mixin.module';
+
+.animate {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .feature {
-  display: flex;
-  height: 587px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: 100%;
   overflow: hidden;
+
+  @include Responsive(L) {
+    height: 100%;
+  }
+
+  @include Responsive(S) {
+    grid-template-columns: 50% 50%;
+    //height: 587px;
+  }
 
   .picFeature {
     margin: 0;
-    width: 25%;
+    width: 100%;
     position: relative;
     transition: all 0.5s ease;
-    // filter: brightness(85%);
+
+    @include Responsive(L) {
+      //height: 57%;
+    }
 
     &:hover .contentFeature {
       opacity: 1;
       bottom: 0;
       z-index: 2;
+      visibility: visible;
+
+      @include Responsive(L) {
+        visibility: hidden;
+      }
     }
 
     &:hover .titleFeature {
       bottom: 150px;
       z-index: 2;
+
+      @include Responsive(L) {
+        bottom: 10px;
+      }
     }
 
     &:hover .btnView {
@@ -68,11 +97,16 @@
     line-height: 1.45em;
     text-decoration: none;
     text-transform: none;
-    letter-spacing: 0px;
+    letter-spacing: 0;
 
     &:hover {
       color: #f16f23;
       cursor: pointer;
+    }
+
+    @include Responsive(L) {
+      font-size: 1.6rem;
+      padding: 0 1.9rem 2.75rem;
     }
   }
 
@@ -84,6 +118,13 @@
     transition: all 0.5s ease;
     font-size: 20px;
     line-height: 1.45em;
+    visibility: hidden;
+
+    @include Responsive(L) {
+      font-size: 14px;
+      line-height: 1.3em;
+      padding: 0 1.9rem 2.75rem;
+    }
   }
 
   .btnView {
@@ -106,6 +147,12 @@
       background-color: white;
       color: black;
       cursor: pointer;
+    }
+
+    @include Responsive(L) {
+      height: 70px;
+      width: 70px;
+      padding-top: 25px;
     }
   }
 }

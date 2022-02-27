@@ -39,7 +39,20 @@ export const dataSwiper = [
 export const dataNavbar = [
   {
     menu: 'home',
-    subMenu: ['home 1', 'home 2', 'home 3'],
+    subMenu: [
+      {
+        title: 'home 1',
+        href: '/#',
+      },
+      {
+        title: 'home 2',
+        href: '/#',
+      },
+      {
+        title: 'home 3',
+        href: '/#',
+      },
+    ],
   },
   {
     menu: 'about',
@@ -188,13 +201,13 @@ export const dataVision = {
 export const dataDharma = [
     {
         urlPic: dharma1,
-        urlAudio: 'https://www.computerhope.com/jargon/m/example.mp3',
+        urlAudio: 'https://samadhi.axiomthemes.com/wp-content/uploads/2019/03/sample-melody.mp3',
         title: 'Managing Relationships',
         author: 'ALAN BRAHM'
     },
     {
         urlPic: dharma2,
-        urlAudio: 'https://www.computerhope.com/jargon/m/example.mp3',
+        urlAudio: 'https://samadhi.axiomthemes.com/wp-content/uploads/2019/03/sample-melody.mp3',
         title: 'Managing Relationships',
         author: 'ALAN BRAHM'
     },

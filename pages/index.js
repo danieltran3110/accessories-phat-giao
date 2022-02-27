@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import SlideIntro from '../components/Home/componentSwiper';
+import SlideIntro from '../components/BeginSlide/componentSwiper';
 import NavBar from '../components/NavBar/componentNavBar';
 import Proverb from '../components/ProVerb/componentsProVerb';
 import Welcome from '../components/Welcome/componentWelcome';
@@ -10,6 +10,7 @@ import Event from '../components/Event/componentEvent';
 import Feature from '../components/Feature/componentFeature';
 import Vision from '../components/Vision/componentVison';
 import Dharma from '../components/Dharma/componentDharma';
+import HomePage from './home';
 
 export default function Home() {
   return (
@@ -21,19 +22,11 @@ export default function Home() {
         <script
           src='https://kit.fontawesome.com/618a331a9e.js'
           crossOrigin='anonymous'
-        ></script>
+        />
       </Head>
 
       <main>
-        <SlideIntro />
-        <NavBar />
-        <Proverb />
-        <Welcome />
-        <Mend />
-        <Event />
-        <Feature />
-        <Vision />
-        <Dharma />
+        <HomePage />
       </main>
 
       <footer className={styles.footer}>

@@ -1,11 +1,28 @@
+@import 'assets/scss/mixin.module';
+
 .proverb {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 150px;
+
+    @include Responsive(L) {
+        padding: 50px;
+
+    }
+
+    @include Responsive(S) {
+        flex-direction: column;
+        margin-top: -100px;
+    }
 
     .picProverb {
+        width: 50%;
         margin: 0;
+
+        @include Responsive(S) {
+            width: 100%;
+            flex-direction: column;
+        }
     }
 
     .picProverb img {
@@ -15,8 +32,17 @@
     }
 
     .contentProverb {
-        width: 600px;
+        width: 50%;
         margin-left: 120px;
+
+        @include Responsive(L) {
+            margin-left: 50px;
+        }
+
+        @include Responsive(S) {
+            margin-left: 0;
+            width: 100%;
+        }
 
         .detailProverb {
             color: #282828;
@@ -26,6 +52,20 @@
             margin-bottom: 25px;
             font-family: 'reforma';
             font-weight: 500;
+
+            @include Responsive(L) {
+                font-size: 1.8rem;
+            }
+
+            @include Responsive(S) {
+                font-size: 1.4rem;
+                margin-top: 30px;
+            }
+
+            @include Responsive(XXS) {
+                font-size: 1.2rem;
+            }
+
         }
         .author {
             color: #f16f23;

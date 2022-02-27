@@ -1,8 +1,18 @@
+@import 'assets/scss/mixin.module';
+
 .linksContact {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  margin-bottom: 100px;
+  
+  @include Responsive(S) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+  }
 
   .icon {
     width: 230px;
@@ -18,10 +28,37 @@
     transition: 0.5s;
     color: #a8a8a8;
 
+    @include Responsive(L) {
+      font-size: 12px;
+      height: 60px;
+      padding-top: 21px;
+    }
+
+    @include Responsive(S) {
+      margin-bottom: 20px;
+      width: 170px;
+      height: 55px;
+    }
+
+    @include Responsive(XXS) {
+      margin-bottom: 20px;
+      width: 130px;
+      height: 45px;
+      padding-top: 17px;
+    }
+
     > i {
       margin-right: 20px;
       font-size: 20px;
       color: black;
+
+      @include Responsive(L) {
+        font-size: 16px;
+      }
+
+      @include Responsive(XXS) {
+        margin-right: 10px;
+      }
     }
 
     &:hover {

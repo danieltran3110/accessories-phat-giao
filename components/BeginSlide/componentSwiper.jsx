@@ -9,8 +9,24 @@ import { EffectFade, Pagination } from 'swiper';
 import styles from '../../styles/Home/componentSwiper.module.scss';
 import logo from '../../assets/images/logo2_retina.png';
 import { dataSwiper } from '../../utils/data-config';
+import { css, StyleSheet } from 'aphrodite';
+import { fadeInUp, zoomIn } from 'react-animations';
 
 const SlideIntro = () => {
+
+  const styles2 = StyleSheet.create({
+    fadeInUp: {
+      animationName: fadeInUp,
+      animationDuration: '0.5s',
+      scrollingBehavior: 'smooth',
+    },
+    zoomIn: {
+      animationName: zoomIn,
+      animationDuration: '0.5s',
+      scrollingBehavior: 'smooth',
+    }
+  });
+
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
@@ -29,14 +45,13 @@ const SlideIntro = () => {
       >
         {dataSwiper.map((_data, index) => {
           return (
-            <>
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index.toString()}>
                 <div className={styles.slide}>
                   <div className={styles.placeName}>
-                    <p className={styles.place}>
+                    <p className={styles.place + ' ' + css(styles2.fadeInUp)}>
                       {_data.title} <br /> {_data.subtitle}
                     </p>
-                    <div className={styles.learnMore}>{_data.titleBtn}</div>
+                    <div className={`${styles.learnMore} ${css(styles2.zoomIn)}`}>{_data.titleBtn}</div>
                   </div>
                   <figure className={styles.logo}>
                     <img src={logo.src} alt='logo' />
@@ -46,7 +61,6 @@ const SlideIntro = () => {
                   </figure>
                 </div>
               </SwiperSlide>
-            </>
           );
         })}
       </Swiper>
