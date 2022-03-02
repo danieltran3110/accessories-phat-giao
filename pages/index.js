@@ -1,15 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import SlideIntro from '../components/BeginSlide/componentSwiper';
-import NavBar from '../components/NavBar/componentNavBar';
-import Proverb from '../components/ProVerb/componentsProVerb';
-import Welcome from '../components/Welcome/componentWelcome';
-import Mend from '../components/Mend/componentMend';
-import Event from '../components/Event/componentEvent';
-import Feature from '../components/Feature/componentFeature';
-import Vision from '../components/Vision/componentVison';
-import Dharma from '../components/Dharma/componentDharma';
 import HomePage from './home';
 
 export default function Home() {
