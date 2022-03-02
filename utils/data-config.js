@@ -38,11 +38,22 @@ export const dataSwiper = [
 
 export const dataNavbar = [
   {
-    menu: 'home',
+    title: 'home',
+    href: '/#',
     subMenu: [
       {
         title: 'home 1',
         href: '/#',
+        subMenu: [
+          {
+            title: 'home 22',
+            href: '/#',
+          },
+          {
+            title: 'home 33',
+            href: '/#',
+          },
+        ]
       },
       {
         title: 'home 2',
@@ -55,29 +66,66 @@ export const dataNavbar = [
     ],
   },
   {
-    menu: 'about',
-    subMenu: ['about 1', 'about 2', 'home 3'],
+    title: 'about',
+    href: '/#',
+    subMenu: [
+      {
+        title: 'about 1',
+        href: '/#',
+      },
+      {
+        title: 'about 2',
+        href: '/#',
+      },
+      {
+        title: 'about 3',
+        href: '/#',
+      },
+    ],
   },
   {
-    menu: 'programs',
-    subMenu: ['programs 1', 'programs 2', 'programs 3'],
+    title: 'programs',
+    href: '/#',
   },
   {
-    menu: 'features',
-    subMenu: ['features 1', 'features 2', 'features 3'],
+    title: 'features',
+    href: '/#',
   },
   {
-    menu: 'teaching&training',
+    title: 'teaching&training',
+    href: '/#',
   },
   {
-    menu: 'blog',
-    subMenu: ['blog 1', 'blog 2'],
+    title: 'blog',
+    href: '/#',
+    subMenu: [
+      {
+        title: 'blog 1',
+        href: '/#',
+      },
+      {
+        title: 'blog 2',
+        href: '/#',
+        subMenu: [
+          {
+            title: 'home 22',
+            href: '/#',
+          },
+          {
+            title: 'home 33',
+            href: '/#',
+          },
+        ]
+      },
+    ],
   },
   {
-    menu: 'shop',
+    title: 'shop',
+    href: '/#',
   },
   {
-    menu: 'visiting',
+    title: 'visiting',
+    href: '/#',
   },
 ];
 
