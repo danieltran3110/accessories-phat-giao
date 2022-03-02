@@ -30,7 +30,7 @@ const NavBarLeftSide = () => {
                 <ul className={styles.menuDropdown}>
                   {_data.subMenu.map((_data2, index2) => {
                     return (
-                      <>
+                      // <>
                         <li
                           className={
                             _data2.subMenu
@@ -73,7 +73,7 @@ const NavBarLeftSide = () => {
                             </ul>
                           )}
                         </li>
-                      </>
+                      // </>
                     );
                   })}
                 </ul>
