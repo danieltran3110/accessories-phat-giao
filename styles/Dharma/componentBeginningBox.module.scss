@@ -11,6 +11,10 @@
   width: 100%;
   //max-width: 1110px;
 
+  @include Responsive(XXS) {
+    padding: 30px 20px;
+  }
+
   .content {
     color: white;
     font-family: 'reforma';
@@ -29,7 +33,7 @@
     background-color: #fff;
     font-family: 'reforma';
     padding: 30px 80px;
-    font-weight: bold;
+    font-weight: bolder;
     color: black;
     letter-spacing: 2px;
     text-align: center;
@@ -38,6 +42,12 @@
       font-size: 13px;
       width: 70%;
       padding: 15px 20px;
+    }
+
+    @include Responsive(XXS) {
+      font-size: 10px;
+      width: 90%;
+      letter-spacing: 1px;
     }
 
     &:hover {

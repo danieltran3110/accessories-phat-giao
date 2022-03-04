@@ -154,5 +154,12 @@
       width: 70px;
       padding-top: 25px;
     }
+
+    @include Responsive(XXS) {
+      height: 50px;
+      width: 50px;
+      padding-top: 18px;
+      font-size: 11px;
+    }
   }
 }

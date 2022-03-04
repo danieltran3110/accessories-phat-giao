@@ -1,7 +1,11 @@
 @import 'assets/scss/mixin.module';
 
 .event {
-  padding-bottom: 150px;
+  padding-bottom: 130px;
+
+  @include Responsive(S) {
+    padding-bottom: 50px;
+  }
 
   .titleEvent {
     font-family: 'Reforma', sans-serif;
@@ -19,6 +23,12 @@
 
     @include Responsive(L) {
       font-size: 2.0rem;
+      padding-top: 80px;
+    }
+
+    @include Responsive(S) {
+      font-size: 2.0rem;
+      padding-top: 20px;
     }
 
     .seeComingEvent {
@@ -35,6 +45,7 @@
       }
     }
   }
+
   .dateEvent {
     display: flex;
     align-items: flex-start;
@@ -44,6 +55,7 @@
 
     @include Responsive(L) {
       padding: 30px 30px;
+      margin-bottom: 15px;
     }
 
     @include Responsive(S) {
@@ -95,9 +107,15 @@
       .title {
         font-size: 1.778rem;
         margin-bottom: 15px;
+        font-family: 'reforma';
+        font-weight: bold;
 
         @include Responsive(L) {
           font-size: 1.278rem;
+        }
+
+        @include Responsive(S) {
+          font-size: 1rem;
         }
       }
 
@@ -109,8 +127,14 @@
         font-size: 15px;
 
         @include Responsive(L) {
-          font-size: 10px;
+          font-size: 9px;
         }
+
+        @include Responsive(XXS) {
+
+          letter-spacing: 0.1rem;
+        }
+
         .cost {
           display: inline;
           margin-left: 30px;
@@ -124,6 +148,10 @@
 
         @include Responsive(L) {
           font-size: 14px;
+        }
+
+        @include Responsive(XXS) {
+          font-size: 12px;
         }
       }
     }

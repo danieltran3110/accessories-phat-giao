@@ -9,8 +9,15 @@
     padding-top: 50px;
     padding-bottom: 350px;
 
+    @include Responsive(XS) {
+        padding-top: 0;
+    }
+
+    @include Responsive(XXS) {
+        padding-bottom: 180px;
+    }
+
     .place {
-        //width: 1110px;
         text-align: center;
 
         .welcomePlace {
@@ -33,6 +40,7 @@
 
             @include Responsive(XS) {
                 width: 300px;
+                margin-top: 20px;
             }
         }
 

@@ -5,12 +5,29 @@
 
   .mend {
     margin: 0 auto;
+    position: relative;
+
+    @include Responsive(L) {
+      margin-bottom: -100px;
+    }
+
+    @include Responsive(M) {
+      margin-bottom: -150px;
+    }
+
+    @include Responsive(XXS) {
+      margin-bottom: -110px;
+    }
 
     .videoMend {
       position: relative;
       width: 100%;
       margin: 0;
       top: -300px;
+
+      @include Responsive(XXS) {
+        top: -180px;
+      }
 
       .btnPlay {
         position: absolute;
@@ -62,6 +79,11 @@
 
       @include Responsive(S) {
         grid-template-columns: 50% 50% ;
+      }
+
+      @include Responsive(XXS) {
+        grid-template-columns: 100%;
+        top: -140px;
       }
 
       .gridItem {

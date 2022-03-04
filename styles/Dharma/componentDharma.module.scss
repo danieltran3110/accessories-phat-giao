@@ -18,6 +18,14 @@
   @include Responsive(L) {
     font-size: 2.556rem;
   }
+
+  @include Responsive(XS) {
+    padding-top: 60px;
+  }
+
+  @include Responsive(XXS) {
+    padding-top: 20px;
+  }
 }
 
 .dharma {
