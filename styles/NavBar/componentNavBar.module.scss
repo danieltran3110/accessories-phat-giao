@@ -34,7 +34,7 @@ $menu_icon_padding: 5px 10px;
     @include Responsive(S) {
       display: inline-block !important;
       position: absolute;
-      top: 38px;
+      top: 30px;
       left: 10px;
     }
 
@@ -114,6 +114,11 @@ $menu_icon_padding: 5px 10px;
   .menu a {
     padding: $menu_padding;
     font-size: 12px;
+
+    @include Responsive(M) {
+      padding: 30px 10px;
+
+    }
   }
 
 
@@ -215,7 +220,7 @@ $menu_icon_padding: 5px 10px;
     width: 100%;
     margin: 0 auto;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     border-bottom: 2px solid rgba(128, 128, 128, 0.281);
 
   }

@@ -6,7 +6,7 @@
     align-items: center;
 
     @include Responsive(L) {
-        padding: 50px;
+        //padding: 50px;
     }
 
     @include Responsive(S) {
@@ -57,7 +57,7 @@
             font-weight: 500;
 
             @include Responsive(L) {
-                font-size: 1.8rem;
+                font-size: 1.7rem;
             }
 
             @include Responsive(S) {
