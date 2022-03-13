@@ -1,0 +1,270 @@
+@import 'assets/scss/mixin.module';
+
+/* vars */
+
+$menu_background: white;
+$menu_color: gray;
+$menu_breakpoint: 768px;
+$menu_toggle_background: black;
+$menu_border: 1px solid rgba(255, 255, 255, 0.1);
+$menu_padding: 50px 20px;
+$menu_icon_padding: 5px 10px;
+
+/* hide show mixin */
+
+@mixin show() {
+  display: block;
+  animation: grow .5s ease-in-out; // optional animation
+}
+
+@mixin hide() {
+  display: none;
+}
+
+/* global  styles */
+
+.menu {
+  background: $menu_background;
+  position: relative;
+
+  .symbolNavbar {
+    display: none;
+    width: 150px;
+
+    @include Responsive(S) {
+      display: inline-block !important;
+      position: absolute;
+      top: 30px;
+      left: 10px;
+    }
+
+    @include Responsive(XS) {
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+
+    @include Responsive(XXS) {
+      margin-left: 15px;
+      margin-top: 5px;
+      width: 100px;
+      top: 20px;
+    }
+  }
+
+  .search {
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  .symbolNavbar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu,
+.menu a {
+  color: $menu_color;
+  text-decoration: none;
+}
+
+.menu a {
+  display: block;
+  white-space: nowrap; // prevent links form going to a new line
+  font-weight: bolder;
+}
+
+.menuDropdown,
+.menu input[type="checkbox"] { // hide defaults
+  @include hide;
+}
+
+.menu label:hover {
+  cursor: pointer;
+}
+
+/* narrow styles */
+
+@media screen and (max-width: $menu_breakpoint) {
+  // hide navigation and right icons
+  .menu > ul,
+  .menuRightIcon {
+    @include hide;
+  }
+  .menu input[type="checkbox"]:checked + ul {
+    @include show;
+  }
+}
+
+/* large styles */
+
+@media screen and (min-width: $menu_breakpoint + 1px) {
+  // hide show navigation button and checkboxes
+  .menu > label,
+  .menu > label input[type="checkbox"] {
+    @include hide;
+  }
+  .menu a {
+    padding: $menu_padding;
+    font-size: 12px;
+
+    @include Responsive(M) {
+      padding: 30px 10px;
+
+    }
+  }
+
+
+
+  // align items and style them
+  .menu > ul > li {
+    display: inline-block;
+  }
+  // hover logics
+  .menuHasDropDown {
+    position: relative;
+
+    &:hover {
+      > ul {
+        background-color: #282828;
+        @include show;
+      }
+    }
+  }
+  // dropdown position and style
+  .menuHasDropDown > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: $menu_background;
+  }
+  // flyout position
+  .menuHasFlyOut > ul {
+    left: 100%;
+    top: 0;
+  }
+  .menuHasFlyOut .menuDownIcon {
+    @include hide;
+  }
+}
+
+
+/* look and feel only, not needed for core menu*/
+
+// optional animation for display none/block
+@keyframes grow {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menuDropdown a {
+  padding: 15px 20px;
+  border-bottom: $menu_border;
+}
+
+/* narrow  */
+@media screen and (max-width: $menu_breakpoint) {
+  .menu > label {
+    background: $menu_background;
+    display: block;
+    padding: $menu_padding;
+    text-align: right;
+    color: black;
+
+    @include Responsive(XXS) {
+      padding: 30px 10px;
+      margin-right: 10px;
+    }
+  }
+
+  .menu a {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .menu > ul i {
+    float: right;
+    padding: $menu_icon_padding;
+    background: darken($menu_background, 15%);
+
+    @include Responsive(XXS) {
+      margin-right: 10px;
+    }
+  }
+
+  .menuDropdown a {
+    background: darken($menu_background, 5%);
+  }
+
+  .menuHasFlyOut > ul a {
+    background: darken($menu_background, 10%);
+  }
+}
+
+@media screen and (min-width: $menu_breakpoint + 1px) {
+  .menu {
+    width: 100%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.281);
+
+  }
+}
+
+.displayInline {
+  display: inline;
+  float: right;
+  margin-top: -83px;
+
+  .rightSide {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    @include Responsive(L) {
+      display: none;
+    }
+
+    .title {
+      color: black;
+      font-weight: bolder;
+      margin-right: 15px;
+      letter-spacing: 2px;
+
+      &:hover {
+        color: #f16f23;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+
+      > p {
+        font-size: 13px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+
+        > i {
+          padding-right: 10px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

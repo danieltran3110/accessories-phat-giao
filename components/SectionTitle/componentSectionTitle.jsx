@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import styles from '../../styles/Proverb/componentProverb.module.scss';
+import styles from '../../styles/SectionTitle/componentSectionTitle.module.scss';
+import { dataWelcome } from '../../utils/data-config';
 
 
-const Proverb = () => {
+const SectionTitle = (props) => {
   return (
-<div></div>
+    <p className={styles.title}>{props.title}</p>
   );
 };
 
-export default Proverb;
+export default SectionTitle;

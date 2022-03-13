@@ -1,0 +1,60 @@
+@import 'assets/scss/mixin.module';
+
+.beginningBox {
+  background-color: #f16f23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px 20px;
+  margin: 0 auto;
+  width: 100%;
+  //max-width: 1110px;
+
+  @include Responsive(XXS) {
+    padding: 30px 20px;
+  }
+
+  .content {
+    color: white;
+    font-family: 'reforma';
+    width: 70%;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+
+    @include Responsive(L) {
+      font-size: 16px;
+    }
+  }
+
+  .btnStart {
+    background-color: #fff;
+    font-family: 'reforma';
+    padding: 30px 80px;
+    font-weight: bolder;
+    color: black;
+    letter-spacing: 2px;
+    text-align: center;
+
+    @include Responsive(L) {
+      font-size: 13px;
+      width: 70%;
+      padding: 15px 20px;
+    }
+
+    @include Responsive(XXS) {
+      font-size: 10px;
+      width: 90%;
+      letter-spacing: 1px;
+    }
+
+    &:hover {
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+  }
+}

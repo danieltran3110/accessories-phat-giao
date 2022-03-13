@@ -1,15 +1,15 @@
-import SlideIntro from '../../components/BeginSlide/componentSwiper';
-import NavBar from '../../components/NavBar/componentNavBar';
+import SlideIntro from '../../components/PageHome/BeginSlide/componentSwiper';
+import NavBar from '../../components/PageHome/NavBar/componentNavBar';
 import { useEffect } from 'react';
 import { fadeInUp, fadeIn } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
-import Proverb from '../../components/Proverb/componentsProverb';
-import Welcome from '../../components/Welcome/componentWelcome';
-import Mend from '../../components/Mend/componentMend';
-import Event from '../../components/Event/componentEvent';
-import Feature from '../../components/Feature/componentFeature';
-import Vision from '../../components/Vision/componentVison';
-import Dharma from '../../components/Dharma/componentDharma';
+import Proverb from '../../components/PageHome/Proverb/componentsProverb';
+import Welcome from '../../components/PageHome/Welcome/componentWelcome';
+import Mend from '../../components/PageHome/Mend/componentMend';
+import Event from '../../components/PageHome/Event/componentEvent';
+import Feature from '../../components/PageHome/Feature/componentFeature';
+import Vision from '../../components/PageHome/Vision/componentVison';
+import Dharma from '../../components/PageHome/Dharma/componentDharma';
 import stylesGlobal from '../../assets/scss/global.module.scss';
 
 export default function HomePage() {

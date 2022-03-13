@@ -1,0 +1,147 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
+.dharmaWrapper {
+  padding-bottom: 100px;
+
+  .titleDharma {
+    padding-top: 40px;
+
+    @include Responsive(XS) {
+      padding-top: 30px;
+    }
+
+    @include Responsive(XXS) {
+      padding-top: 20px;
+    }
+  }
+
+  .dharma {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    @include Responsive(S) {
+      flex-direction: column;
+    }
+
+    .picDharma {
+      display: flex;
+      margin: 0 auto;
+      width: 49%;
+      position: relative;
+      height: 100%;
+
+      @include Responsive(S) {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+
+      @include Responsive(XXS) {
+        width: 100%;
+      }
+
+      &::after {
+        background: rgba(0, 0, 0, 0.4) !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease;
+        z-index: 1;
+      }
+
+      .audio {
+        position: absolute;
+        width: 90%;
+        bottom: 5px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+
+        @include Responsive(XXS) {
+          bottom: -10px;
+        }
+      }
+
+      audio::-webkit-media-controls-panel {
+        background: none;
+        border-radius: 0;
+      }
+
+      audio::-webkit-media-controls-timeline {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #f16f23;
+      }
+
+      .topicAuthor {
+        font-family: 'reforma', sans-serif;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: fit-content;
+        z-index: 2;
+
+        @include Responsive(M) {
+          top: 41%;
+        }
+
+        @include Responsive(S) {
+          top: 40%;
+        }
+
+        .topic {
+          font-size: 40px;
+          font-weight: 600;
+          margin-bottom: 5px;
+
+          @include Responsive(L) {
+            font-size: 30px;
+          }
+
+          @include Responsive(M) {
+            font-size: 22px;
+          }
+
+          @include Responsive(S) {
+            font-size: 35px;
+          }
+
+          @include Responsive(XXS) {
+            font-size: 20px;
+          }
+
+          .author {
+            text-transform: uppercase;
+            font-size: 25px;
+
+            @include Responsive(L) {
+              font-size: 22px;
+            }
+
+            @include Responsive(XXS) {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+
+    .picDharma .img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      //opacity: 0.9;
+      //   background-color: rgba(0, 0, 0, 0.582);
+    }
+  }
+}

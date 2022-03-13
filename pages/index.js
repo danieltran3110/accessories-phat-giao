@@ -13,6 +13,7 @@ export default function Home() {
           src='https://kit.fontawesome.com/618a331a9e.js'
           crossOrigin='anonymous'
         />
+        <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
       </Head>
 
       <main>
@@ -23,5 +24,5 @@ export default function Home() {
         <p>AxiomThemes © 2022. All Rights Reserved.</p>
       </footer>
     </div>
-  );
+);
 }

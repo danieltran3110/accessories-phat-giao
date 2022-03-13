@@ -14,6 +14,16 @@ import vision1 from '../assets/images/vision1.jpg';
 import vision2 from '../assets/images/vision2.jpg';
 import dharma1 from '../assets/images/dharma1.jpg';
 import dharma2 from '../assets/images/dharma2.jpg';
+import banner from '../assets/images/banner.jpg';
+import book1 from '../assets/images/book1.jpg';
+import book2 from '../assets/images/book2.jpg';
+import book3 from '../assets/images/book3.jpg';
+import book4 from '../assets/images/book4.jpg';
+import book5 from '../assets/images/book5.jpg';
+import book6 from '../assets/images/book6.jpg';
+import book7 from '../assets/images/book7.jpg';
+import book8 from '../assets/images/book8.jpg';
+import book9 from '../assets/images/book9.jpg';
 
 export const dataSwiper = [
   {
@@ -121,7 +131,7 @@ export const dataNavbar = [
   },
   {
     title: 'shop',
-    href: '/#',
+    href: '/shop',
   },
   {
     title: 'visiting',
@@ -284,3 +294,87 @@ export const dataBeginningBox = {
   content: 'Samandhi Monastery invites and welcomes every person seeking refuge in the ancient teachings of wisdom and compassion to practice.',
   btnName: 'BEGINNING INSTRUCTION'
 }
+
+export const dataBanner = {
+  title: 'Shop',
+  src: banner,
+  alt: 'banner'
+}
+
+export const dataCategories = [
+  {
+    item: 'book',
+    href: '#'
+  },
+  {
+    item: 'buddhism',
+    href: '#'
+  },
+  {
+    item: 'inspiration',
+    href: '#'
+  },
+  {
+    item: 'meditation',
+    href: '#'
+  },
+  {
+    item: 'other',
+    href: '#'
+  },
+  {
+    item: 'philosophy',
+    href: '#'
+  },
+  {
+    item: 'teaching',
+    href: '#'
+  },
+]
+
+
+export const dataTags = [
+  {
+    item: 'buddhism',
+    href: '#'
+  },
+  {
+    item: 'happiness',
+    href: '#'
+  },
+  {
+    item: 'meditation',
+    href: '#'
+  },
+  {
+    item: 'religion',
+    href: '#'
+  },
+  {
+    item: 'soul',
+    href: '#'
+  },
+]
+
+export const dataProducts = [
+  {
+    name: 'The Buddha’s Way of Happiness',
+    src: book1,
+    alt: 'book1',
+    money: 15,
+    numStars: 5
+  },
+  {
+    name: 'The Four Noble Truths of Love',
+    src: book2,
+    alt: 'book2',
+    money: 11,
+    numStars: 4
+  },
+  {
+    name: 'Meditations from the Mat',
+    src: book3,
+    alt: 'book3',
+    money: 10,
+  },
+]

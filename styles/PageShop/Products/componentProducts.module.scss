@@ -1,0 +1,18 @@
+.wrapperProduct {
+  .listProduct {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .item {
+      border: 2px gray solid;
+
+      .wrapperImage {
+        padding: 30px 40px;
+
+        .picProduct {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

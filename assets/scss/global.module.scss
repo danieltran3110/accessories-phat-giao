@@ -3,10 +3,10 @@
 .container1 {
   width: auto;
   height: 100%;
-  max-width: 1260px;
+  max-width: 1290px;
   transition: 0.5s;
   margin: 120px auto 100px;
-  padding: 0 50px;
+  padding: 0 30px;
 
   @include Responsive(M) {
     margin: 70px auto 60px;
@@ -21,10 +21,10 @@
 .container2 {
   width: auto;
   height: 100%;
-  max-width: 1110px;
+  max-width: 1140px;
   transition: 0.5s;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 30px;
 
   @include Responsive(S) {
     padding: 0 20px;

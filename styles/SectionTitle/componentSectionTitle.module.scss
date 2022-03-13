@@ -1,0 +1,28 @@
+@import '../../assets/scss/fonts.module.scss';
+@import 'assets/scss/mixin.module';
+
+.title {
+  font-family: "reforma",sans-serif;
+  color: black;
+  font-size: 3.556rem;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.45em;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0;
+  width: 560px;
+  margin: 1.60em auto 0.87em;
+  text-align: center;
+  //padding-top: 50px;
+
+  @include Responsive(L) {
+    font-size: 2.0rem;
+    width: 360px;
+  }
+
+  @include Responsive(XS) {
+    width: 300px;
+    margin-top: 20px;
+  }
+}
