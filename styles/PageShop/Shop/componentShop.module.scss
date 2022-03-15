@@ -1,3 +1,5 @@
 .shop {
-  display: flex;
+  display: grid;
+  grid-template-columns: 30% 62%;
+  column-gap: 50px;
 }

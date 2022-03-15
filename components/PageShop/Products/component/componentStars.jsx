@@ -5,15 +5,19 @@ import stylesGlobal from '../../../../assets/scss/global.module.scss';
 const Stars = (props) => {
   const numStars = props.numStars;
 
-  return (
-    <div>
-      <i className='fa fa-star' aria-hidden='true' />
-      <i className='fa fa-star' aria-hidden='true' />
-      <i className='fa fa-star' aria-hidden='true' />
-      <i className='fa fa-star' aria-hidden='true' />
-    </div>
-  )
-    ;
-};
+  function renderStarts() {
+    const items=[];
+    for (let i = 0; i < numStars; i++) {
+      items.push(
+        <i className='fa fa-star' aria-hidden='true' />
+      )
+    }
+    return items;
+  }
 
-export default Stars;
+    return (
+      renderStarts()
+    );
+  };
+
+  export default Stars;

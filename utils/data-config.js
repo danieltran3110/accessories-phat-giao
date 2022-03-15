@@ -377,4 +377,43 @@ export const dataProducts = [
     alt: 'book3',
     money: 10,
   },
+  {
+    name: 'The Buddha’s Way of Happiness',
+    src: book4,
+    alt: 'book4',
+    money: 12,
+  },
+  {
+    name: 'The Four Noble Truths of Love',
+    src: book5,
+    alt: 'book5',
+    money: 11,
+    numStars: 4
+  },
+  {
+    name: 'Meditations from the Mat',
+    src: book6,
+    alt: 'book6',
+    money: 10,
+  },
+  {
+    name: 'The Buddha’s Way of Happiness',
+    src: book7  ,
+    alt: 'book7',
+    money: 15,
+    numStars: 5
+  },
+  {
+    name: 'The Four Noble Truths of Love',
+    src: book8  ,
+    alt: 'book8 ',
+    money: 11,
+    numStars: 4
+  },
+  {
+    name: 'Meditations from the Mat',
+    src: book9  ,
+    alt: 'book9',
+    money: 10,
+  },
 ]

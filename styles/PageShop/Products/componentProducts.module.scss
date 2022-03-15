@@ -2,15 +2,52 @@
   .listProduct {
     display: grid;
     grid-template-columns: 50% 50%;
+    column-gap: 50px;
+    row-gap: 50px;
 
     .item {
-      border: 2px gray solid;
+      position: relative;
 
       .wrapperImage {
-        padding: 30px 40px;
+        padding: 50px 70px;
+        border: 3px rgba(128, 128, 128, 0.3) solid;
 
         .picProduct {
           margin: 0;
+          min-height: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .infoProduct {
+        //font-family: 'renner';
+        font-weight: bolder;
+        margin-top: 40px;
+
+        .name {
+          font-size: 21px;
+        }
+
+        .money {
+          color: #7e7e7e;
+        }
+      }
+
+      .detailInfo {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: fit-content;
+        width: fit-content;
+        color: #282828;
+
+        .icon {
+          > i {
+            color: #282828;
+            font-size: 14px;
+          }
         }
       }
     }

@@ -1,13 +1,16 @@
 import React from 'react';
 import styles from '../../../styles/PageShop/Shop/componentShop.module.scss';
-import Products from '../Products/componentProduct';
+import stylesGlobal from '../../../assets/scss/global.module.scss';
 import SideBar from '../SideBar/componentSideBar';
+import PaginatedItems from '../PaginatedItems/componentPaginatedItems';
 
 const Shop = () => {
   return (
-    <div className={styles.shop}>
-      <SideBar />
-      <Products />
+    <div className={stylesGlobal.container1}>
+      <div className={styles.shop}>
+        <SideBar />
+        <PaginatedItems itemsPerPage={8} />
+      </div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 import HomePage from './home';
+import styles from '../styles/Zalo/zalo.module.scss';
 
 export default function Home() {
   return (
@@ -13,10 +13,17 @@ export default function Home() {
           src='https://kit.fontawesome.com/618a331a9e.js'
           crossOrigin='anonymous'
         />
-        <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
+        <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
+
+        <script src='https://sp.zalo.me/plugins/sdk.js' />
       </Head>
 
       <main>
+        <div className={styles.zalo}><a href='https://zalo.me/2318603118117676985' target='_blank'>
+          <img alt='icon zalo'
+               src='https://1.bp.blogspot.com/-EfLNosfvRuU/YShtgbHi9tI/AAAAAAAAAko/2E0ZcIf6hsYWzf0xZRaGUzclGiULofhPgCNcBGAsYHQ/s0/icon-zalo.png' />
+        </a></div>
+
         <HomePage />
       </main>
 
@@ -24,5 +31,5 @@ export default function Home() {
         <p>AxiomThemes © 2022. All Rights Reserved.</p>
       </footer>
     </div>
-);
+  );
 }

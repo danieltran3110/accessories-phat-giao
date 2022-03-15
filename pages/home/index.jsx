@@ -11,6 +11,9 @@ import Feature from '../../components/PageHome/Feature/componentFeature';
 import Vision from '../../components/PageHome/Vision/componentVison';
 import Dharma from '../../components/PageHome/Dharma/componentDharma';
 import stylesGlobal from '../../assets/scss/global.module.scss';
+import Zalo from '../../components/Zalo/zalo';
+import ScrollButton from '../../components/ScrollButton/componentScrollButton';
+import Script from 'next/script';
 
 export default function HomePage() {
 
@@ -64,6 +67,10 @@ export default function HomePage() {
       <Feature />
       <Vision />
       <Dharma />
+      <Zalo />
+      <ScrollButton />
+      <Script  src='https://kit.fontawesome.com/618a331a9e.js'
+               crossOrigin='anonymous' />
     </div>
   );
 }
