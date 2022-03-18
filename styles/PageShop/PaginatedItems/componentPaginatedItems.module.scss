@@ -1,3 +1,6 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
 .pagination {
   //display: inline-grid;
   margin: 0 auto;
@@ -8,6 +11,12 @@
   font-family: 'renner';
   font-weight: bold;
   width: fit-content;
+
+  @include Responsive(M) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    //grid-row: 3;
+  }
 
   .pageItem {
     list-style: none;
@@ -43,5 +52,43 @@
 
   :global(.disabled) {
     display: none;
+  }
+}
+
+.view {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  @include Responsive(XXS) {
+    flex-direction: column;
+  }
+
+  .icon {
+
+    .blur {
+      opacity: 0.2;
+    }
+
+    > i {
+      margin: 0 10px;
+      font-size: 25px;
+      transition: 0.5s;
+
+      &:hover {
+        cursor: pointer;
+        color: #282828;
+        opacity: 1!important;
+      }
+    }
+  }
+
+  .select {
+    width: 300px;
+
+    @include Responsive(XXS) {
+      width: 100%;
+      margin-top: 20px;
+    }
   }
 }

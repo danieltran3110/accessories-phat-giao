@@ -16,7 +16,7 @@ const Filter = () => {
     <div className={stylesGlobal.backgroundColor}>
       <div className={styles.wrapperBox}>
         <h2 className={styles.title}>Filter by price</h2>
-        <Box sx={{ width: 300 }}>
+        <Box sx={{ width:' 100% '}}>
           <Slider
             className={styles.sliderPrice}
             value={value}

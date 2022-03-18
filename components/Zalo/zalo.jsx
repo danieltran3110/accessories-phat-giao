@@ -1,14 +1,17 @@
 import React from 'react';
 import styles from '../../styles/Zalo/zalo.module.scss';
+import Script from 'next/script';
 
 const Zalo = () => {
   return (
-    <div className={styles.zalo}>
-      <a href='https://zalo.me/2318603118117676985' target='_blank'>
-        <img alt='icon zalo'
-             src='https://1.bp.blogspot.com/-EfLNosfvRuU/YShtgbHi9tI/AAAAAAAAAko/2E0ZcIf6hsYWzf0xZRaGUzclGiULofhPgCNcBGAsYHQ/s0/icon-zalo.png' />
-      </a>
-    </div>
+    <>
+      <Script src='https://sp.zalo.me/plugins/sdk.js' />
+      <div className='zalo-chat-widget' data-oaid='579745863508352884'
+           // style={{left: '30px!important'}}
+           data-welcome-message='Rất vui khi được hỗ trợ bạn!'
+           data-autopopup='5' data-width='300' data-height='300'>
+      </div>
+    </>
   );
 };
 

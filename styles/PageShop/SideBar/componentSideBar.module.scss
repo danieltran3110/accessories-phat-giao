@@ -3,6 +3,24 @@
 
 .sideBarInner {
   width: auto;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  @include Responsive(M) {
+    grid-row: 4;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+  }
+
+  @include Responsive(XS) {
+    grid-template-columns: 48% 48%;
+  }
+
+  @include Responsive(XXS) {
+    grid-template-columns: 100%;
+  }
 
   .backgroundColorOrange {
     background-color: #ffac4b;
@@ -12,13 +30,34 @@
     padding: 50px;
     margin-bottom: 25px;
 
+    @include Responsive(M) {
+      height: fit-content;
+      padding: 20px;
+    }
+
+    @include Responsive(S) {
+      font-size: 14px;
+    }
+
     .title {
       font-family: 'reforma';
+
+      p {
+        font-size: inherit;
+      }
+
+      @include Responsive(S) {
+        font-size: 18px;
+      }
     }
 
     .titleWhite {
       color: white;
       font-family: 'reforma';
+
+      @include Responsive(S) {
+        font-size: 18px;
+      }
     }
 
     .listItem {
@@ -29,6 +68,10 @@
       letter-spacing: 1px;
       padding-left: 15px;
       margin-top: 40px;
+
+      @include Responsive(S) {
+        font-size: 14px;
+      }
 
       > li {
         margin: 10px 0;
@@ -47,6 +90,12 @@
     }
 
     .itemTag {
+
+      @include Responsive(M) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
       > a {
         display: block;
         padding: 14px 25px;
@@ -79,6 +128,7 @@
       border-radius: 0;
       height: 7px;
       padding: 8px 0;
+      width: 100%;
 
       :global(.css-187mznn-MuiSlider-root) {
         margin-left: 10px;
@@ -93,6 +143,7 @@
         border-radius: 0;
         width: 15px;
         height: 15px;
+        cursor: e-resize;
       }
 
       :global(.css-6cwnna-MuiSlider-mark ) {
@@ -127,6 +178,11 @@
       letter-spacing: 2px;
       font-size: 18px;
       transition: 0.5s;
+
+      @include Responsive(S) {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
 
       &:hover {
         background-color: #282828;

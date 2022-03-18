@@ -2,10 +2,21 @@
 @import 'assets/scss/mixin.module';
 
 .banner {
+  z-index: 99;
+
   .picBanner {
     margin: 0;
     position: relative;
     color: white;
+    overflow: visible!important;
+
+    @include Responsive(M) {
+      //min-height: 220px;
+    }
+
+    .img {
+      z-index: -1;
+    }
 
     .titleBanner {
       position: absolute;
@@ -16,17 +27,47 @@
       font-size: 55px;
       font-weight: bold;
 
+      @include Responsive(M) {
+        font-size: 30px;
+      }
+
+      @include Responsive(S) {
+        font-size: 22px;
+      }
+
       .subTitleBanner {
-        display: block;
         font-size: 14px;
         text-transform: uppercase;
         font-family: 'renner';
         font-weight: bold;
         letter-spacing: 3px;
         margin-top: 20px;
+        transition: 0.5s;
+        z-index: 2;
+
+        @include Responsive(M) {
+          font-size: 11px;
+        }
+
+        @include Responsive(S) {
+          font-size: 10px;
+          margin-top: 10px;
+        }
+
+        a {
+          transition: 0.5s;
+
+          &:hover {
+            cursor: pointer;
+            color: #f16f23;
+
+          }
+        }
+
 
         i {
           font-style: normal;
+          opacity: 0.6;
         }
       }
     }

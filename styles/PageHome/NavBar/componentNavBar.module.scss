@@ -73,6 +73,13 @@ $menu_icon_padding: 5px 10px;
 .menu a {
   color: $menu_color;
   text-decoration: none;
+  transition: 0.5s;
+  z-index: 30;
+
+  &:hover {
+    cursor: pointer;
+    color: #f16f23;
+  }
 }
 
 .menu a {
@@ -120,7 +127,6 @@ $menu_icon_padding: 5px 10px;
 
     }
   }
-
 
 
   // align items and style them
@@ -186,6 +192,7 @@ $menu_icon_padding: 5px 10px;
     padding: $menu_padding;
     text-align: right;
     color: black;
+    text-transform: capitalize;
 
     @include Responsive(XXS) {
       padding: 30px 10px;
@@ -196,6 +203,8 @@ $menu_icon_padding: 5px 10px;
   .menu a {
     padding: 10px 20px;
     font-size: 12px;
+    text-transform: capitalize;
+
   }
 
   .menu > ul i {
@@ -214,6 +223,10 @@ $menu_icon_padding: 5px 10px;
 
   .menuHasFlyOut > ul a {
     background: darken($menu_background, 10%);
+  }
+
+  .menuRightIcon {
+    visibility: hidden;
   }
 }
 

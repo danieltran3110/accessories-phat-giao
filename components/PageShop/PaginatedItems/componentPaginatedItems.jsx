@@ -3,9 +3,13 @@ import ReactPaginate from 'react-paginate';
 import styles from '../../../styles/PageShop/PaginatedItems/componentPaginatedItems.module.scss';
 import { dataProducts } from '../../../utils/data-config';
 import Products from '../Products/componentProduct';
+import ProductsV2 from '../ProductsV2/componentProductV2';
+import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
 
 function PaginatedItems({ itemsPerPage }) {
+
+  const [view, setView] = useState(false);
   // We start with an empty list of items.
   const [currentItems, setCurrentItems] = useState(dataProducts);
   const [pageCount, setPageCount] = useState(0);
@@ -30,12 +34,35 @@ function PaginatedItems({ itemsPerPage }) {
 
   return (
     <>
-      <Products currentItems={currentItems} />
+      <div className={styles.view}>
+        <div className={styles.icon}>
+          <i className={`fa fa-th-large ${view ? styles.blur : ''}`} aria-hidden='true'
+             onClick={() => setView(!view)} />
+          <i className={`fa fa-th-list ${!view ? styles.blur : ''}`} aria-hidden='true'
+             onClick={() => setView(!view)} />
+        </div>
+        <FormControl className={styles.select} fullWidth>
+          <InputLabel id='demo-simple-select-label'>SORT BY LATEST</InputLabel>
+          <Select
+            labelId='demo-simple-select-label'
+            id='demo-simple-select'
+            // value={age}
+            label='SORT BY LATEST'
+            // onChange={handleChange}
+          >
+            <MenuItem value={10}>SORT BY POPULARITY</MenuItem>
+            <MenuItem value={20}>SORT BY AVERAGE RATING</MenuItem>
+            <MenuItem value={30}>SORT BY PRICE: LOW TO HIGH</MenuItem>
+            <MenuItem value={40}>SORT BY PRICE: HIGH TO LOW</MenuItem>
+          </Select>
+        </FormControl>
+      </div>
+      {!view ? <Products currentItems={currentItems} /> : <ProductsV2 currentItems={currentItems} />}
       <ReactPaginate
         nextLabel='->'
         onPageChange={handlePageClick}
-        pageRangeDisplayed={3}
-        marginPagesDisplayed={2}
+        pageRangeDisplayed={1}
+        marginPagesDisplayed={0}
         pageCount={pageCount}
         previousLabel='<-'
         pageClassName={`${styles.pageItem} ${styles.decoration}`}
@@ -44,7 +71,7 @@ function PaginatedItems({ itemsPerPage }) {
         previousLinkClassName='page-link'
         nextClassName={styles.pageItem}
         nextLinkClassName='page-link'
-        breakLabel='...'
+        breakLabel='/'
         breakClassName='page-item'
         breakLinkClassName='page-link'
         containerClassName={styles.pagination}

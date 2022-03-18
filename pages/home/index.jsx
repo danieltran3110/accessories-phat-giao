@@ -1,6 +1,6 @@
 import SlideIntro from '../../components/PageHome/BeginSlide/componentSwiper';
 import NavBar from '../../components/PageHome/NavBar/componentNavBar';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { fadeInUp, fadeIn } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
 import Proverb from '../../components/PageHome/Proverb/componentsProverb';
@@ -58,6 +58,7 @@ export default function HomePage() {
 
   return (
     <div className='homePage'>
+      <Script src='https://sp.zalo.me/plugins/sdk.js' />
       <SlideIntro />
       <NavBar />
       <Proverb />
@@ -71,6 +72,7 @@ export default function HomePage() {
       <ScrollButton />
       <Script  src='https://kit.fontawesome.com/618a331a9e.js'
                crossOrigin='anonymous' />
+
     </div>
   );
 }
