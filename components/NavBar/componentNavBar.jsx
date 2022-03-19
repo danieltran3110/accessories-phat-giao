@@ -33,6 +33,9 @@ const NavBar = () => {
         <i className={`${'fa fa-bars '} ${styles.icon}`} />
       </label>
       <input type='checkbox' id='menu' />
+      <div className={styles.displayInlineLeft}>
+        <figure className={styles.symbolNavbar2}><Image src={icon} alt='Symbol' /></figure>
+      </div>
       <NavBarLeftSide />
       <NavBarRightSide />
       {/*<SearchBox />*/}
