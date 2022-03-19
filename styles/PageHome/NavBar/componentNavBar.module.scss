@@ -7,8 +7,8 @@ $menu_color: gray;
 $menu_breakpoint: 768px;
 $menu_toggle_background: black;
 $menu_border: 1px solid rgba(255, 255, 255, 0.1);
-$menu_padding: 50px 20px;
-$menu_icon_padding: 5px 10px;
+$menu_padding: 40px 10px;
+$menu_icon_padding: 5px 5px;
 
 /* hide show mixin */
 
@@ -26,6 +26,12 @@ $menu_icon_padding: 5px 10px;
 .menu {
   background: $menu_background;
   position: relative;
+  //box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+
+  .icon {
+    margin-right: 30px;
+    font-size: 20px;
+  }
 
   .symbolNavbar {
     display: none;
@@ -36,11 +42,13 @@ $menu_icon_padding: 5px 10px;
       position: absolute;
       top: 30px;
       left: 10px;
+      margin-top: -10px;
+
     }
 
     @include Responsive(XS) {
       margin-left: 20px;
-      margin-top: 5px;
+      margin-top: -15px;
     }
 
     @include Responsive(XXS) {
@@ -49,6 +57,12 @@ $menu_icon_padding: 5px 10px;
       width: 100px;
       top: 20px;
     }
+  }
+
+
+  .wrapperNavLeft {
+    display: flex;
+    align-items: center;
   }
 
   .search {
@@ -66,7 +80,12 @@ $menu_icon_padding: 5px 10px;
 .menu ul {
   margin: 0;
   padding: 0;
+  //padding-left: 9vw;
   list-style: none;
+
+  @include Responsive(L) {
+    text-align: center;
+  }
 }
 
 .menu,
@@ -105,7 +124,7 @@ $menu_icon_padding: 5px 10px;
   .menuRightIcon {
     @include hide;
   }
-  .menu input[type="checkbox"]:checked + ul {
+  .menu input[type="checkbox"]:checked > ul {
     @include show;
   }
 }
@@ -123,8 +142,8 @@ $menu_icon_padding: 5px 10px;
     font-size: 12px;
 
     @include Responsive(M) {
-      padding: 30px 10px;
-
+      padding: 20px 5px;
+      //font-size: 10px;
     }
   }
 
@@ -193,11 +212,21 @@ $menu_icon_padding: 5px 10px;
     text-align: right;
     color: black;
     text-transform: capitalize;
+    //padding-right: 30px;
+
+    @include Responsive(S) {
+      padding: 35px 10px;
+    }
+
+    @include Responsive(XS) {
+      padding: 25px 10px 35px;
+    }
 
     @include Responsive(XXS) {
       padding: 30px 10px;
       margin-right: 10px;
     }
+
   }
 
   .menu a {
@@ -237,21 +266,73 @@ $menu_icon_padding: 5px 10px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     border-bottom: 2px solid rgba(128, 128, 128, 0.281);
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+  }
+}
 
+.displayInlineLeft {
+  float: left;
+  display: inline;
+  max-height: 100px;
+  margin-right: 2vw;
+
+  @include Responsive(L) {
+    display: block;
+    float: none;
+    //margin: 0 auto;
+  }
+
+
+  @include Responsive(S) {
+    display: none;
+    visibility: hidden;
+  }
+
+  .symbolNavbar2 {
+    max-height: 70px;
+
+    @include Responsive(L) {
+      display: flex;
+      justify-content: center;
+      //margin: 0 auto;
+    }
+
+
+    img {
+      min-height: 70px !important;
+      max-width: 210px !important;
+      display: flex;
+      align-items: center;
+      //padding-top: 30px;
+      //margin-top: 30px;
+      //margin-top: -150px;
+      //top: -20px!important;
+
+      @include Responsive(L) {
+        //min-height: 50px !important;
+        //max-width: 155px !important;
+        ////top: 30px!important;
+        ////z-index: 120;
+        //bottom: -20px!important;
+        //left: -30px!important;
+      }
+    }
   }
 }
 
 .displayInline {
   display: inline;
   float: right;
-  margin-top: -83px;
+  margin-top: -75px;
 
   .rightSide {
     display: flex;
     align-items: center;
     margin-right: 20px;
 
-    @include Responsive(L) {
+    @include Responsive(XL) {
       display: none;
     }
 
@@ -280,4 +361,38 @@ $menu_icon_padding: 5px 10px;
       }
     }
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.backgroundBlur {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(171, 171, 171, 0.51);
+  position: relative;
+  //opacity: 0.25;
+  //filter: blur(8px);
+
+}
+
+.searchField {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+
+}
+
+.iconSearchField {
+  //position: absolute;
+  //top: 50%;
+  //left: 40%;
+  //transform: translate(-50%, -50%);
+  //z-index: 3;
+  display: block;
 }

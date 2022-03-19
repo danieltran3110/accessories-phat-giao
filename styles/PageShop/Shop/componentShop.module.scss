@@ -1,24 +1,31 @@
 @import 'assets/scss/fonts.module';
 @import 'assets/scss/mixin.module';
 
-.shop {
-  display: grid;
-  grid-template-columns: 30% 60%;
-  column-gap: 50px;
-
-  @include Responsive(M) {
-    grid-template-columns: 94%;
-  }
-
-  @include Responsive(S) {
-    grid-template-columns: 90%;
-  }
+.margin {
 
   @include Responsive(XS) {
-    grid-template-columns: 97%;
+    margin-top: 25px;
   }
 
-  @include Responsive(XXS) {
-    grid-template-columns: 100%;
+  .shop {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    column-gap: 50px;
+
+    @include Responsive(M) {
+      grid-template-columns: 94%;
+    }
+
+    @include Responsive(S) {
+      grid-template-columns: 90%;
+    }
+
+    @include Responsive(XS) {
+      grid-template-columns: 97%;
+    }
+
+    @include Responsive(XXS) {
+      grid-template-columns: 100%;
+    }
   }
 }

@@ -6,7 +6,7 @@ import PaginatedItems from '../PaginatedItems/componentPaginatedItems';
 
 const Shop = () => {
   return (
-    <div className={stylesGlobal.container1}>
+    <div className={`${stylesGlobal.container1} ${styles.margin}`}>
       <div className={styles.shop}>
         <SideBar />
         <PaginatedItems itemsPerPage={8} />

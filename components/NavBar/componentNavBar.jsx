@@ -1,61 +1,44 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from '../../styles/PageHome/NavBar/componentNavBar.module.scss';
-import NavBarLeftSide from './components/navBarLeftSide';
-import NavBarRightSide from './components/navBarRightSide';
 import icon from '../../assets/images/logo1_retina.png';
+import NavBarLeftSide from '../PageHome/NavBar/components/navBarLeftSide';
+import NavBarRightSide from '../PageHome/NavBar/components/navBarRightSide';
+import Image from 'next/image';
+import SearchBox from '../PageHome/NavBar/components/searchBox';
 
 const NavBar = () => {
+
+  useEffect(() => {
+    const navbar = document.getElementById('navbar');
+    let sticky = navbar.offsetTop;
+
+    function FuncSticky() {
+      if ((window.pageYOffset - 1) >= sticky) {
+        navbar.classList.add(styles.sticky);
+      } else {
+        navbar.classList.remove(styles.sticky);
+      }
+    }
+
+    window.onscroll = function() {
+      FuncSticky();
+    };
+  });
+
   return (
-    // <div className={styles.navigationBar}>
-    //   <div className={styles.leftSide}>
-    //     <NavBarLeftSide />
-    //   </div>
-    //   <div className={styles.rightSide}>
-    //     <NavBarRightSide/>
-    //   </div>
-    // </div>
-    <nav role='navigation' className={styles.menu}>
+    <nav role='navigation' className={styles.menu} id='navbar'>
       <label htmlFor='menu'>
-        <figure className={styles.symbolNavbar}><img src={icon.src} alt='Symbol' /></figure>
-        <i className={'fas fa-search ' + styles.search} />
-        <i className='fa fa-bars' />
+        <figure className={styles.symbolNavbar}><Image src={icon} alt='Symbol' /></figure>
+        <i className={`${'fas fa-search '} ${styles.search} ${styles.icon}`} />
+        <i className={`${'fa fa-bars '} ${styles.icon}`} />
       </label>
       <input type='checkbox' id='menu' />
-      {/*<label htmlFor='symbol'></label>*/}
-      {/*<input type='checkbox' id='symbol' />*/}
-      {/*<ul>*/}
-      {/*  <li><a href='#'>Home</a></li>*/}
-      {/*  <li className={styles.menuHasDropDown}>*/}
-      {/*    <a href='#'>About&nbsp;*/}
-      {/*      <label title='toggle menu' htmlFor='about'>*/}
-      {/*        <i className='fa fa-caret-down' />*/}
-      {/*      </label>*/}
-      {/*    </a>*/}
-      {/*    <input type='checkbox' id='about' />*/}
-      {/*    <ul className={styles.menuDropdown}>*/}
-      {/*      <li><a href=''>History</a></li>*/}
-      {/*      <li><a href=''>Mission</a></li>*/}
-      {/*      <li className={`${styles.menuHasDropDown} ${styles.menuHasFlyOut}`}>*/}
-      {/*        <a href=''>Services&nbsp;*/}
-      {/*          <label title='toggle menu' htmlFor='services'>*/}
-      {/*            <i className={'fa fa-caret-down' + ' ' + styles.menuDownIcon} />*/}
-      {/*            <i className={'fa fa-caret-right' + ' ' + styles.menuRightIcon} />*/}
-      {/*          </label>*/}
-      {/*        </a>*/}
-      {/*        <input type='checkbox' id='services' />*/}
-      {/*        <ul className={styles.menuDropdown}>*/}
-      {/*          <li><a href=''>Service 1</a></li>*/}
-      {/*          <li><a href=''>Service 2</a></li>*/}
-      {/*          <li><a href=''>Service 3</a></li>*/}
-      {/*        </ul>*/}
-      {/*      </li>*/}
-      {/*    </ul>*/}
-      {/*  </li>*/}
-      {/*  <li><a href='#'>Clients</a></li>*/}
-      {/*  <li><a href='#'>Contact Us</a></li>*/}
-      {/*</ul>*/}
+      {/*<div className={styles.displayInlineLeft}>*/}
+      {/*  <figure className={styles.symbolNavbar2}><Image src={icon} alt='Symbol' /></figure>*/}
+      {/*</div>*/}
       <NavBarLeftSide />
       <NavBarRightSide />
+      {/*<SearchBox />*/}
     </nav>
   );
 };

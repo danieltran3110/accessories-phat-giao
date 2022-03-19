@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../../../../styles/PageHome/NavBar/componentNavBar.module.scss';
-import { dataNavbar } from '../../../../utils/data-config';
 
 const MenuDropdown = (props) => {
    const dataMenu = props.dataMenu;

@@ -62,7 +62,7 @@ function PaginatedItems({ itemsPerPage }) {
         nextLabel='->'
         onPageChange={handlePageClick}
         pageRangeDisplayed={1}
-        marginPagesDisplayed={0}
+        marginPagesDisplayed={1}
         pageCount={pageCount}
         previousLabel='<-'
         pageClassName={`${styles.pageItem} ${styles.decoration}`}

@@ -6,6 +6,7 @@ import stylesGlobal from '../../assets/scss/global.module.scss';
 import { fadeInUp } from 'react-animations';
 import { css, StyleSheet } from 'aphrodite';
 import styled, { keyframes } from 'styled-components';
+import Link from 'next/link';
 
 const Banner = (props) => {
 
@@ -30,7 +31,7 @@ const Banner = (props) => {
           <figcaption className={`${styles.titleBanner}`}>
             {dataBanner.title}
             <p className={styles.subTitleBanner}>
-              <a href='/'>HOME</a> - <i>{dataBanner.title}</i>
+              <Link href={'/'}><a>HOME</a></Link> - <i>{dataBanner.title}</i>
             </p>
           </figcaption>
         </FadeInUpDiv>

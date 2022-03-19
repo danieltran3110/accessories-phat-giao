@@ -58,7 +58,6 @@ export default function HomePage() {
 
   return (
     <div className='homePage'>
-      <Script src='https://sp.zalo.me/plugins/sdk.js' />
       <SlideIntro />
       <NavBar />
       <Proverb />
@@ -72,7 +71,6 @@ export default function HomePage() {
       <ScrollButton />
       <Script  src='https://kit.fontawesome.com/618a331a9e.js'
                crossOrigin='anonymous' />
-
     </div>
   );
 }

@@ -73,10 +73,8 @@
           padding: 30px 40px;
         }
 
-
-
         @include Responsive(XXS) {
-          padding: 40px 50px;
+          padding: 15px 65px;
         }
 
         .picProduct {
@@ -175,6 +173,7 @@
 
       @include Responsive(XS) {
         flex-direction: column;
+        margin-bottom: 40px;
       }
 
       .picture {
