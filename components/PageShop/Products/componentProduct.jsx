@@ -2,10 +2,6 @@ import React from 'react';
 import styles from '../../../styles/PageShop/Products/componentProducts.module.scss';
 import Image from 'next/image';
 import Stars from './component/componentStars';
-// import { stylesAnimation } from '../../../styles/Animation/animation.module';
-import { css, StyleSheet } from 'aphrodite';
-import { fadeIn, fadeInUp, zoomIn } from 'react-animations';
-
 
 const Products = ({ currentItems }) => {
 

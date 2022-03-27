@@ -4,27 +4,15 @@
 .margin {
 
   @include Responsive(XS) {
-    margin-top: 25px;
+    margin-top: 25px!important;
   }
 
   .shop {
     display: grid;
-    grid-template-columns: 30% 60%;
+    grid-template-columns: 32%  calc(68% - 50px);
     column-gap: 50px;
 
     @include Responsive(M) {
-      grid-template-columns: 94%;
-    }
-
-    @include Responsive(S) {
-      grid-template-columns: 90%;
-    }
-
-    @include Responsive(XS) {
-      grid-template-columns: 97%;
-    }
-
-    @include Responsive(XXS) {
       grid-template-columns: 100%;
     }
   }

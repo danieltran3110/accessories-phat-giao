@@ -4,7 +4,6 @@ import styles from '../../../styles/PageShop/PaginatedItems/componentPaginatedIt
 import { dataProducts } from '../../../utils/data-config';
 import Products from '../Products/componentProduct';
 import ProductsV2 from '../ProductsV2/componentProductV2';
-import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
 
 function PaginatedItems({ itemsPerPage }) {
@@ -20,7 +19,6 @@ function PaginatedItems({ itemsPerPage }) {
   useEffect(() => {
     // Fetch items from another resources.
     const endOffset = itemOffset + itemsPerPage;
-    console.log(`Loading items from ${itemOffset} to ${endOffset}`);
     setCurrentItems(dataProducts.slice(itemOffset, endOffset));
     setPageCount(Math.ceil(dataProducts.length / itemsPerPage));
   }, [itemOffset, itemsPerPage]);
@@ -28,7 +26,6 @@ function PaginatedItems({ itemsPerPage }) {
   // Invoke when user click to request another page.
   const handlePageClick = (event) => {
     const newOffset = event.selected * itemsPerPage % dataProducts.length;
-    console.log(`User requested page number ${event.selected}, which is offset ${newOffset}`);
     setItemOffset(newOffset);
   };
 
@@ -41,42 +38,37 @@ function PaginatedItems({ itemsPerPage }) {
           <i className={`fa fa-th-list ${!view ? styles.blur : ''}`} aria-hidden='true'
              onClick={() => setView(!view)} />
         </div>
-        <FormControl className={styles.select} fullWidth>
-          <InputLabel id='demo-simple-select-label'>SORT BY LATEST</InputLabel>
-          <Select
-            labelId='demo-simple-select-label'
-            id='demo-simple-select'
-            // value={age}
-            label='SORT BY LATEST'
-            // onChange={handleChange}
-          >
-            <MenuItem value={10}>SORT BY POPULARITY</MenuItem>
-            <MenuItem value={20}>SORT BY AVERAGE RATING</MenuItem>
-            <MenuItem value={30}>SORT BY PRICE: LOW TO HIGH</MenuItem>
-            <MenuItem value={40}>SORT BY PRICE: HIGH TO LOW</MenuItem>
-          </Select>
-        </FormControl>
+        <div className={styles.selectSort}>
+          <select name='SORT BY LATEST' id='lattes' className={styles.selectInner}>
+            <option value='popularity'>SORT BY LATEST</option>
+            <option value='popularity'>SORT BY POPULARITY</option>
+            <option value='average'>SORT BY AVERAGE RATING</option>
+            <option value='lth'>SORT BY PRICE: LOW TO HIGH</option>
+            <option value='htl'>SORT BY PRICE: HIGH TO LOW</option>
+          </select>
+        </div>
       </div>
       {!view ? <Products currentItems={currentItems} /> : <ProductsV2 currentItems={currentItems} />}
       <ReactPaginate
-        nextLabel='->'
+        nextLabel='→'
         onPageChange={handlePageClick}
         pageRangeDisplayed={1}
         marginPagesDisplayed={1}
         pageCount={pageCount}
-        previousLabel='<-'
-        pageClassName={`${styles.pageItem} ${styles.decoration}`}
+        previousLabel='←'
+        pageClassName={`${styles.pageItem} ${styles.decoration} `}
         pageLinkClassName='page-link'
-        previousClassName={styles.pageItem}
-        previousLinkClassName='page-link'
+        previousClassName={`${styles.pageItem} ${styles.iconRight}`}
+        previousLinkClassName={styles.pageLink}
         nextClassName={styles.pageItem}
-        nextLinkClassName='page-link'
+        nextLinkClassName={styles.pageLink}
         breakLabel='/'
         breakClassName='page-item'
         breakLinkClassName='page-link'
         containerClassName={styles.pagination}
         activeClassName={styles.active}
         renderOnZeroPageCount={null}
+
       />
     </>
   );

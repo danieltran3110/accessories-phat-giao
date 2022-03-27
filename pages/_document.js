@@ -1,5 +1,7 @@
 import Document, { Html,Head, Main, NextScript } from 'next/document';
 import { StyleSheetServer } from 'aphrodite';
+import Script from 'next/script';
+import React from 'react';
 
 export default class MyDocument extends Document {
   static async getInitialProps({ renderPage }) {

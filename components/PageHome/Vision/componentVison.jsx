@@ -19,7 +19,7 @@ const Vision = () => {
     <div className={stylesGlobal.container1}>
       <div className={styles.visionWrapper}>
         <div className={styles.vision}>
-          <SectionTitle title={dataVision.title}/>
+          <SectionTitle title={dataVision.title} />
           <p className={styles.contentVision}>{dataVision.content}</p>
           <section className={stylesGlobal.section}>
             <div className={styles.videoSpeech}>

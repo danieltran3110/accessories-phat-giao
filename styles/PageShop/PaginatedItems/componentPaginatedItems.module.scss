@@ -2,7 +2,6 @@
 @import 'assets/scss/mixin.module';
 
 .pagination {
-  //display: inline-grid;
   margin: 0 auto;
   grid-column-start: 0;
   grid-column-end: 3;
@@ -15,7 +14,6 @@
   @include Responsive(M) {
     grid-column-start: 1;
     grid-column-end: 2;
-    //grid-row: 3;
   }
 
   .pageItem {
@@ -24,12 +22,12 @@
     height: 40px;
     border-radius: 50%;
     text-align: center;
-    padding-top: 12px;
+    //padding-top: 12px;
     transition: 0.5s;
-    margin: 0 10px;
-    //&:before {
-    //  content: '/';
-    //}
+    margin: 0 15px;
+    font-family: 'renner';
+    font-size: 14px;
+    font-weight: bolder !important;
 
     &:hover {
       cursor: pointer;
@@ -38,10 +36,41 @@
     }
   }
 
+  .iconRight {
+    position: relative;
+    line-height: 38px;
+    font-size: 15px;
+
+    &:after {
+      content: '/';
+      position: absolute;
+      right: -75px;
+      top: 2px;
+      color: black !important;
+      padding-right: 55px;
+
+      &:hover {
+        cursor: none;
+      }
+    }
+  }
+
+  .pageLink {
+    line-height: 38px;
+    position: relative;
+    font-size: 15px;
+  }
+
   .decoration {
-    &:before {
-      //padding-right: 10px;
-      content: '';
+    position: relative;
+    line-height: 42px;
+
+    &:after {
+      content: '/';
+      position: absolute;
+      right: -19px;
+      top: -1px;
+      color: black !important;
     }
   }
 
@@ -65,6 +94,9 @@
   }
 
   .icon {
+    @include Responsive(XXS) {
+      margin-bottom: 20px;
+    }
 
     .blur {
       opacity: 0.2;
@@ -78,17 +110,66 @@
       &:hover {
         cursor: pointer;
         color: #282828;
-        opacity: 1!important;
+        opacity: 1 !important;
       }
     }
   }
+}
 
-  .select {
-    width: 300px;
+.selectSort {
+  width: auto;
+  position: relative;
 
-    @include Responsive(XXS) {
+  &:after {
+    content: "\25bc";
+    font-family: "fontello", serif;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 1.8em;
+    width: 1.2em;
+    height: 1em;
+    line-height: 1em;
+    text-align: center;
+    margin-top: -0.5em;
+    pointer-events: none;
+    cursor: pointer;
+  }
+
+  .selectInner {
+    padding: 1.893em 1.8em;
+    border: 2px solid #e7e4df;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.124rem;
+    font-family: 'renner';
+    font-weight: bolder;
+    width: auto;
+    padding-right: 60px;
+    color: rgba(94, 94, 94, 0.78);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    @include Responsive(S) {
+      padding: 1.193em 1.2em;
+      font-size: 12px;
+      padding-right: 50px;
       width: 100%;
-      margin-top: 20px;
     }
+
+    > option {
+      color: black!important;
+    }
+
+
+  }
+  :global(select::-ms-expand) {
+    display: none;
   }
 }
+

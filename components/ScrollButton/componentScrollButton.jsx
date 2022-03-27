@@ -28,10 +28,11 @@ const ScrollButton = () => {
 
   });
 
-
   return (
-    <i className={`${'fa fa-arrow-up'}  ${styles.btnScrollUp}`} onClick={scrollToTop}
-       style={{ display: visible ? 'inline' : 'none' }} />
+    <p className={`${styles.btnScrollUp}`} onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none' }}>
+      <i className={`${'fa fa-caret-up'}`}
+      />
+    </p>
   );
 };
 

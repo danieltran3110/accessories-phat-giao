@@ -10,11 +10,13 @@
     position: relative;
     color: white;
     //overflow: visible!important;
-    //min-height: 500px;
-
-    @include Responsive(M) {
-      //min-height: 220px;
+    @include Responsive(S) {
+      height: 120px;
     }
+    //span {
+    //    height: 50vw;
+    //}
+
 
     .img {
       overflow: visible!important;
@@ -37,7 +39,7 @@
       }
 
       @include Responsive(S) {
-        font-size: 22px;
+        font-size: 25px;
       }
 
       @include Responsive(XXS) {
@@ -59,7 +61,7 @@
         }
 
         @include Responsive(S) {
-          font-size: 10px;
+          font-size: 12px;
           margin-top: 10px;
         }
 

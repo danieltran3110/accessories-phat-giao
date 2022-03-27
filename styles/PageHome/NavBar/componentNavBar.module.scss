@@ -1,5 +1,5 @@
 @import 'assets/scss/mixin.module';
-
+@import 'assets/scss/fonts.module';
 /* vars */
 
 $menu_background: white;
@@ -8,7 +8,7 @@ $menu_breakpoint: 768px;
 $menu_toggle_background: black;
 $menu_border: 1px solid rgba(255, 255, 255, 0.1);
 $menu_padding: 40px 10px;
-$menu_icon_padding: 5px 5px;
+$menu_icon_padding: 5px 8px;
 
 /* hide show mixin */
 
@@ -26,24 +26,32 @@ $menu_icon_padding: 5px 5px;
 .menu {
   background: $menu_background;
   position: relative;
-  //box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+
+  .showDefault {
+    display: block;
+    background-color: #282828;
+  }
+
+  //.wrapperNavLeft {
+  //
+  //}
 
   .icon {
-    margin-right: 30px;
-    font-size: 20px;
+    //margin-right: 30px;
+    font-size: 18px;
   }
 
   .symbolNavbar {
     display: none;
-    width: 150px;
+    width: 150px!important;
 
     @include Responsive(S) {
       display: inline-block !important;
       position: absolute;
-      top: 30px;
-      left: 10px;
+      top: 20px;
+      left: 0;
       margin-top: -10px;
-
+      margin-left: 0;
     }
 
     @include Responsive(XS) {
@@ -53,12 +61,11 @@ $menu_icon_padding: 5px 5px;
 
     @include Responsive(XXS) {
       margin-left: 15px;
-      margin-top: 5px;
-      width: 100px;
-      top: 20px;
+      margin-top: 0;
+      width: 100px !important;
+      top: 15px;
     }
   }
-
 
   .wrapperNavLeft {
     display: flex;
@@ -75,6 +82,44 @@ $menu_icon_padding: 5px 5px;
     height: 100%;
     object-fit: contain;
   }
+
+
+  .displayInlineLeft {
+    float: left;
+    display: inline-block;
+    max-height: 100px;
+
+    @include Responsive(L) {
+      display: block;
+      float: none;
+    }
+
+
+    @include Responsive(S) {
+      display: none;
+      visibility: hidden;
+    }
+
+    .symbolNavbar2 {
+      max-height: 70px;
+      margin: 0;
+      margin-top: 20px;
+
+      @include Responsive(L) {
+        display: flex;
+        justify-content: center;
+      }
+
+
+      img {
+        min-height: 70px !important;
+        max-width: 210px !important;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
 }
 
 .menu ul {
@@ -86,6 +131,9 @@ $menu_icon_padding: 5px 5px;
   @include Responsive(L) {
     text-align: center;
   }
+  @include Responsive(S) {
+    text-align: left;
+  }
 }
 
 .menu,
@@ -94,6 +142,16 @@ $menu_icon_padding: 5px 5px;
   text-decoration: none;
   transition: 0.5s;
   z-index: 30;
+
+  @include Responsive(S) {
+    color: white;
+    width: 470px;
+    margin: 0 auto;
+  }
+
+  @include Responsive(XXS) {
+    width: 310px;
+  }
 
   &:hover {
     cursor: pointer;
@@ -124,9 +182,25 @@ $menu_icon_padding: 5px 5px;
   .menuRightIcon {
     @include hide;
   }
-  .menu input[type="checkbox"]:checked > ul {
-    @include show;
+  //input[type="checkbox"]:checked > ul {
+  //  @include show;
+  //}
+
+  //.input2 {
+  //
+  //}
+
+  .menuHasDropDown {
+    .input2:checked {
+      > ul {
+        @include show;
+      }
+    }
   }
+
+  //.menu > ul input[type="checkbox"]:checked + .menuDropdown ul {
+  //    @include show;
+  //  }
 }
 
 /* large styles */
@@ -143,10 +217,8 @@ $menu_icon_padding: 5px 5px;
 
     @include Responsive(M) {
       padding: 20px 5px;
-      //font-size: 10px;
     }
   }
-
 
   // align items and style them
   .menu > ul > li {
@@ -212,19 +284,19 @@ $menu_icon_padding: 5px 5px;
     text-align: right;
     color: black;
     text-transform: capitalize;
-    //padding-right: 30px;
+    //width: 150px;
 
     @include Responsive(S) {
-      padding: 35px 10px;
+      padding: 25px 10px;
     }
 
-    @include Responsive(XS) {
-      padding: 25px 10px 35px;
-    }
+    //@include Responsive(XS) {
+    //  padding: 25px 35px;
+    //}
 
     @include Responsive(XXS) {
-      padding: 30px 10px;
-      margin-right: 10px;
+      padding: 20px 10px;
+      //margin-right: 10px;
     }
 
   }
@@ -234,12 +306,18 @@ $menu_icon_padding: 5px 5px;
     font-size: 12px;
     text-transform: capitalize;
 
+    @include Responsive(S) {
+      font-size: 18px;
+      padding: 3px 20px;
+      font-family: 'reforma', sans-serif;
+    }
   }
 
   .menu > ul i {
     float: right;
     padding: $menu_icon_padding;
-    background: darken($menu_background, 15%);
+    background: #333333;
+    font-weight: 600;
 
     @include Responsive(XXS) {
       margin-right: 10px;
@@ -266,61 +344,9 @@ $menu_icon_padding: 5px 5px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     border-bottom: 2px solid rgba(128, 128, 128, 0.281);
-    //display: flex;
-    //flex-direction: column;
-    //justify-content: center;
   }
 }
 
-.displayInlineLeft {
-  float: left;
-  display: inline;
-  max-height: 100px;
-  margin-right: 2vw;
-
-  @include Responsive(L) {
-    display: block;
-    float: none;
-    //margin: 0 auto;
-  }
-
-
-  @include Responsive(S) {
-    display: none;
-    visibility: hidden;
-  }
-
-  .symbolNavbar2 {
-    max-height: 70px;
-
-    @include Responsive(L) {
-      display: flex;
-      justify-content: center;
-      //margin: 0 auto;
-    }
-
-
-    img {
-      min-height: 70px !important;
-      max-width: 210px !important;
-      display: flex;
-      align-items: center;
-      //padding-top: 30px;
-      //margin-top: 30px;
-      //margin-top: -150px;
-      //top: -20px!important;
-
-      @include Responsive(L) {
-        //min-height: 50px !important;
-        //max-width: 155px !important;
-        ////top: 30px!important;
-        ////z-index: 120;
-        //bottom: -20px!important;
-        //left: -30px!important;
-      }
-    }
-  }
-}
 
 .displayInline {
   display: inline;
@@ -366,7 +392,14 @@ $menu_icon_padding: 5px 5px;
 .sticky {
   position: fixed;
   top: 0;
+  //width: 470px;
+  //margin: 0 auto;
   width: 100%;
+  //padding: 0 15vw;
+  z-index: 999999;
+  background-color: white;
+  border-bottom: 1px solid black;
+  //height: 50px;
 }
 
 .backgroundBlur {
@@ -374,9 +407,6 @@ $menu_icon_padding: 5px 5px;
   height: 100vh;
   background-color: rgba(171, 171, 171, 0.51);
   position: relative;
-  //opacity: 0.25;
-  //filter: blur(8px);
-
 }
 
 .searchField {
@@ -389,10 +419,126 @@ $menu_icon_padding: 5px 5px;
 }
 
 .iconSearchField {
-  //position: absolute;
-  //top: 50%;
-  //left: 40%;
-  //transform: translate(-50%, -50%);
-  //z-index: 3;
   display: block;
+}
+
+.positionFixed {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 9999;
+  left: 0;
+  bottom: 0;
+
+  .backgroundBlack {
+    background-color: #282828;
+    color: white;
+    padding: 50px 10vw;
+    position: relative;
+    top: 0;
+    height: 100%;
+
+    .btnClose {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+
+      i {
+        font-size: 16px;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+
+        &:before {
+          animation: spinReverse 0.5s;
+
+        }
+
+        @keyframes spin {
+          from {
+            transform: rotateZ(0);
+          }
+          to {
+            transform: rotateZ(270deg);
+          }
+        }
+
+        @keyframes spinReverse {
+          from {
+            transform: rotateZ(270deg);
+          }
+          to {
+            transform: rotateZ(0);
+          }
+        }
+
+        &:hover {
+          color: #f16f23;
+          cursor: pointer;
+          transition: 0.5s;
+
+          &:before {
+            animation: spin 0.5s;
+          }
+        }
+
+        span {
+          font-size: 12px;
+          font-family: 'renner';
+          margin-left: 10px;
+          line-height: 1.5;
+          margin-bottom: -3px;
+          font-weight: bolder;
+          letter-spacing: 2px;
+        }
+      }
+    }
+
+    .narrowNavBar {
+      //text-align: center;
+
+      .iconLogo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+      }
+
+      .boxSearch {
+        position: relative;
+        margin-top: 30px;
+
+        label {
+          position: absolute;
+          right: 5%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+
+          i {
+            font-size: 11px;
+          }
+        }
+
+        input {
+          width: 100%;
+          padding: 1.5em 3em 1.5em 1.5em !important;
+          background-color: rgba(255, 255, 255, 0.1);
+          border-color: rgba(255, 255, 255, 0.1);
+          color: white !important;
+
+          &:focus-visible {
+            outline: 0 !important;
+          }
+        }
+      }
+
+      .iconInfo {
+        text-align: center;
+        margin-top: 20px;
+
+        i {
+          padding: 8px;
+        }
+      }
+    }
+  }
 }

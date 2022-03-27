@@ -26,7 +26,7 @@ const Banner = (props) => {
   return (
     <div className={styles.banner}>
       <figure className={styles.picBanner}>
-        <Image className={styles.img} src={dataBanner.src} alt={dataBanner.alt} />
+        <Image className={styles.img} layout={'fill'} objectFit={'fill'} src={dataBanner.src} alt={dataBanner.alt} />
         <FadeInUpDiv>
           <figcaption className={`${styles.titleBanner}`}>
             {dataBanner.title}

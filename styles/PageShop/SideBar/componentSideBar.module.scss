@@ -10,12 +10,8 @@
     grid-row: 4;
     margin-top: 70px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: calc(50% - 15px)  calc(50% - 15px);
     gap: 30px;
-  }
-
-  @include Responsive(XS) {
-    grid-template-columns: 48% 48%;
   }
 
   @include Responsive(XXS) {
@@ -24,6 +20,7 @@
 
   .backgroundColorOrange {
     background-color: #ffac4b;
+    height: fit-content;
   }
 
   .wrapperBox {
@@ -75,6 +72,7 @@
 
       > li {
         margin: 10px 0;
+        width: fit-content;
 
         &:hover {
           color: black;
@@ -107,6 +105,11 @@
         color: black;
         font-weight: bold;
 
+        @include Responsive(XS) {
+          padding: 10px 18px;
+
+        }
+
         &:hover {
           background-color: #f16f23;
           color: white;
@@ -133,10 +136,14 @@
       :global(.css-187mznn-MuiSlider-root) {
         margin-left: 10px;
         padding-right: 10px;
+        cursor: e-resize;
+
       }
 
       :global(.css-14pt78w-MuiSlider-rail) {
         display: none;
+        cursor: e-resize;
+
       }
 
       :global(.css-eg0mwd-MuiSlider-thumb) {
@@ -144,6 +151,13 @@
         width: 15px;
         height: 15px;
         cursor: e-resize;
+
+        &:after {
+          display: none;
+        }
+        &:hover {
+          box-shadow: none;
+        }
       }
 
       :global(.css-6cwnna-MuiSlider-mark ) {
@@ -152,6 +166,14 @@
 
       :global(.css-1tfve6q-MuiSlider-mark) {
         display: none;
+      }
+
+      :global(.Mui-active) {
+        box-shadow: none;
+      }
+
+      :global(.Mui-focusVisible) {
+        box-shadow: none;
       }
     }
 
@@ -165,6 +187,10 @@
         font-size: 18px;
         color: black;
         font-weight: bolder;
+
+        @include Responsive(XS) {
+          font-size: 14px;
+        }
       }
     }
 
