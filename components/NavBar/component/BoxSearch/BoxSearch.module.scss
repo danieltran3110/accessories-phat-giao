@@ -1,0 +1,58 @@
+.backgroundBlur {
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9999999999999999;
+
+  .boxSearch {
+    position: relative;
+    color: #282828;
+
+    .iconSearchField {
+      position: absolute;
+      top: 50%;
+      left: 4%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      transition: 0.5s;
+
+      &:hover {
+        cursor: pointer;
+        color: #f16f23;
+      }
+
+      &.right {
+        left: 95%;
+        color: #7e7e7e;
+        font-size: 26px;
+
+        &:hover {
+          cursor: pointer;
+          color: black;
+        }
+      }
+    }
+
+    input {
+      height: 50px;
+      width: 80vw;
+      border: none #a8a8a8;
+      border-bottom: 1px solid #a8a8a8;
+      padding-left: 50px;
+      font-size: 20px;
+      background-color: transparent;
+
+      &:focus-visible {
+        outline: 0 !important;
+      }
+    }
+  }
+}

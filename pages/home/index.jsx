@@ -1,5 +1,4 @@
 import SlideIntro from '../../components/PageHome/BeginSlide/componentSwiper';
-import NavBar from '../../components/PageHome/NavBar/componentNavBar';
 import React, { useEffect } from 'react';
 import { fadeInUp, fadeIn } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
@@ -14,6 +13,7 @@ import stylesGlobal from '../../assets/scss/global.module.scss';
 import Zalo from '../../components/Zalo/zalo';
 import ScrollButton from '../../components/ScrollButton/componentScrollButton';
 import Script from 'next/script';
+import Navbar from '../../components/NavBar/componentNavBar';
 
 export default function HomePage() {
 
@@ -59,7 +59,8 @@ export default function HomePage() {
   return (
     <div className='homePage'>
       <SlideIntro />
-      <NavBar />
+      {/*<NavBar />*/}
+      <Navbar />
       <Proverb />
       <Welcome />
       <Mend />

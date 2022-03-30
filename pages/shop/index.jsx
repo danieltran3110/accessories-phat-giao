@@ -1,4 +1,4 @@
-import Shop from '../../components/PageShop/Shop/componentShop';
+import Shop from '../../components/PageShop/componentShop.jsx';
 import React from 'react';
 import Layout from '../../components/Layout/layout';
 

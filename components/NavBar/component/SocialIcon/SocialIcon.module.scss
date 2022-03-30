@@ -1,0 +1,28 @@
+@import 'assets/scss/mixin.module';
+@import 'assets/scss/fonts.module';
+
+.socialIconWrap {
+  display: none;
+  margin: 20px 0;
+
+  @include Responsive(S) {
+    display: flex;
+    justify-content: center;
+  }
+
+  .iconInfo {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+
+    i {
+      padding: 8px;
+      transition: 0.5s;
+      font-size: 14px;
+
+      &:hover {
+        color: #f16f23;
+      }
+    }
+  }
+}

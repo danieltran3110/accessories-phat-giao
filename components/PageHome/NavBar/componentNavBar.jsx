@@ -7,34 +7,35 @@ import Image from 'next/image';
 
 const NavBar = () => {
 
-  useEffect(() => {
-    const navbar = document.getElementById('navbar');
-    let sticky = navbar.offsetTop;
-
-    function FuncSticky() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add(styles.sticky);
-      } else {
-        navbar.classList.remove(styles.sticky);
-      }
-    }
-
-    window.onscroll = function() {
-      FuncSticky();
-    };
-  });
+  // useEffect(() => {
+  //   const navbar = document.getElementById('navbar');
+  //   let sticky = navbar.offsetTop;
+  //
+  //   function FuncSticky() {
+  //     if (window.pageYOffset >= sticky) {
+  //       navbar.classList.add(styles.sticky);
+  //     } else {
+  //       navbar.classList.remove(styles.sticky);
+  //     }
+  //   }
+  //
+  //   window.onscroll = function() {
+  //     FuncSticky();
+  //   };
+  // });
 
   return (
-    <nav role='navigation' className={styles.menu} id='navbar'>
-      <label htmlFor='menu'>
-        <figure className={styles.symbolNavbar}><Image src={icon} alt='Symbol' /></figure>
-        <i className={`${'fas fa-search '} ${styles.search} ${styles.icon}`} />
-        <i className={`${'fa fa-bars '} ${styles.icon}`} />
-      </label>
-      <input type='checkbox' id='menu' />
-      <NavBarLeftSide />
-      <NavBarRightSide />
-    </nav>
+    // <nav role='navigation' className={styles.menu} id='navbar'>
+    //   {/*<label htmlFor='menu'>*/}
+    //   {/*  <figure className={styles.symbolNavbar}><Image src={icon} alt='Symbol' /></figure>*/}
+    //   {/*  <i className={`${'fas fa-search '} ${styles.search} ${styles.icon}`} />*/}
+    //   {/*  <i className={`${'fa fa-bars '} ${styles.icon}`} />*/}
+    //   {/*</label>*/}
+    //   {/*<input type='checkbox' id='menu' />*/}
+    //   {/*<NavBarLeftSide />*/}
+    //   {/*<NavBarRightSide />*/}
+    // </nav>
+    <div></div>
   );
 };
 

@@ -58,9 +58,9 @@ function PaginatedItems({ itemsPerPage }) {
         previousLabel='←'
         pageClassName={`${styles.pageItem} ${styles.decoration} `}
         pageLinkClassName='page-link'
-        previousClassName={`${styles.pageItem} ${styles.iconRight}`}
+        previousClassName={`${styles.pageItem} ${styles.iconLeft}`}
         previousLinkClassName={styles.pageLink}
-        nextClassName={styles.pageItem}
+        nextClassName={`${styles.pageItem} ${styles.iconRight}`}
         nextLinkClassName={styles.pageLink}
         breakLabel='/'
         breakClassName='page-item'

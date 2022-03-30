@@ -9,13 +9,13 @@ import styled, { keyframes } from 'styled-components';
 import Link from 'next/link';
 
 const Banner = (props) => {
-
-  const styles2 = StyleSheet.create({
-    fadeInUp: {
-      animationName: fadeInUp,
-      animationDuration: '1s',
-    },
-  });
+  //
+  // const styles2 = StyleSheet.create({
+  //   fadeInUp: {
+  //     animationName: fadeInUp,
+  //     animationDuration: '1s',
+  //   },
+  // });
 
   const FadeInUpAnimation = keyframes`${fadeInUp}`;
 

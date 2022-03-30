@@ -22,21 +22,37 @@
     height: 40px;
     border-radius: 50%;
     text-align: center;
-    //padding-top: 12px;
     transition: 0.5s;
     margin: 0 15px;
     font-family: 'renner';
     font-size: 14px;
-    font-weight: bolder !important;
+    font-weight: 900 !important;
 
     &:hover {
       cursor: pointer;
       color: white;
       background-color: #f16f23;
     }
+
+    &.decoration {
+      position: relative;
+      line-height: 42px;
+
+      &::after {
+        content: '/';
+        position: absolute;
+        right: -19px;
+        top: -1px;
+        color: black !important;
+      }
+    }
   }
 
-  .iconRight {
+  li:nth-last-child(2):after {
+    content: ' ' !important;
+  }
+
+  .iconLeft {
     position: relative;
     line-height: 38px;
     font-size: 15px;
@@ -45,7 +61,26 @@
       content: '/';
       position: absolute;
       right: -75px;
-      top: 2px;
+      top: 0;
+      color: black !important;
+      padding-right: 55px;
+
+      &:hover {
+        cursor: none;
+      }
+    }
+  }
+
+  .iconRight {
+    position: relative;
+    line-height: 38px;
+    font-size: 15px;
+
+    &:before {
+      content: '/';
+      position: absolute;
+      right: -4px;
+      top: 0;
       color: black !important;
       padding-right: 55px;
 
@@ -58,20 +93,8 @@
   .pageLink {
     line-height: 38px;
     position: relative;
-    font-size: 15px;
-  }
-
-  .decoration {
-    position: relative;
-    line-height: 42px;
-
-    &:after {
-      content: '/';
-      position: absolute;
-      right: -19px;
-      top: -1px;
-      color: black !important;
-    }
+    font-size: 17px;
+    color: #282828;
   }
 
   .active {
@@ -147,7 +170,7 @@
     text-transform: uppercase;
     letter-spacing: 0.124rem;
     font-family: 'renner';
-    font-weight: bolder;
+    font-weight: 400;
     width: auto;
     padding-right: 60px;
     color: rgba(94, 94, 94, 0.78);
@@ -163,11 +186,12 @@
     }
 
     > option {
-      color: black!important;
+      color: black !important;
     }
 
 
   }
+
   :global(select::-ms-expand) {
     display: none;
   }

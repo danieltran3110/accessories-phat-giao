@@ -22,7 +22,7 @@ const Products = ({ currentItems }) => {
             </div>
             <div className={styles.detailInfo}>
               <p className={`${styles.icon}`}><i className={'fa fa-shopping-cart'} aria-hidden /></p>
-              <p className={`${styles.icon} ${styles.icon2}`}><i className={'fa fa-eye'} aria-hidden /></p>
+              <p className={`${styles.icon}`}><i className={'fa fa-eye'} aria-hidden /></p>
             </div>
           </div>,
         )}

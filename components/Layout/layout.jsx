@@ -13,7 +13,7 @@ export default function Layout(props) {
       <Script  src='https://kit.fontawesome.com/618a331a9e.js'
                crossOrigin='anonymous' />
       <NavBar />
-      <Banner />
+      {/*<Banner />*/}
       {props.children}
       <ScrollButton />
       <Zalo />

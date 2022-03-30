@@ -3,9 +3,8 @@ import styles from '../../../../styles/PageHome/NavBar/componentNavBar.module.sc
 
 const NavBarRightSide = () => {
   return (
-    <div className={styles.displayInline}>
       <div className={styles.rightSide}>
-        <div className={styles.title}>
+        <div className={`${styles.title} ${styles.displayXLNone}` }>
           <p>
             <i aria-hidden className='fa fa-calendar' />
             Calender
@@ -17,7 +16,6 @@ const NavBarRightSide = () => {
             Donate
           </p>
         </div>
-      </div>
     </div>);
 };
 

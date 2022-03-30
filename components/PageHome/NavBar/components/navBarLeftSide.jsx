@@ -3,7 +3,6 @@ import styles from '../../../../styles/PageHome/NavBar/componentNavBar.module.sc
 import { dataNavbar } from '../../../../utils/data-config';
 import Link from 'next/link';
 
-
 const NavBarLeftSide = ({ showing }) => {
   return (
     <>

@@ -1,0 +1,135 @@
+@import 'assets/scss/mixin.module';
+@import 'assets/scss/fonts.module';
+
+.submenu {
+  display: none;
+  top: 89px;
+  flex-direction: column;
+  position: absolute;
+  left: 0px;
+  width: 220px;
+  padding: 20px 0;
+  z-index: 100;
+  background: #333333;
+  transition: 0.5s;
+  color: #b6b7b7;
+  font-family: 'renner';
+
+  @include Responsive(S) {
+    display: flex;
+    height: 0;
+    max-height: 0;
+    position: relative;
+    top: unset;
+    left: unset;
+    background: transparent;
+    border: none;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s max-height;
+    padding: 0;
+  }
+
+  .subItemWrap {
+    position: relative;
+    width: 100%;
+    border: none;
+    padding: 0;
+
+    @include Responsive(S) {
+      border: none;
+    }
+
+    .checkbox {
+      display: none;
+    }
+
+    input[type='checkbox']:checked ~ .submenu {
+      transition: all 0.5s;
+      height: fit-content;
+      max-height: 500px;
+    }
+    input[type='checkbox']:checked ~ .icon {
+      @include Responsive(S) {
+        transform: rotate(-90deg);
+      }
+    }
+
+    &:hover > .submenu {
+      display: flex;
+      left: 220px;
+      top: -20px;
+      margin-left: 2px;
+
+      @include Responsive(S) {
+        top: unset;
+        left: unset;
+      }
+    }
+
+    .icon {
+      font-size: 14px;
+      position: absolute;
+      top: 9px;
+      right: 18px;
+      z-index: 3;
+
+      @include Responsive(S) {
+        background: none;
+        color: #ffffff;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        padding: 3px 12px;
+        font-size: 14px;
+        border-radius: 0;
+        outline: none;
+        top: 6px;
+        right: 15px;
+        z-index: 9;
+        cursor: pointer;
+        transform: rotate(90deg);
+      }
+    }
+
+    .subItem {
+      display: block;
+      padding: 5px 15px;
+      position: relative;
+      text-align: left;
+      line-height: 24px;
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: capitalize;
+      cursor: pointer;
+      background-color: #333333;
+      transition: 0.5s;
+      font-family: 'renner';
+
+      &:hover {
+        color: #f16f23!important;
+
+        .icon {
+          color: #f16f23!important;
+        }
+
+        @include Responsive(S) {
+          background: rgba(255, 255, 255, 0.1);
+          color: #ffffff;
+        }
+      }
+
+      @include Responsive(S) {
+        text-transform: capitalize;
+        font-size: 14px;
+        text-align: left;
+        margin: 0;
+        font-weight: 500;
+        color: #fff;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 10px 15px 10px 20px;
+        width: 100%;
+        background-color: transparent;
+      }
+    }
+  }
+}

@@ -1,0 +1,313 @@
+@import 'assets/scss/mixin.module';
+@import 'assets/scss/fonts.module';
+
+.navigation {
+  width: 100vw;
+  background-color: #fff;
+  font-family: 'renner';
+  border-bottom: 1px solid black;
+
+  &.nonTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  .navigationInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+
+    @include Responsive(M) {
+      flex-direction: column;
+    }
+
+    @include Responsive(S) {
+      flex-direction: row;
+      width: 450px;
+      margin: 0 auto;
+    }
+
+    @include Responsive(XXS) {
+      width: 300px;
+    }
+
+    .logo {
+      padding: 6px 0;
+      flex-shrink: 0;
+      position: relative;
+
+      img {
+        max-height: 70px;
+
+        @include Responsive(L) {
+          max-height: 50px;
+        }
+
+        @include Responsive(XS) {
+          max-height: 40px;
+        }
+      }
+    }
+
+    .navigationRight {
+      flex-shrink: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.5s right;
+
+      .logo {
+        margin: 20px 0;
+        display: none;
+
+        @include Responsive(S) {
+          display: block;
+          text-align: center;
+
+          img {
+            min-height: 80px;
+          }
+        }
+      }
+
+      &.open {
+        @include Responsive(S) {
+          display: block;
+        }
+      }
+
+      @include Responsive(S) {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        background: #272727;
+        padding: 50px 60px 50px 40px;
+      }
+
+      .menuItemWrap {
+        position: relative;
+
+        &:hover {
+          .submenu {
+            display: flex;
+            top: unset;
+          }
+        }
+
+        @include Responsive(S) {
+          width: 400px;
+          margin: 0 auto;
+        }
+
+        .checkbox {
+          display: none;
+        }
+
+        input[type='checkbox']:checked ~ .submenu {
+          transition: all 0.5s;
+          height: fit-content;
+          max-height: 500px;
+        }
+        input[type='checkbox']:checked ~ .icon {
+          @include Responsive(M) {
+            transform: rotate(-90deg);
+          }
+        }
+
+        .icon {
+          display: none;
+          line-height: 24px;
+
+          @include Responsive(S) {
+            cursor: pointer;
+            display: inline-block;
+            background: rgba(126, 126, 126, 0.32);
+            color: #ffffff;
+            padding: 3px 12px;
+            font-size: 14px;
+            border-radius: 0;
+            outline: none;
+            z-index: 9;
+            position: absolute;
+            top: 9px;
+            right: 15px;
+            transform: rotate(90deg);
+
+            &:hover {
+              background: rgba(255, 255, 255, 0.1);
+            }
+          }
+        }
+
+        .menuItem {
+          position: relative;
+          margin-right: 29px;
+          display: block;
+          border: none;
+          background: none;
+          cursor: pointer;
+          padding: 40px 0;
+          color: #7e7e7e;
+          text-align: center;
+          line-height: 30px;
+          font-size: 12px;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          transition: 0.5s;
+
+          &:hover {
+            color: #f16f23;
+          }
+
+          @include Responsive(M) {
+            letter-spacing: 0;
+          }
+
+          @include Responsive(S) {
+            text-align: left;
+            margin: 0;
+            color: #fff;
+            text-transform: capitalize;
+            padding: 2px 15px 2px 20px;
+            width: 100%;
+            font-size: 18px;
+            font-family: 'reforma';
+            font-weight: bold;
+
+            &:hover {
+              color: #f16f23;
+            }
+          }
+        }
+      }
+
+      .boxSearch {
+        display: none;
+        position: relative;
+        margin-top: 30px;
+
+        @include Responsive(S) {
+          display: block;
+          width: 370px;
+          margin: 30px auto 0;
+        }
+
+        label {
+          position: absolute;
+          right: 5%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+
+          i {
+            font-size: 11px;
+          }
+        }
+
+        input {
+          width: 100%;
+          padding: 1.5em 3em 1.5em 1.5em !important;
+          background-color: rgba(255, 255, 255, 0.1);
+          border-color: rgba(255, 255, 255, 0.1);
+          color: white !important;
+
+          &:focus-visible {
+            outline: 0 !important;
+          }
+        }
+      }
+
+      .button {
+        @include Responsive(S) {
+          display: none;
+        }
+      }
+
+      .closeButton {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+
+        i {
+          font-size: 16px;
+          font-weight: bolder;
+          display: flex;
+          align-items: center;
+
+          &:before {
+            animation: spinReverse 0.5s;
+          }
+
+          @keyframes spin {
+            from {
+              transform: rotateZ(0);
+            }
+            to {
+              transform: rotateZ(270deg);
+            }
+          }
+
+          @keyframes spinReverse {
+            from {
+              transform: rotateZ(270deg);
+            }
+            to {
+              transform: rotateZ(0);
+            }
+          }
+
+          &:hover {
+            color: #f16f23;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:before {
+              animation: spin 0.5s;
+            }
+          }
+
+          span {
+            font-size: 12px;
+            font-family: 'renner';
+            margin-left: 10px;
+            line-height: 1.5;
+            margin-bottom: -3px;
+            font-weight: bolder;
+            letter-spacing: 2px;
+          }
+        }
+      }
+    }
+    .btnControl {
+      display: flex;
+
+      .menuButton {
+        display: none;
+        cursor: pointer;
+        height: 42px;
+        width: 42px;
+        background: none;
+        text-align: center;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: normal;
+        border: none;
+
+        @include Responsive(S) {
+          display: block;
+          justify-self: flex-end;
+        }
+      }
+    }
+  }
+}
