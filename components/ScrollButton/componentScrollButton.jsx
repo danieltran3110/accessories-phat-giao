@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from '../../styles/ScrollButton/componentScrollButton.module.scss';
+import styles from './componentScrollButton.module.scss';
 
 const ScrollButton = () => {
 

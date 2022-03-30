@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
-import styles from '../../../styles/PageShop/PaginatedItems/componentPaginatedItems.module.scss';
+import styles from './componentPaginatedItems.module.scss';
 import { dataProducts } from '../../../utils/data-config';
 import Products from '../Products/componentProduct';
 import ProductsV2 from '../ProductsV2/componentProductV2';

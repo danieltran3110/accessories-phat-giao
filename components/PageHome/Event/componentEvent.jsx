@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../styles/PageHome/Event/componentEvent.module.scss';
+import styles from './componentEvent.module.scss';
 import EventsBox from './components/eventsBox';
 import stylesGlobal from '../../../assets/scss/global.module.scss';
 import SectionTitle from '../../SectionTitle/componentSectionTitle';

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../../styles/PageHome/Dharma/componentLinksContact.module.scss';
+import styles from './componentLinksContact.module.scss';
 import { dataLinksContact } from '../../../../utils/data-config';
 
 const LinksContact = () => {

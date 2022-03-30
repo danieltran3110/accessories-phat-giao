@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from '../../../../styles/PageHome/Dharma/componentDharma.module.scss';
+import styles from '../componentDharma.module.scss';
 import { dataDharma } from '../../../../utils/data-config';
 import stylesGlobal from '../../../../assets/scss/global.module.scss';
 import { StyleSheet, css } from 'aphrodite';

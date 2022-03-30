@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../../styles/PageShop/SideBar/componentSideBar.module.scss';
+import styles from '../componentSideBar.module.scss';
 import stylesGlobal from '../../../../assets/scss/global.module.scss';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';

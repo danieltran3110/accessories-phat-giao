@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../styles/PageShop/SideBar/componentSideBar.module.scss';
+import styles from './componentSideBar.module.scss';
 import Cart from './component/componentCart';
 import Filter from './component/componentFilter';
 import Categories from './component/componentCategories';

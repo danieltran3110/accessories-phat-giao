@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../styles/PageShop/Products/componentProducts.module.scss';
+import styles from '../Products/componentProducts.module.scss';
 import Image from 'next/image';
 import Stars from '../Products/component/componentStars';
 // import { stylesAnimation } from '../../../styles/Animation/animation.module';

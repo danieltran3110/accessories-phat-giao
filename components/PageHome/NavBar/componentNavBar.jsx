@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from '../../../styles/PageHome/NavBar/componentNavBar.module.scss';
+import styles from './componentNavBar.module.scss';
 import NavBarLeftSide from './components/navBarLeftSide';
 import NavBarRightSide from './components/navBarRightSide';
 import icon from '../../../assets/images/logo1_retina.png';

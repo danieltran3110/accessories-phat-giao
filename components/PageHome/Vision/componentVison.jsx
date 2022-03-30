@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import styles from '../../../styles/PageHome/Vision/componentVision.module.scss';
+import styles from './componentVision.module.scss';
 import stylesGlobal from '../../../assets/scss/global.module.scss';
 import { dataVision } from '../../../utils/data-config';
 import SectionTitle from '../../SectionTitle/componentSectionTitle';

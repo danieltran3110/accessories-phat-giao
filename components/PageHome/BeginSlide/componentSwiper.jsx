@@ -10,7 +10,7 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 
 import { EffectFade, Pagination } from 'swiper';
-import styles from '../../../styles/PageHome/Home/componentSwiper.module.scss';
+import styles from './componentSwiper.module.scss';
 import logo from '../../../assets/images/logo2_retina.png';
 import { dataSwiper } from '../../../utils/data-config';
 import { css, StyleSheet } from 'aphrodite';

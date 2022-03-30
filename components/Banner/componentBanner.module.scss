@@ -2,27 +2,21 @@
 @import 'assets/scss/mixin.module';
 
 .banner {
-  z-index: 99;
-  //min-height: 500px;
+  z-index: 999;
+  width: 100vw;
 
   .picBanner {
     margin: 0;
     position: relative;
     color: white;
-    //overflow: visible!important;
+
     @include Responsive(S) {
       height: 120px;
     }
-    //span {
-    //    height: 50vw;
-    //}
-
 
     .img {
       overflow: visible!important;
       z-index: -1;
-      //min-height: 600px;
-
     }
 
     .titleBanner {
@@ -78,7 +72,6 @@
 
           }
         }
-
 
         i {
           font-style: normal;

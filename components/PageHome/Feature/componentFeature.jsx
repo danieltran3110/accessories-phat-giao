@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../styles/PageHome/Feature/componentFeature.module.scss';
+import styles from './componentFeature.module.scss';
 import { dataFeature } from '../../../utils/data-config';
 import stylesGlobal from '../../../assets/scss/global.module.scss';
 import Image from 'next/image';

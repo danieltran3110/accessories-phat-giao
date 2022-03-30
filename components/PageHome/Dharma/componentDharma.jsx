@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../styles/PageHome/Dharma/componentDharma.module.scss';
+import styles from './componentDharma.module.scss';
 import AudioBox from './components/audioBox';
 import LinksContact from './components/linksContact';
 import BeginningBox from './components/beginningBox';

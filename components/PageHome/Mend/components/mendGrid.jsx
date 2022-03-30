@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../../../../styles/PageHome/Mend/componentMend.module.scss';
+import styles from '../componentMend.module.scss';
 import { dataMend } from '../../../../utils/data-config';
 import stylesGlobal from '../../../../assets/scss/global.module.scss';
 

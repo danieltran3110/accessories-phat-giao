@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import styles from '../../../styles/PageHome/Proverb/componentProverb.module.scss';
+import styles from './componentProverb.module.scss';
 import { dataProverb } from '../../../utils/data-config';
 import stylesGlobal from '../../../assets/scss/global.module.scss';
 

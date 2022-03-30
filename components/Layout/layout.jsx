@@ -10,10 +10,10 @@ export default function Layout(props) {
   return (
     <>
       <Script src='https://sp.zalo.me/plugins/sdk.js' />
-      <Script  src='https://kit.fontawesome.com/618a331a9e.js'
-               crossOrigin='anonymous' />
+      <Script src='https://kit.fontawesome.com/618a331a9e.js'
+              crossOrigin='anonymous' />
       <NavBar />
-      {/*<Banner />*/}
+      <Banner />
       {props.children}
       <ScrollButton />
       <Zalo />

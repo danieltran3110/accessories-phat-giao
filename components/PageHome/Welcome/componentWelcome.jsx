@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from '../../../styles/PageHome/Welcome/componentWelcome.module.scss';
+import styles from './componentWelcome.module.scss';
 import { dataWelcome } from '../../../utils/data-config';
 import stylesGlobal from '../../../assets/scss/global.module.scss';
 import SectionTitle from '../../SectionTitle/componentSectionTitle';

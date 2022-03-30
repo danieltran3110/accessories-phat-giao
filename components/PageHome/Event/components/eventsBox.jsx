@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../../styles/PageHome/Event/componentEvent.module.scss';
+import styles from '../componentEvent.module.scss';
 import { dataEvent } from '../../../../utils/data-config';
 import Image from 'next/image';
 

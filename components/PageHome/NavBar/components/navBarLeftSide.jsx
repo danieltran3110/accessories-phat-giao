@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../../styles/PageHome/NavBar/componentNavBar.module.scss';
+import styles from '../componentNavBar.module.scss';
 import { dataNavbar } from '../../../../utils/data-config';
 import Link from 'next/link';
 

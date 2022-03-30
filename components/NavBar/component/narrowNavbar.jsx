@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../../../styles/PageHome/NavBar/componentNavBar.module.scss';
+import styles from '../../PageHome/NavBar/componentNavBar.module.scss';
 import Image from 'next/image';
 import icon from '../../../assets/images/iconNarrow.jpg';
 import NavBarLeftSide from '../../PageHome/NavBar/components/navBarLeftSide';

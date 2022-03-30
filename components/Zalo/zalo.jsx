@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/Zalo/zalo.module.scss';
+import styles from './zalo.module.scss';
 import Script from 'next/script';
 
 const Zalo = () => {
