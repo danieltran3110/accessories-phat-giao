@@ -19,43 +19,47 @@ const classes = StyleSheet.create({
   },
 });
 
-const NavBar = () => {
+const NavBar = ({ hideLogo }) => {
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [openSearch, setOpenSearch] = useState(false);
-  // const [showing, setShowing] = useState(false);
-  //
+
   const cancelBox = () => {
     setOpenSearch(false);
   };
-  //
-  // const handleShow = () => {
-  //   setShowing(true);
-  // };
-  const [top, setTop] = useState(true);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.pageYOffset === 0) {
-        setTop(true);
-      } else setTop(false);
-    });
-  }, [top]);
+    const navbar = document.getElementById('navbar');
+    let sticky = navbar.offsetTop;
+
+    function FuncSticky() {
+      if ((window.pageYOffset -1) >= sticky) {
+        navbar.classList.add(styles.sticky);
+      } else {
+        navbar.classList.remove(styles.sticky);
+      }
+    }
+
+    window.onscroll = function() {
+      FuncSticky();
+    };
+  });
 
   return (
     <div
-      className={`${styles.navigation} ${!top && styles.nonTop}`}
+      className={`${styles.navigation}`}
+      id = 'navbar'
     >
       <div className='container'>
         <div className={styles.navigationInner}>
-          <Link href='/'>
+          {!hideLogo && <Link href='/'>
             <a className={styles.logo}>
               <Image src={icon} alt='logo' />
             </a>
-          </Link>
+          </Link>}
           <div
             className={`${styles.navigationRight} ${css(classes.fadeIn)} ${
               navigationOpen && styles.open
-            }`}
+            } ${hideLogo && styles.margin0}`}
           >
             <div
               // type='button'

@@ -1,0 +1,182 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
+.formInfo {
+  display: grid;
+  grid-template-columns: calc(50% - 25px) calc(50% - 25px);
+  column-gap: 50px;
+  margin-bottom: 30px;
+  row-gap: 30px;
+
+  @include Responsive(S) {
+    grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+    column-gap: 20px;
+  }
+
+  .inputComment {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    resize: none;
+
+    @include Responsive(M) {
+      height: 280px;
+    }
+  }
+
+  .input {
+    padding: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+    border: 2px solid #e7e4df;
+
+    @include Responsive(S) {
+      padding: 20px;
+    }
+
+    @include Responsive(XXS) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      padding: 15px;
+    }
+
+    &::placeholder {
+      font-family: 'renner';
+
+      @include Responsive(XXS) {
+          font-size: 11px;
+      }
+    }
+
+    &:hover {
+      border-color: #f16f23;
+    }
+  }
+
+  .btnSubscribe {
+    font-family: 'reforma', sans-serif;
+    font-weight: bolder;
+    width: fit-content;
+    padding: 35px 70px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    border: none;
+    transition: 0.5s;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: right;
+    background-color: #282828;
+    color: white;
+
+    @include Responsive(M) {
+      padding: 15px 30px;
+      letter-spacing: 0;
+      font-size: 12px;
+    }
+
+    @include Responsive(XS) {
+      padding: 15px 20px;
+      font-size: 10px;
+      margin-left: 0;
+    }
+  }
+
+  .checkbox {
+    position: relative;
+    padding-left: 40px;
+    padding-top: 5px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: 'renner';
+    color: #7e7e7e;
+    letter-spacing: 2px;
+    font-size: 14px;
+
+    @include Responsive(M) {
+      font-size: 12px;
+    }
+
+    @include Responsive(XXS) {
+      font-size: 10px;
+    }
+
+    &.fontBold {
+      font-weight: 500;
+      color: black;
+      font-size: 19px;
+      padding-top: 0;
+
+      @include Responsive(M) {
+        font-size: 14px;
+      }
+
+      span {
+        color: #f16f23;
+      }
+    }
+
+    &.fontBigger {
+      font-size: 19px;
+      padding-top: 0;
+
+      @include Responsive(M) {
+        font-size: 14px;
+      }
+
+      abbr {
+        cursor: help;
+      }
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+
+      &:checked ~ .checkMark:after {
+        display: block;
+      }
+    }
+
+    .checkMark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      border: 2px solid #e7e4df;
+
+      @include Responsive(XS) {
+        height: 20px;
+        width: 20px;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+
+        left: 6px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+        border: solid #f16f23;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+
+        @include Responsive(XS) {
+          left: 5px;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+

@@ -11,10 +11,15 @@
   text-decoration: none;
   text-transform: none;
   letter-spacing: 0;
-  width: 560px;
+  width: fit-content;
+  max-width: 560px;
   margin: 1.60em auto 0.87em;
   text-align: center;
-  //padding-top: 50px;
+
+  &.left {
+    margin: 1.60em 0 0.87em;
+    text-align: left;
+  }
 
   @include Responsive(L) {
     font-size: 2.0rem;
@@ -22,7 +27,8 @@
   }
 
   @include Responsive(XS) {
-    width: 300px;
+    width: 290px;
     margin-top: 20px;
+    font-size: 1.7rem;
   }
 }

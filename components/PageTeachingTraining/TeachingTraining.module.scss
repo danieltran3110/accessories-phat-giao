@@ -1,0 +1,186 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
+.teachingTraining {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 30px;
+  row-gap: 50px;
+
+  @include Responsive(S) {
+    grid-template-columns: 90%;
+    justify-content: center;
+  }
+}
+
+.subscribe {
+  font-family: 'reforma', sans-serif;
+  color: white;
+  background-color: #ffac4b;
+  padding: 70px;
+  margin-top: 120px;
+
+  @include Responsive(S) {
+    padding: 40px;
+  }
+
+  @include Responsive(XS) {
+    margin-top: 70px;
+    padding: 30px;
+  }
+
+  .invite {
+    font-size: 20px;
+    margin-top: 0;
+    font-style: italic;
+
+    @include Responsive(L) {
+      font-size: 16px;
+    }
+
+    @include Responsive(L) {
+      font-size: 14px;
+    }
+  }
+
+  .formSubscribe {
+    margin-bottom: 25px;
+
+    input {
+      padding: 30px;
+      width: 68%;
+      color: #ffffff;
+      border-color: #ffbc6f;
+      background-color: #ffbc6f;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      transition: 0.5s;
+      border: none;
+
+      @include Responsive(L) {
+        padding: 20px;
+      }
+
+      @include Responsive(S) {
+        width: 55%;
+      }
+
+      @include Responsive(XS) {
+        width: 100%;
+        display: block;
+      }
+
+      &::placeholder {
+        font-family: 'renner';
+        color: white;
+      }
+
+      &[type]:focus {
+        border-color: white;
+        box-shadow: 1px 1px 1px 1px rgb(255, 255, 255) inset, 1px 1px 1px 1px rgb(255, 255, 255);
+        outline: 0 none;
+      }
+    }
+
+    .btnSubscribe {
+      font-family: 'reforma', sans-serif;
+      width: 27%;
+      padding: 30px;
+      text-align: center;
+      letter-spacing: 2px;
+      font-weight: bold;
+      margin-left: 20px;
+      border: none;
+      transition: 0.5s;
+
+      @include Responsive(L) {
+        padding: 20px;
+        font-size: 12px;
+        letter-spacing: 0;
+      }
+
+      @include Responsive(S) {
+        width: 41%;
+        margin-left: 10px;
+        font-size: 11px;
+        padding: 20px 15px;
+      }
+
+      @include Responsive(XS) {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .checkbox {
+    position: relative;
+    padding-left: 35px;
+    padding-top: 5px;
+    font-family: 'renner';
+
+    @include Responsive(L) {
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    @include Responsive(S) {
+      font-size: 11px;
+    }
+
+    @include Responsive(XS) {
+      font-size: 10px;
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+
+      &:checked ~ .checkMark:after {
+        display: block;
+      }
+    }
+
+    .checkMark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #ffbc6f;
+
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid #f16f23;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+
+    //> label {
+    //  font-family: 'renner';
+    //  letter-spacing: 2px;
+    //  font-size: 15px;
+    //}
+  }
+}
+
+.hover {
+  transition: 0.5s;
+  cursor: pointer!important;
+  background-color: #282828!important;
+}

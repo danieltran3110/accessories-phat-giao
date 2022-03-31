@@ -1,0 +1,81 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
+.reactionTitle {
+  font-family: 'reforma', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+
+  @include Responsive(M) {
+    font-size: 24px;
+  }
+}
+
+.reactionWrapper {
+  display: flex;
+  column-gap: 20px;
+  flex-flow: wrap;
+  row-gap: 20px;
+
+  .reaction {
+    width: 100px;
+    background-color: #282828;
+    transition: all 0.5s;
+
+    @include Responsive(M) {
+      width: 80px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-4px);
+
+      .count,
+      .title {
+        color: #f16f23;
+      }
+    }
+
+    .emotional {
+      text-align: center;
+      padding: 20px;
+      color: white;
+
+      @include Responsive(M) {
+        padding: 15px 0;
+      }
+
+      i {
+        color: #f16f23;
+        font-size: 25px;
+
+        @include Responsive(M) {
+          font-size: 20px;
+        }
+      }
+
+      .count {
+        font-family: 'renner';
+        font-weight: bold;
+        margin: 5px 0;
+        transition: 0.5s;
+
+        @include Responsive(M) {
+          font-size: 14px;
+        }
+      }
+
+      .title {
+        font-family: 'renner';
+        margin: 5px 0;
+        letter-spacing: 2px;
+        font-size: 14px;
+        transition: 0.5s;
+
+        @include Responsive(M) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

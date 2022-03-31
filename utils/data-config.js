@@ -24,6 +24,15 @@ import book6 from '../assets/images/book6.jpg';
 import book7 from '../assets/images/book7.jpg';
 import book8 from '../assets/images/book8.jpg';
 import book9 from '../assets/images/book9.jpg';
+import course1 from '../assets/images/course1.jpg';
+import course2 from '../assets/images/course2.jpg';
+import course3 from '../assets/images/course3.jpg';
+import course4 from '../assets/images/course4.jpg';
+import course5 from '../assets/images/course5.jpg';
+import course6 from '../assets/images/course6.jpg';
+import course7 from '../assets/images/course7.jpg';
+import course8 from '../assets/images/course8.jpg';
+import course3full from '../assets/images/course3full.jpg';
 
 export const socialIcon = [
   {
@@ -171,7 +180,7 @@ export const navigationData = {
     },
     {
       title: 'teaching&training',
-      url: '#',
+      url: 'teachingtraining',
     },
     {
       title: 'Blog',
@@ -572,3 +581,143 @@ export const dataProducts = [
     numStars: 4,
   },
 ];
+
+export const dataCourses = [
+  {
+    src: course1,
+    title: 'Art & Culture',
+    content: 'It is believed that art is a form of meditation. Creative practices help to relieve stress and bring peace to one heart and mind.',
+    beginning: 'SEPTEMBER 12, 2022',
+    duration: '3 WEEKS',
+    cost: 'FREE',
+    urlLearn: '/'
+  },
+  {
+    src: course2,
+    title: 'Tibetan Language',
+    content: 'You have a chance to learn the language of the Dalai Lama and the language of dharma to understand buddhist teaching in depth.',
+    beginning: 'JUNE 2, 2022',
+    duration: '3 WEEKS',
+    cost: '$150',
+    urlLearn: '/'
+  },
+  {
+    src: course3,
+    title: 'Meditation School',
+    content: 'You’ll be a full-time part of Samadhi Monastery to support your training, practice, and spiritual life. Find the way to inner harmony.',
+    beginning: 'APRIL 8, 2022',
+    duration: '2 WEEKS',
+    cost: 'FREE',
+    urlLearn: '/'
+  },
+  {
+    src: course4,
+    title: 'Cooking Classes',
+    content: 'Throw your dreams into space like a kite, and you do not know what it will bring back, a new life, a new friend, a new love, a new country.',
+    beginning: 'APRIL 15, 2022',
+    duration: '1 MONTH',
+    cost: '$130',
+    urlLearn: '/'
+  },
+  {
+    src: course5,
+    title: 'Dreams and Reality',
+    content: 'Throw your dreams into space like a kite, and you do not know what it will bring back, a new life, a new friend, a new love, a new country.',
+    beginning: 'JULY 4, 2022',
+    duration: '4 WEEKS',
+    cost: '$100',
+    urlLearn: '/'
+  },
+  {
+    src: course6,
+    title: 'Find Happiness',
+    content: 'Throw your dreams into space like a kite, and you do not know what it will bring back, a new life, a new friend, a new love, a new country.',
+    beginning: 'JULY 15, 2022',
+    duration: '3 WEEKS',
+    cost: 'FREE',
+    urlLearn: '/'
+  },
+  {
+    src: course7,
+    title: 'Transform Your Life',
+    content: 'Throw your dreams into space like a kite, and you do not know what it will bring back, a new life, a new friend, a new love, a new country.',
+    beginning: 'AUGUST 9, 2022',
+    duration: '3 WEEKS',
+    cost: '$150',
+    urlLearn: '/'
+  },
+  {
+    src: course8,
+    title: 'Yoga School',
+    content: 'Throw your dreams into space like a kite, and you do not know what it will bring back, a new life, a new friend, a new love, a new country.',
+    beginning: 'SEPTEMBER 3, 2022',
+    duration: '3 MONTHS',
+    cost: '$200',
+    urlLearn: '/'
+  },
+]
+
+export const dataAlsoLike = {
+  src: course3full,
+  title: 'Meditation School',
+  content: 'You’ll be a full-time part of Samadhi Monastery to support your training, practice, and spiritual life. Find the way to inner harmony.',
+  fullContent: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+  beginning: 'APRIL 8, 2022',
+  duration: '2 WEEKS',
+  cost: 'FREE',
+  urlLearn: '/'
+}
+
+export const dataReaction = [
+  {
+    className: 'fa fa-heart',
+    count: 0,
+    title: 'COOL'
+  },
+  {
+    className: 'fa fa-heartbeat',
+    count: 0,
+    title: 'BAD'
+  },
+  {
+    className: 'fa fa-smile-o',
+    count: 2,
+    title: 'HAPPY'
+  },
+  {
+    className: 'fa fa-frown-o',
+    count: 0,
+    title: 'SAD'
+  },
+]
+
+
+export const dataMayLike = [
+  {
+    src: course1,
+    title: 'Art & Culture',
+    content: 'It is believed that art is a form of meditation. Creative practices help to relieve stress and bring peace to one heart and mind.',
+    beginning: 'SEPTEMBER 12, 2022',
+    duration: '3 WEEKS',
+    cost: 'FREE',
+    urlLearn: '/'
+  },
+  {
+    src: course2,
+    title: 'Tibetan Language',
+    content: 'You have a chance to learn the language of the Dalai Lama and the language of dharma to understand buddhist teaching in depth.',
+    beginning: 'JUNE 2, 2022',
+    duration: '3 WEEKS',
+    cost: '$150',
+    urlLearn: '/'
+  },
+  {
+    src: course3,
+    title: 'Meditation School',
+    content: 'You’ll be a full-time part of Samadhi Monastery to support your training, practice, and spiritual life. Find the way to inner harmony.',
+    beginning: 'APRIL 8, 2022',
+    duration: '2 WEEKS',
+    cost: 'FREE',
+    urlLearn: '/'
+  }
+]

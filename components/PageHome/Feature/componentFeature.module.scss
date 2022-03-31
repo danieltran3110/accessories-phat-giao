@@ -95,8 +95,6 @@
     position: absolute;
     bottom: -180px;
     width: 100%;
-    // margin-bottom: -9em;
-    // height: 16em;
     z-index: 1;
     -webkit-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -116,6 +114,11 @@
     &:hover {
       color: #f16f23;
       cursor: pointer;
+
+      .contentFeature {
+        color: white;
+        cursor: auto;
+      }
     }
 
     @include Responsive(L) {
@@ -136,10 +139,6 @@
 
   .contentFeature {
     display: block;
-    //visibility: hidden;
-    //position: absolute;
-    //padding: 0 3.9rem 3.75rem;
-    //color: white;
     opacity: 0;
     transition: all 0.5s ease;
     font-size: 18px;

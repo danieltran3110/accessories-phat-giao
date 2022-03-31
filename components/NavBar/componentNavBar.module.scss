@@ -7,11 +7,10 @@
   font-family: 'renner';
   border-bottom: 1px solid black;
 
-  &.nonTop {
+  &.sticky {
     position: fixed;
     top: 0;
-    left: 0;
-    z-index: 999;
+    z-index: 9999;
   }
 
   .navigationInner {
@@ -46,7 +45,11 @@
           max-height: 50px;
         }
 
-        @include Responsive(XS) {
+        @include Responsive(M) {
+          max-height: 70px;
+        }
+
+        @include Responsive(S) {
           max-height: 40px;
         }
       }
@@ -55,9 +58,13 @@
     .navigationRight {
       flex-shrink: 1;
       display: flex;
-      justify-content: space-between;
       align-items: center;
       transition: 0.5s right;
+      margin: 0 auto;
+
+      &.margin0 {
+        margin: 0;
+      }
 
       .logo {
         margin: 20px 0;
@@ -170,6 +177,7 @@
 
           @include Responsive(M) {
             letter-spacing: 0;
+            padding: 20px 0;
           }
 
           @include Responsive(S) {
@@ -288,6 +296,7 @@
         }
       }
     }
+
     .btnControl {
       display: flex;
 

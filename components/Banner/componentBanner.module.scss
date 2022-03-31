@@ -2,29 +2,22 @@
 @import 'assets/scss/mixin.module';
 
 .banner {
-  z-index: 999;
-  width: 100vw;
-
   .picBanner {
     margin: 0;
     position: relative;
     color: white;
 
-    @include Responsive(S) {
-      height: 120px;
-    }
-
-    .img {
-      overflow: visible!important;
-      z-index: -1;
+    img {
+      @include Responsive(S) {
+        min-height: 100px;
+      }
     }
 
     .titleBanner {
       position: absolute;
-      top: 45%;
-      left: 22%;
-      transform: translate(-50%, -50%);
-      font-family: "reforma", sans-serif;
+      top: 25%;
+      left: 20%;
+      font-family: 'reforma', sans-serif;
       font-size: 55px;
       font-weight: bold;
 

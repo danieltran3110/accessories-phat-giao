@@ -59,8 +59,7 @@ export default function HomePage() {
   return (
     <div className='homePage'>
       <SlideIntro />
-      {/*<NavBar />*/}
-      <Navbar />
+      <Navbar hideLogo={true} />
       <Proverb />
       <Welcome />
       <Mend />
