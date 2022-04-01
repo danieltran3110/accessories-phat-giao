@@ -1,15 +1,22 @@
 @import 'assets/scss/fonts.module';
 @import 'assets/scss/mixin.module';
+@import 'assets/scss/animation.module';
 
 .courses {
-
   .pic {
     margin: 0;
     position: relative;
     overflow: hidden;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
+      .btnView {
+        opacity: 1;
+        animation: bounce 0.5s;
+      }
+
       &::after {
         background: rgba(0, 0, 0, 0.3) !important;
         position: absolute;
@@ -45,40 +52,12 @@
       }
     }
 
-    .pulse {
-      animation: pulse 1s infinite ease-in-out alternate;
-    }
-
-    @keyframes pulse {
-      from {
-        transform: scale(0.8);
-      }
-      to {
-        transform: scale(1.2);
-      }
-    }
-
-    .fade-in {
-      animation: fade-in 2s linear infinite;
-    }
-
-    @keyframes fade-in {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
     .btnView {
-      visibility: hidden;
+      opacity: 0;
       color: white;
       font-family: 'reforma', sans-serif;
+      animation: bounceReverse 0.5s;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       background-color: #282828;
       width: 90px;
       height: 90px;
@@ -149,6 +128,7 @@
     }
 
     .btnLearn {
+      display: block;
       font-family: 'renner';
       background-color: #282828;
       padding: 20px 60px;

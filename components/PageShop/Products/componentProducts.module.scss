@@ -1,5 +1,6 @@
 @import 'assets/scss/fonts.module';
 @import 'assets/scss/mixin.module';
+@import 'assets/scss/animation.module';
 
 .wrapperProduct {
   .listProduct {
@@ -25,40 +26,15 @@
       cursor: pointer;
 
       &:hover {
-        .detailInfo .icon {
-          visibility: visible;
-
-          &:before {
-            animation: myMove1 0.5s;
-          }
-
-          @keyframes myMove1 {
-            0% {
-              transform: scale(0);
-
-            }
-            100% {
-              transform: scale(1);
-            }
+        .detailInfo {
+          .icon {
+            opacity: 1;
+            animation: bounce 0.5s;
           }
 
           .icon2 {
-            visibility: visible;
-            animation: myMove2 0.5s;
-
-            @keyframes myMove2 {
-              0% {
-                transform: scale(0);
-              }
-              50% {
-                transform: scale(0);
-
-                //background-color: white;
-              }
-              100% {
-                transform: scale(1);
-              }
-            }
+            opacity: 1;
+            animation: bounce2 1s;
           }
         }
       }
@@ -121,8 +97,9 @@
         color: #282828;
         transition: 0.5s;
 
-        .icon {
-          visibility: hidden;
+        .icon,
+        .icon2 {
+          opacity: 0;
           width: 50px;
           height: 50px;
           color: white;
@@ -131,201 +108,139 @@
           padding-top: 11px;
           background-color: #ffac4b;
           border-radius: 50%;
+          transition: 0.5s;
+          animation: bounceReverse 0.4s;
+        }
 
-          &:before {
-            animation: reverse 0.5s;
-          }
-
-          @keyframes reverse {
-            from {
-              transform: scale(1);
-            }
-            to {
-              transform: scale(0);
-            }
-          }
-
-
-          //.icon2 {
-          //  animation: reverse 1s;
-          //  @keyframes reverse {
-          //    0% {
-          //      transform: scale(1);
-          //    }
-          //    100% {
-          //      transform: scale(0);
-          //    }
-          //  }
-          //}
-          //&.icon2 {
-          //
-          //}
+        .icon2 {
+          animation: bounceReverse 1.5s;
         }
       }
     }
   }
 
-  //  .listProduct2 {
-  //    .item {
-  //      display: flex;
-  //      column-gap: 50px;
-  //      padding-bottom: 40px;
-  //      border-bottom: 1px rgba(128, 128, 128, 0.3) solid;
-  //      margin-bottom: 80px;
-  //
-  //      @include Responsive(XS) {
-  //        flex-direction: column;
-  //        margin-bottom: 40px;
-  //      }
-  //
-  //      .picture {
-  //        position: relative;
-  //        cursor: pointer;
-  //
-  //        &:hover {
-  //          .icon {
-  //            visibility: visible;
-  //
-  //            @keyframes myMove1 {
-  //              0% {
-  //                transform: scale(0);
-  //
-  //              }
-  //              100% {
-  //                transform: scale(1);
-  //              }
-  //            }
-  //          }
-  //
-  //          .icon2 {
-  //            visibility: visible;
-  //            animation: myMove2 0.5s;
-  //
-  //            @keyframes myMove2 {
-  //              0% {
-  //                transform: scale(0);
-  //              }
-  //              50% {
-  //                transform: scale(0);
-  //              }
-  //              100% {
-  //                transform: scale(1);
-  //              }
-  //            }
-  //          }
-  //        }
-  //
-  //        .wrapperImage {
-  //          padding: 50px 40px;
-  //          border: 1px rgba(128, 128, 128, 0.3) solid;
-  //
-  //          .picProduct {
-  //            margin: 0;
-  //            //min-height: 300px;
-  //            min-width: 150px;
-  //            display: flex;
-  //            justify-content: center;
-  //            align-items: center;
-  //
-  //            @include Responsive(XS) {
-  //              min-width: 50px;
-  //            }
-  //          }
-  //
-  //          @include Responsive(XS) {
-  //            padding: 30px 75px;
-  //          }
-  //        }
-  //
-  //        .detailInfo {
-  //          visibility: hidden;
-  //          position: absolute;
-  //          top: 10px;
-  //          right: 15px;
-  //          height: fit-content;
-  //          width: fit-content;
-  //          color: #282828;
-  //          transition: 0.5s;
-  //
-  //          .icon {
-  //            width: 50px;
-  //            height: 50px;
-  //            color: white;
-  //            font-size: 20px;
-  //            text-align: center;
-  //            padding-top: 11px;
-  //            border-radius: 50%;
-  //            animation: myMove1 0.5s;
-  //            background-color: #ffac4b;
-  //            visibility: hidden;
-  //            //  animation: reverse 1s;
-  //            //
-  //            //  @keyframes reverse {
-  //            //    0% {
-  //            //      transform: scale(1);
-  //            //    }
-  //            //    100% {
-  //            //      transform: scale(0);
-  //            //    }
-  //            //  }
-  //            //}
-  //
-  //            //.icon2 {
-  //            //  animation: reverse 1s;
-  //            //  @keyframes reverse {
-  //            //    0% {
-  //            //      transform: scale(1);
-  //            //    }
-  //            //    100% {
-  //            //      transform: scale(0);
-  //            //    }
-  //            //  }
-  //            //}
-  //          }
-  //        }
-  //      }
-  //
-  //      .infoProduct {
-  //        font-family: 'renner';
-  //        font-weight: 400;
-  //        margin-top: 0;
-  //        letter-spacing: 1px;
-  //
-  //        .name {
-  //          font-size: 21px;
-  //          margin-top: 0;
-  //          margin-bottom: 5px;
-  //
-  //          @include Responsive(S) {
-  //            font-size: 16px;
-  //          }
-  //
-  //          @include Responsive(XS) {
-  //            margin-top: 20px;
-  //          }
-  //        }
-  //
-  //        > i {
-  //          margin: 0 2px;
-  //          font-size: 12px;
-  //          color: #ffac4b;
-  //        }
-  //
-  //        .content {
-  //          line-height: 1.5;
-  //          color: #7e7e7e;
-  //
-  //          @include Responsive(S) {
-  //            font-size: 12px;
-  //          }
-  //        }
-  //
-  //        .money {
-  //          color: #7e7e7e;
-  //          opacity: 0.7;
-  //        }
-  //      }
-  //    }
-  //  }
-  //}
+  .listProduct2 {
+    .item {
+      display: flex;
+      column-gap: 50px;
+      padding-bottom: 40px;
+      border-bottom: 1px rgba(128, 128, 128, 0.3) solid;
+      margin-bottom: 80px;
+
+      @include Responsive(XS) {
+        flex-direction: column;
+        margin-bottom: 40px;
+      }
+
+      .picture {
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+          .detailInfo {
+            .icon {
+              opacity: 1;
+              animation: bounce 0.5s;
+            }
+
+            .icon2 {
+              opacity: 1;
+              animation: bounce2 1s;
+            }
+          }
+        }
+
+        .wrapperImage {
+          padding: 50px 40px;
+          border: 1px rgba(128, 128, 128, 0.3) solid;
+
+          .picProduct {
+            margin: 0;
+            min-width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include Responsive(XS) {
+              min-width: 50px;
+            }
+          }
+
+          @include Responsive(XS) {
+            padding: 30px 75px;
+          }
+        }
+
+        .detailInfo {
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          height: fit-content;
+          width: fit-content;
+          color: #282828;
+          transition: 0.5s;
+
+          .icon,
+          .icon2 {
+            opacity: 0;
+            width: 50px;
+            height: 50px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 11px;
+            background-color: #ffac4b;
+            border-radius: 50%;
+            transition: 0.5s;
+            animation: bounceReverse 0.4s;
+          }
+
+          .icon2 {
+            animation: bounceReverse 1.5s;
+          }
+        }
+      }
+
+      .infoProduct {
+        font-family: 'renner';
+        font-weight: 400;
+        margin-top: 0;
+        letter-spacing: 1px;
+
+        .name {
+          font-size: 21px;
+          margin-top: 0;
+          margin-bottom: 5px;
+
+          @include Responsive(S) {
+            font-size: 16px;
+          }
+
+          @include Responsive(XS) {
+            margin-top: 20px;
+          }
+        }
+
+        > i {
+          margin: 0 2px;
+          font-size: 12px;
+          color: #ffac4b;
+        }
+
+        .content {
+          line-height: 1.5;
+          color: #7e7e7e;
+
+          @include Responsive(S) {
+            font-size: 12px;
+          }
+        }
+
+        .money {
+          color: #7e7e7e;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
 }

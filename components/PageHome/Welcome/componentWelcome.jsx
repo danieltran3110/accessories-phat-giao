@@ -12,7 +12,6 @@ const Welcome = () => {
         <div className={stylesGlobal.container2}>
           <div className={styles.welcome}>
             <div className={styles.place}>
-              {/*<p className={styles.welcomePlace}>{dataWelcome.place}</p>*/}
               <SectionTitle title={dataWelcome.place} left={false}/>
               <p className={styles.introduction}>
                 {dataWelcome.intro}

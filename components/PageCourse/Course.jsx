@@ -3,7 +3,6 @@ import styles from './Course.module.scss';
 import stylesGlobal from '../../assets/scss/global.module.scss';
 import Image from 'next/image';
 
-import SectionTitle from '../SectionTitle/componentSectionTitle';
 import { dataAlsoLike } from '../../utils/data-config';
 import Reactions from './components/Reations/Reactions';
 import MayLike from './components/MayLike/MayLike';

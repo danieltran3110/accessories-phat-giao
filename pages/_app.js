@@ -1,12 +1,50 @@
 import '../styles/globals.css'
-// import 'rsuite/dist/rsuite.min.css';
-// import type { AppProps } from 'next/app';
-// import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
-// import { config } from "@fortawesome/fontawesome-svg-core";
-// config.autoAddCss = false;
-// import '@fortawesome/fontawesome-svg-core/styles.css'
+import { css, StyleSheet } from 'aphrodite';
+import { fadeIn, fadeInUp } from 'react-animations';
+import { useEffect } from 'react';
+import stylesGlobal from '../assets/scss/global.module.scss';
 
 function MyApp({ Component, pageProps }) {
+
+  const styles = StyleSheet.create({
+    fadeInUp: {
+      visibility: 'visible',
+      animationName: fadeInUp,
+      animationDuration: '0.8s',
+      scrollingBehavior: 'smooth',
+    },
+    fadeIn: {
+      visibility: 'visible',
+      animationName: fadeIn,
+      animationDuration: '0.8s',
+      scrollingBehavior: 'smooth',
+    },
+  });
+
+  useEffect(() => {
+    let observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains(stylesGlobal.section)) {
+              entry.target.classList.add(css(styles.fadeInUp));
+              if (entry.target.classList.contains(stylesGlobal.section2)) {
+                entry.target.classList.add(css(styles.fadeIn));
+              }
+            }
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+      },
+    );
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  });
+
   return <Component {...pageProps} />
 }
 

@@ -1,10 +1,13 @@
 import React from 'react';
 import styles from './componentSectionTitle.module.scss';
+import stylesGlobal from '../../assets/scss/global.module.scss';
 
 
 const SectionTitle = (props) => {
   return (
-    <p className={props.left ? styles.title + ' ' + styles.left : styles.title}>{props.title}</p>
+    <section className={stylesGlobal.section}>
+      <p className={props.left ? styles.title + ' ' + styles.left : styles.title}>{props.title}</p>
+    </section>
   );
 };
 

@@ -6,7 +6,7 @@ import { fadeInUp } from 'react-animations';
 import { css, StyleSheet } from 'aphrodite';
 import Link from 'next/link';
 
-const Banner = (props) => {
+const Banner = ({ title }) => {
 
   const styles2 = StyleSheet.create({
     fadeInUp: {
@@ -20,9 +20,9 @@ const Banner = (props) => {
       <figure className={styles.picBanner}>
         <Image className={styles.img} src={dataBanner.src} alt={dataBanner.alt} />
         <figcaption className={`${styles.titleBanner} ${css(styles2.fadeInUp)}`}>
-          {dataBanner.title}
+          {title}
           <p className={styles.subTitleBanner}>
-            <Link href={'/'}><a>HOME</a></Link> - <i>{dataBanner.title}</i>
+            <Link href={'/'}><a>HOME</a></Link> - <i>{title}</i>
           </p>
         </figcaption>
       </figure>

@@ -22,6 +22,7 @@ export default class MyDocument extends Document {
   }
 
   render() {
+
     /* Make sure to use data-aphrodite attribute in the style tag here
     so that aphrodite knows which style tag it's in control of when
     the client goes to render styles. If you don't you'll get a second

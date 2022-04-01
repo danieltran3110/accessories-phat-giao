@@ -5,7 +5,7 @@ import Course from '../../components/PageCourse/Course';
 export default function CoursePage() {
   return (
     <div className='TeachingTrainingPage'>
-      <Layout>
+      <Layout title={'Teaching&Training'}>
         <Course />
       </Layout>
     </div>

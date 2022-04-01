@@ -3,13 +3,14 @@ import styles from './Courses.module.scss';
 import Image from 'next/image';
 import { dataCourses } from '../../../../utils/data-config';
 import stylesGlobal from '../../../../assets/scss/global.module.scss';
+import Link from 'next/link';
 
 const Courses = () => {
   return (
     <>
       {dataCourses.map((_data, index) =>
         <div className={stylesGlobal.backgroundColor} key={index}>
-          <div className={styles.courses} >
+          <div className={styles.courses}>
             <figure className={styles.pic}>
               <Image src={_data.src} alt={'courses'} />
               <figcaption className={styles.btnView}>VIEW</figcaption>
@@ -24,7 +25,7 @@ const Courses = () => {
                 <p className={styles.time}><b>DURATION</b> {_data.duration}</p>
                 <p className={styles.time}><b>COST</b> {_data.cost}</p>
               </div>
-              <div className={styles.btnLearn}>LEARN</div>
+              <Link href={_data.urlLearn}><a className={styles.btnLearn}>LEARN</a></Link>
             </div>
           </div>
         </div>,

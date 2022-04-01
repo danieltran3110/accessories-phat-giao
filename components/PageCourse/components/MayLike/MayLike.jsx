@@ -5,7 +5,6 @@ import stylesGlobal from '../../../../assets/scss/global.module.scss';
 import Image from 'next/image';
 import SectionTitle from '../../../SectionTitle/componentSectionTitle';
 
-
 const MayLike = () => {
   return (
     <div className={styles.borderWrapper}>

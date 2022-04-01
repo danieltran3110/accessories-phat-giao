@@ -180,7 +180,9 @@
 }
 
 .hover {
-  transition: 0.5s;
-  cursor: pointer!important;
-  background-color: #282828!important;
+  &:hover {
+    transition: 0.5s;
+    cursor: pointer !important;
+    background-color: #282828 !important;
+  }
 }
