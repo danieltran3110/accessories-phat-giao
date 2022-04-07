@@ -33,6 +33,7 @@ import course6 from '../assets/images/course6.jpg';
 import course7 from '../assets/images/course7.jpg';
 import course8 from '../assets/images/course8.jpg';
 import course3full from '../assets/images/course3full.jpg';
+import review from '../assets/images/user.png';
 
 export const socialIcon = [
   {
@@ -192,7 +193,7 @@ export const navigationData = {
         },
         {
           title: 'All Post',
-          url: '/',
+          url: '/posts',
           id: 'blog2',
         },
         {
@@ -449,6 +450,29 @@ export const dataCategories = [
   },
 ];
 
+export const dataCategoriesPost = [
+  {
+    item: 'Events',
+    href: '/',
+  },
+  {
+    item: 'inspiration',
+    href: '/',
+  },
+  {
+    item: 'meditation',
+    href: '/',
+  },
+  {
+    item: 'philosophy',
+    href: '/',
+  },
+  {
+    item: 'teaching',
+    href: '/',
+  },
+];
+
 
 export const dataTags = [
   {
@@ -469,6 +493,43 @@ export const dataTags = [
   },
   {
     item: 'soul',
+    href: '#',
+  },
+];
+
+
+export const dataTagsPosts = [
+  {
+    item: 'buddhism',
+    href: '#',
+  },
+  {
+    item: 'business',
+    href: '#',
+  },
+  {
+    item: 'craft',
+    href: '#',
+  },
+  {
+    item: 'decor',
+    href: '#',
+  },
+  {
+    item: 'hobby',
+    href: '#',
+  },
+  {
+    item: 'inspiration',
+    href: '#',
+  },
+  {
+    item: 'meditation',
+    href: '#',
+  },
+
+  {
+    item: 'work',
     href: '#',
   },
 ];
@@ -721,3 +782,43 @@ export const dataMayLike = [
     urlLearn: '/'
   }
 ]
+
+
+export const dataProductDetail = {
+  src: book1,
+  alt: 'book detail',
+  money: '15.00',
+  numStars: 5,
+  content: `Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. \n\n Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. \n\n Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?`,
+  categories: 'BOOK, BUDDHISM, PHILOSOPHY, TEACHING',
+  tags: 'BUDDHISM, HAPPINESS, MEDITATION, SOUL',
+  productID: 379,
+  description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.',
+  products: [
+    {
+      src: book2,
+      alt: 'book2'
+    },
+    {
+      src: book3,
+      alt: 'book2'
+    },
+    {
+      src: book6,
+      alt: 'book2'
+    },
+    {
+      src: book7,
+      alt: 'book2'
+    },
+  ]
+}
+
+export const dataReview = {
+  src: review,
+  alt: 'pic',
+  person: 'Imogene Martin',
+  time: 'April 29, 2019',
+  comment: 'Great!',
+
+}

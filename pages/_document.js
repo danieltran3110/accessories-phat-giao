@@ -1,6 +1,5 @@
 import Document, { Html,Head, Main, NextScript } from 'next/document';
 import { StyleSheetServer } from 'aphrodite';
-import Script from 'next/script';
 import React from 'react';
 
 export default class MyDocument extends Document {
@@ -34,7 +33,8 @@ export default class MyDocument extends Document {
             data-aphrodite
             dangerouslySetInnerHTML={{ __html: this.props.css.content }}
           />
-          <script dangerouslySetInnerHTML={{ __html: <script src='https://kit.fontawesome.com/618a331a9e.js' crossOrigin='anonymous'/> }} />
+          <script src='https://kit.fontawesome.com/618a331a9e.js' crossOrigin='anonymous'/>
+          <script src='https://sp.zalo.me/plugins/sdk.js' />
         </Head>
         <body>
         <Main />

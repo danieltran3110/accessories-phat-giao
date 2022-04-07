@@ -1,0 +1,56 @@
+@import 'assets/scss/mixin.module';
+@import 'assets/scss/fonts.module';
+
+.backgroundColor {
+  padding: 50px;
+  background-color: #f16f23;
+  margin-bottom: 30px;
+
+  .name {
+    font-family: 'reforma', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+  }
+
+  .boxSearch {
+    position: relative;
+
+
+    @include Responsive(S) {
+      display: block;
+      width: 370px;
+      margin: 30px auto 0;
+    }
+
+    label {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+
+      i {
+        font-size: 18px;
+      }
+    }
+
+    input {
+      width: 100%;
+      padding: 1.5em 3em 1.5em 1.5em !important;
+      background-color: #f78b4b;
+      color: white !important;
+      border: none;
+
+      &::placeholder {
+        color: white;
+        font-size: 18px;
+      }
+
+      &:focus-visible {
+        outline: 0 !important;
+      }
+    }
+  }
+}

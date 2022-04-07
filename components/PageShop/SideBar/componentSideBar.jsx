@@ -1,18 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './componentSideBar.module.scss';
 import Cart from './component/componentCart';
 import Filter from './component/componentFilter';
 import Categories from './component/componentCategories';
 import Tags from './component/componentTags';
+import { dataCategories, dataTags } from '../../../utils/data-config';
 
 const SideBar = () => {
-
   // useEffect(() => {
   //   const boxCategories = document.getElementById('boxCategories');
-  //   let sticky = boxCategories.offsetTop;
+  //   let sticky2 = boxCategories.offsetTop;
   //
-  //   function FuncSticky() {
-  //     if ((window.pageYOffset) >= sticky) {
+  //   function FuncSticky2() {
+  //     if ((window.pageYOffset) >= sticky2) {
   //       boxCategories.classList.add(styles.sticky);
   //     } else {
   //       boxCategories.classList.remove(styles.sticky);
@@ -20,16 +20,16 @@ const SideBar = () => {
   //   }
   //
   //   window.onscroll = function() {
-  //     FuncSticky();
+  //     FuncSticky2();
   //   };
-  // });
+  // },[]);
 
   return (
     <div className={styles.sideBarInner} id={'boxCategories'}>
       <Cart />
       <Filter />
-      <Categories />
-      <Tags />
+      <Categories data={dataCategories} />
+      <Tags data={dataTags} />
     </div>
   );
 };

@@ -1,0 +1,47 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
+.displayFlex {
+  display: flex;
+  column-gap: 50px;
+
+  .userReview {
+    width: 45%;
+
+    .countView {
+      font-family: 'reforma', sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .userComment {
+      font-family: 'reforma', sans-serif;
+      font-weight: bold;
+      color: #7e7e7e;
+      display: flex;
+
+      .pic {
+        margin: 0;
+      }
+
+      .content {
+        margin: 0 0 0 20px;
+
+        .time {
+          font-family: 'renner';
+          font-weight: normal;
+        }
+
+        .comment {
+          display: block;
+        }
+      }
+
+      .stars {
+        margin-left: 70px;
+        color: #ffac4b;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}

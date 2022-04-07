@@ -1,0 +1,15 @@
+.calendar {
+  .react-calendar {
+    width: 20px;
+
+  }
+
+  :global(.react-calendar__navigation) {
+    //display: flex;
+    //justify-content: center;
+    //margin: 0 auto;
+    background-color: #f16f23;
+  }
+}
+
+

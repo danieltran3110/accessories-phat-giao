@@ -7,6 +7,7 @@
   column-gap: 50px;
   margin-bottom: 30px;
   row-gap: 30px;
+  font-family: 'renner';
 
   @include Responsive(S) {
     grid-template-columns: calc(50% - 10px) calc(50% - 10px);
@@ -23,13 +24,33 @@
     }
   }
 
-  .input {
+  .stars {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .input,
+  .input2 {
     padding: 30px;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
     transition: all 0.5s;
     border: 2px solid #e7e4df;
+
+    &:active {
+      border-color: #f16f23;
+    }
+
+    &:focus-visible {
+      outline: 0;
+      border-color: #f16f23;
+    }
+
+    &.input2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
 
     @include Responsive(S) {
       padding: 20px;
@@ -45,7 +66,7 @@
       font-family: 'renner';
 
       @include Responsive(XXS) {
-          font-size: 11px;
+        font-size: 11px;
       }
     }
 
@@ -69,6 +90,10 @@
     justify-self: right;
     background-color: #282828;
     color: white;
+
+    &.btnSubmit {
+
+    }
 
     @include Responsive(M) {
       padding: 15px 30px;
@@ -181,9 +206,19 @@
 
 .hover {
   transition: 0.5s;
+
   &:hover {
     cursor: pointer;
     background-color: #f16f23;
+  }
+}
+
+.active {
+  background-color: #f16f23!important;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #333333!important;
   }
 }
 

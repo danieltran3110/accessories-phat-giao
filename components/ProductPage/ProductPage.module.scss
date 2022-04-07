@@ -1,0 +1,182 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
+.displayGrid {
+  display: grid;
+  grid-template-columns: calc(43% - 50px) 57%;
+  column-gap: 50px;
+
+  .wrapperImage {
+    border: 3px rgba(128, 128, 128, 0.3) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+    cursor: pointer;
+
+    .picProduct {
+      padding: 80px 100px;
+
+      img {
+        min-width: 200px;
+      }
+    }
+
+    .searchIcon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  .popUpImage {
+    position: fixed;
+    width: 100vw;
+    background-color: black;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 99999999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+
+    i {
+      position: absolute;
+      top: 20px;
+      right: 50px;
+      color: white;
+      font-size: 20px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.iconFullScreen {
+        right: 80px;
+      }
+    }
+
+    .picPopUp {
+      img {
+        min-height: 500px;
+      }
+    }
+  }
+
+  .infoProduct {
+    .moneyStars {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .money {
+        font-family: 'reforma', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+      }
+
+      .stars {
+        color: #ffac4b;
+        letter-spacing: 4px;
+        font-size: 20px;
+      }
+    }
+
+    .content {
+      font-family: 'renner';
+      color: #7e7e7e;
+      font-size: 18px;
+      white-space: pre-line;
+      line-height: 1.5;
+    }
+
+    .buy {
+      display: flex;
+      column-gap: 25px;
+
+      .input {
+        border: 2px rgba(128, 128, 128, 0.3) solid;
+        position: relative;
+        width: 145px;
+        color: #7e7e7e;
+        padding-left: 20px;
+
+        .inputNumber {
+          font-family: 'renner';
+        }
+
+        span {
+          position: absolute;
+          background-color: #e7e4df;
+          font-size: 14px;
+          width: 27px;
+          height: 29px;
+          text-align: center;
+          line-height: 2;
+          cursor: pointer;
+          transition: 0.5s;
+
+          &:hover {
+            color: #f16f23;
+          }
+        }
+
+        .inputInc {
+          top: 0;
+          right: 0;
+        }
+
+        .inputDes {
+          bottom: 0;
+          right: 0;
+        }
+      }
+
+      .btnBuy {
+        border: none;
+      }
+    }
+
+    .type {
+      .typeDetail {
+        font-family: 'renner';
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: #7e7e7e;
+
+        b {
+          color: #282828;
+        }
+      }
+    }
+  }
+}
+
+.descriptionReviews {
+  .btn {
+    display: flex;
+    column-gap: 10px;
+
+    .btnDescription {
+
+    }
+
+    .btnReviews {
+
+    }
+  }
+
+  .contentDescription {
+    font-family: 'renner';
+    color: #7e7e7e;
+    font-size: 18px;
+  }
+}
+
+.displayGrid4 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}

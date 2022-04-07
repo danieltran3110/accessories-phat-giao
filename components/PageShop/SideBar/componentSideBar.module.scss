@@ -21,7 +21,7 @@
   @media only screen and (min-width: 992px) {
     &.sticky {
       position: fixed;
-      top: -455px;
+      top: -555px;
       z-index: -1;
     }
   }
@@ -103,11 +103,8 @@
     }
 
     .itemTag {
-
-      @include Responsive(M) {
-        display: flex;
-        flex-wrap: wrap;
-      }
+      display: flex;
+      flex-wrap: wrap;
 
       > a {
         display: block;

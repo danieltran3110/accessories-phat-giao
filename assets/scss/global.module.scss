@@ -42,3 +42,44 @@
 .section2 {
   visibility: hidden;
 }
+
+.button {
+  background-color: #f16f23;
+  font-family: 'renner';
+  font-size: 14px;
+  transition: 0.5s;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+  padding: 22px 50px;
+
+  &:hover {
+    background-color: #282828;
+    cursor: pointer;
+  }
+}
+
+
+.button2 {
+  background-color: #f16f23;
+  font-family: 'renner';
+  font-size: 14px;
+  transition: 0.5s;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+  padding: 22px 50px;
+  cursor: pointer;
+
+  &.inActive {
+    background-color: #f2f1ef;
+    color: #a8a8a8;
+
+    &:hover {
+      background-color: #f16f23;
+      color: white;
+    }
+  }
+}
+
+
