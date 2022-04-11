@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../componentSideBar.module.scss';
 import Link from 'next/link';
+import styles from './ComponentCategories.module.scss';
 
 const Categories = ({data}) => {
 

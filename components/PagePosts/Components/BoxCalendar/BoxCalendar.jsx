@@ -4,7 +4,6 @@ import Calendar from 'react-calendar';
 import stylesGlobal from '../../../../assets/scss/global.module.scss';
 
 const BoxCalendar = () => {
-  // const [value, onChange] = useState(new Date());
 
   return (
     <div className={stylesGlobal.backgroundColor}>

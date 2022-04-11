@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import styles from './componentPaginatedItems.module.scss';
 import { dataProducts } from '../../../utils/data-config';
-import Products from '../Products/componentProduct';
+import Products from '../Products/componentProducts';
 import ProductsV2 from '../ProductsV2/componentProductV2';
 
 
@@ -30,7 +30,7 @@ function PaginatedItems({ itemsPerPage }) {
   };
 
   return (
-    <>
+    <div className={styles.wrapperPaginate}>
       <div className={styles.view}>
         <div className={styles.icon}>
           <i className={`fa fa-th-large ${view ? styles.blur : ''}`} aria-hidden='true'
@@ -70,7 +70,7 @@ function PaginatedItems({ itemsPerPage }) {
         renderOnZeroPageCount={null}
 
       />
-    </>
+    </div>
   );
 }
 

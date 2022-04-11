@@ -32,7 +32,7 @@ const NavBar = ({ hideLogo }) => {
     let sticky = navbar.offsetTop;
 
     function FuncSticky() {
-      if ((window.pageYOffset -1) >= sticky) {
+      if ((window.pageYOffset - 1) >= sticky) {
         navbar.classList.add(styles.sticky);
       } else {
         navbar.classList.remove(styles.sticky);
@@ -47,13 +47,13 @@ const NavBar = ({ hideLogo }) => {
   return (
     <div
       className={`${styles.navigation}`}
-      id = 'navbar'
+      id={'navbar'}
     >
       <div className='container'>
         <div className={styles.navigationInner}>
           {!hideLogo && <Link href='/'>
             <a className={styles.logo}>
-              <Image src={icon} alt='logo' />
+              <Image src={icon} alt={'logo'} />
             </a>
           </Link>}
           <div

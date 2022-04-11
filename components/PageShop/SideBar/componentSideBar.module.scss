@@ -33,7 +33,7 @@
 
   .wrapperBox {
     margin-bottom: 25px;
-    padding: 35px 70px 40px;
+    padding: 35px 50px 40px;
 
     @include Responsive(L) {
       padding: 35px 50px 40px;
@@ -166,6 +166,7 @@
         &:after {
           display: none;
         }
+
         &:hover {
           box-shadow: none;
         }
@@ -226,5 +227,6 @@
         cursor: pointer;
       }
     }
+
   }
 }

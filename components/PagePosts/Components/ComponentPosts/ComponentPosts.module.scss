@@ -1,0 +1,121 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
+.listPosts {
+  max-width: 800px;
+
+  .firstPost {
+    display: none;
+    background-color: #282828;
+    padding: 50px;
+    color: white !important;
+    margin-top: 0;
+    position: relative;
+
+    &:first-child {
+      display: block;
+    }
+
+    .title {
+      font-family: "reforma", sans-serif;
+      color: white;
+      font-size: 2.556rem;
+      font-weight: bold;
+      font-style: normal;
+      line-height: 1.45em;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: 0;
+      width: 100%;
+      position: relative;
+      transition: 0.5s;
+      cursor: pointer;
+
+      &:hover {
+        color: #f16f23;
+      }
+    }
+
+    .author {
+      font-family: 'reforma', sans-serif;
+      font-weight: bold;
+      transition: 0.5s;
+      cursor: pointer;
+      letter-spacing: 2px;
+      color: #7e7e7e;
+
+      span {
+        font-family: 'renner';
+      }
+
+      &:hover {
+        color: #f16f23;
+      }
+    }
+
+    .content {
+      color: white;
+      font-family: 'renner';
+      font-size: 18px;
+      white-space: pre-line;
+      line-height: 1.5;
+    }
+  }
+
+  .wrapperPosts {
+    border-bottom: 3px solid #e7e4df;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .title {
+      font-family: "reforma", sans-serif;
+      color: black;
+      font-size: 2.556rem;
+      font-weight: bold;
+      font-style: normal;
+      line-height: 1.45em;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: 0;
+      width: 100%;
+      position: relative;
+      transition: 0.5s;
+      cursor: pointer;
+
+      &:hover {
+        color: #f16f23;
+      }
+    }
+
+    .author {
+      font-family: 'reforma', sans-serif;
+      font-weight: bold;
+      transition: 0.5s;
+      cursor: pointer;
+      letter-spacing: 2px;
+
+      &:hover {
+        color: #f16f23;
+      }
+
+      span {
+        font-family: 'renner';
+        font-weight: normal;
+        color: #7e7e7e;
+      }
+    }
+
+    .content {
+      font-family: 'renner';
+      color: #7e7e7e;
+      font-size: 18px;
+      white-space: pre-line;
+      line-height: 1.5;
+    }
+  }
+}

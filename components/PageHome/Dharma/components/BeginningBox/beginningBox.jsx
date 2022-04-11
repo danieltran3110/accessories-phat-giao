@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './componentBeginningBox.module.scss';
-import { dataBeginningBox } from '../../../../utils/data-config';
-import stylesGlobal from '../../../../assets/scss/global.module.scss';
+import styles from './BeginningBox.module.scss';
+import { dataBeginningBox } from '../../../../../utils/data-config';
+import stylesGlobal from '../../../../../assets/scss/global.module.scss';
 
 const BeginningBox = () => {
   return (

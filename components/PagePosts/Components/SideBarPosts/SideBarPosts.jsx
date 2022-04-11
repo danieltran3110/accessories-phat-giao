@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import styles from '../../../PageShop/SideBar/componentSideBar.module.scss';
-import Categories from '../../../PageShop/SideBar/component/componentCategories';
-import { dataCategoriesPost, dataTagsPosts } from '../../../../utils/data-config';
+import React from 'react';
+import styles from './SideBarPosts.module.scss';
+import Categories from '../../../PageShop/SideBar/component/ComponentCategories/ComponentCategories';
+import { dataCategoriesPost, dataStateComment, dataTagsPosts } from '../../../../utils/data-config';
 import Search from '../Search/Search';
-import Tags from '../../../PageShop/SideBar/component/componentTags';
+import Tags from '../../../PageShop/SideBar/component/ComponentTags/ComponentTags';
 import BoxCalendar from '../BoxCalendar/BoxCalendar';
+import RecentNews from '../RecentNews/RecentNews';
+import BoxComments from '../BoxComments/BoxComments';
 
 const SideBarPosts = () => {
 
@@ -12,8 +14,10 @@ const SideBarPosts = () => {
     <div className={styles.sideBarInner}>
       <Search />
       <Categories data={dataCategoriesPost} />
+      <RecentNews />
       <BoxCalendar />
       <Tags data={dataTagsPosts}/>
+      <BoxComments _data={dataStateComment} />
     </div>
   );
 };

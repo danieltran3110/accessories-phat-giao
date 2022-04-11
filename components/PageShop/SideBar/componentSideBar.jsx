@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import styles from './componentSideBar.module.scss';
 import Cart from './component/componentCart';
 import Filter from './component/componentFilter';
-import Categories from './component/componentCategories';
-import Tags from './component/componentTags';
+import Categories from './component/ComponentCategories/ComponentCategories';
+import Tags from './component/ComponentTags/ComponentTags';
 import { dataCategories, dataTags } from '../../../utils/data-config';
 
 const SideBar = () => {

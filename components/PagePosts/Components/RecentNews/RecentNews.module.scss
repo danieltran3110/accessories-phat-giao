@@ -1,0 +1,14 @@
+@import 'assets/scss/mixin.module';
+@import 'assets/scss/fonts.module';
+
+.wrapperRecentNews {
+  padding: 50px;
+
+  .name {
+    font-family: 'reforma', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 2px;
+  }
+}

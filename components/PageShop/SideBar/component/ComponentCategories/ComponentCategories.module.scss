@@ -1,0 +1,79 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
+.backgroundColorOrange {
+  background-color: #ffac4b;
+  height: fit-content;
+}
+
+.wrapperBox {
+  margin-bottom: 25px;
+  padding: 35px 50px 40px;
+
+  @include Responsive(L) {
+    padding: 35px 50px 40px;
+  }
+
+  @include Responsive(M) {
+    height: fit-content;
+    padding: 20px;
+  }
+
+  @include Responsive(S) {
+    font-size: 14px;
+  }
+
+  .title {
+    font-family: 'reforma';
+
+    p {
+      font-size: inherit;
+    }
+
+    @include Responsive(S) {
+      font-size: 18px;
+    }
+  }
+
+  .titleWhite {
+    color: white;
+    font-family: 'reforma';
+
+    @include Responsive(S) {
+      font-size: 18px;
+    }
+  }
+
+  .listItem {
+    color: white;
+    text-transform: capitalize;
+    font-family: 'renner';
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-left: 15px;
+    margin-top: 40px;
+
+    @include Responsive(S) {
+      font-size: 14px;
+    }
+
+    li {
+      margin: 10px 0;
+      width: fit-content;
+
+      a {
+        transition: 0.5s;
+
+        &:hover {
+          color: black;
+        }
+      }
+
+      &::marker {
+        color: #282828;
+        font-size: 10px;
+        padding-right: 15px;
+      }
+    }
+  }
+}

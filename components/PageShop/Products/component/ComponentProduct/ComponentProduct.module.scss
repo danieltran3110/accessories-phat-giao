@@ -1,0 +1,110 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+@import 'assets/scss/animation.module';
+
+.item {
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+
+  max-width: 335px;
+  width: 100%;
+
+  &:hover {
+    .detailInfo {
+      .icon {
+        opacity: 1;
+        animation: bounce 0.5s;
+      }
+
+      .icon2 {
+        opacity: 1;
+        animation: bounce2 1s;
+      }
+    }
+  }
+
+  .wrapperImage {
+    padding: 50px 70px;
+    border: 3px rgba(128, 128, 128, 0.3) solid;
+    height: 385px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @include Responsive(S) {
+      padding: 30px 40px;
+    }
+
+    @include Responsive(XXS) {
+      padding: 15px 65px;
+    }
+
+    .picProduct {
+      max-width: 200px;
+      width: 100%;
+      margin: 0;
+
+    }
+  }
+
+  .infoProduct {
+    font-family: 'renner';
+    font-weight: 400;
+    margin-top: 40px;
+    letter-spacing: 1px;
+
+    .name {
+      font-size: 21px;
+      margin-bottom: 5px;
+
+      @include Responsive(S) {
+        font-size: 17px;
+        letter-spacing: 0;
+      }
+    }
+
+    > i {
+      margin: 0 2px;
+      font-size: 12px;
+      color: #ffac4b;
+    }
+
+    .money {
+      color: #7e7e7e;
+      opacity: 0.7;
+    }
+  }
+
+  .detailInfo {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    height: fit-content;
+    width: fit-content;
+    color: #282828;
+    transition: 0.5s;
+
+    .icon,
+    .icon2 {
+      opacity: 0;
+      width: 50px;
+      height: 50px;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      padding-top: 11px;
+      background-color: #ffac4b;
+      border-radius: 50%;
+      transition: 0.5s;
+      animation: bounceReverse 0.4s;
+    }
+
+    .icon2 {
+      animation: bounceReverse 1.5s;
+    }
+  }
+}

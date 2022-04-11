@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './ProductPage.module.scss';
 import stylesGlobal from '../../assets/scss/global.module.scss';
 import SectionTitle from '../SectionTitle/componentSectionTitle';
-import Product from '../PageShop/Products/component/componentProduct';
+import Product from '../PageShop/Products/component/ComponentProduct/ComponentProduct';
 import Stars from '../PageShop/Products/component/componentStars';
 import Image from 'next/image';
 import { dataProductDetail } from '../../utils/data-config';

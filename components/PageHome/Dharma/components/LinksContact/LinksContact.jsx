@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './componentLinksContact.module.scss';
-import { dataLinksContact } from '../../../../utils/data-config';
+import styles from './LinksContact.module.scss';
+import { dataLinksContact } from '../../../../../utils/data-config';
 
 const LinksContact = () => {
   return (

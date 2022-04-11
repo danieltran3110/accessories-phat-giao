@@ -18,10 +18,12 @@ const Mend = () => {
       <div className={stylesGlobal.container2}>
         <div className={styles.mend}>
           <figure className={styles.videoMend}>
-            <Image className={styles.img} src={video2} alt='Video Introduce' />
-            <figcaption className={styles.btnPlay} onClick={() => handleIsPlay()}>
-              PLAY
-            </figcaption>
+            {!isPlay && <>
+              <Image className={styles.img} src={video2} alt='Video Introduce' />
+              <figcaption className={styles.btnPlay} onClick={() => handleIsPlay()}>
+                PLAY
+              </figcaption>
+            </>}
             {isPlay && (
               <div className={styles.embedVideo}>
                 <iframe

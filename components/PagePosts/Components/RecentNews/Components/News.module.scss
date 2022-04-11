@@ -1,0 +1,32 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+@import 'assets/scss/animation.module';
+
+.news {
+  border-bottom: 2px solid #e7e4df;
+  margin-bottom: 40px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .wrapperImg {
+    height: 170px;
+  }
+
+  .title {
+    font-family: 'renner';
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .author {
+    font-weight: bold;
+    font-family: 'reforma', sans-serif;
+    margin-bottom: 40px;
+
+    span {
+      font-weight: normal;
+    }
+  }
+}

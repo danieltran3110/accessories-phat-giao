@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '../componentProducts.module.scss';
+import styles from './ComponentProduct.module.scss';
 import Image from 'next/image';
-import Stars from './componentStars';
+import Stars from '../componentStars';
 import Link from 'next/link';
 
 const Product = ({ _data, index, detail }) => {
@@ -12,7 +12,7 @@ const Product = ({ _data, index, detail }) => {
         <a>
           <div className={styles.wrapperImage}>
             <figure className={styles.picProduct}>
-              <Image src={_data.src} alt={_data.alt} />
+              <Image src={_data.src} alt={_data.alt} layout={'responsive'} />
             </figure>
           </div>
         </a>
@@ -24,12 +24,12 @@ const Product = ({ _data, index, detail }) => {
           {_data.numStars && <Stars numStars={_data.numStars} />}
           <p className={styles.money}>${_data.money}</p>
         </div>
-        <div className={styles.detailInfo}>
-          <p className={`${styles.icon}`}><i className={'fa fa-shopping-cart'} aria-hidden /></p>
-          <p className={`${styles.icon2}`}><i className={'fa fa-eye'} aria-hidden /></p>
-        </div>
       </>
       }
+      <div className={styles.detailInfo}>
+        <p className={`${styles.icon}`}><i className={'fa fa-shopping-cart'} aria-hidden /></p>
+        <p className={`${styles.icon2}`}><i className={'fa fa-eye'} aria-hidden /></p>
+      </div>
     </div>
   );
 };

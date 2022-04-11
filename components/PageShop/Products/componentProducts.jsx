@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './componentProducts.module.scss';
-import Product from './component/componentProduct';
+import Product from './component/ComponentProduct/ComponentProduct';
 
 const Products = ({ currentItems }) => {
 

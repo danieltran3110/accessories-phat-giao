@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../componentSideBar.module.scss';
-import stylesGlobal from '../../../../assets/scss/global.module.scss';
+import styles from './ComponentTags.module.scss';
+import stylesGlobal from '../../../../../assets/scss/global.module.scss';
 
 const Tags = ({ data }) => {
   return (

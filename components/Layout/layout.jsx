@@ -4,7 +4,6 @@ import Banner from '../Banner/componentBanner';
 import Footer from '../Footer/footer';
 import Zalo from '../Zalo/zalo';
 import ScrollButton from '../ScrollButton/componentScrollButton';
-import Script from 'next/script';
 
 
 export default function Layout(props) {
@@ -15,7 +14,7 @@ export default function Layout(props) {
       <Banner title={props.title} />
       {props.children}
       <ScrollButton />
-      <Zalo />
+      {/* <Zalo /> */}
       <Footer />
     </>
   );

@@ -1,0 +1,38 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
+.backgroundColor {
+  color: white;
+  background-color: #ffac4b;
+  padding: 60px;
+
+  .content {
+    font-size: 2.322rem;
+    line-height: normal;
+    font-style: italic;
+    margin-bottom: 25px;
+    font-family: 'reforma';
+    font-weight: 500;
+    margin: 0;
+
+    @include Responsive(L) {
+      font-size: 1.7rem;
+    }
+
+    @include Responsive(S) {
+      font-size: 1.4rem;
+      margin-top: 30px;
+    }
+
+    @include Responsive(XXS) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .author {
+    font-family: 'renner';
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+  }
+}

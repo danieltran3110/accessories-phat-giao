@@ -1,0 +1,6 @@
+.displayGrid {
+  display: grid;
+
+  grid-template-columns: 65% calc(35% - 40px);
+  column-gap: 40px;
+}

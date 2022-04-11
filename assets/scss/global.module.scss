@@ -59,7 +59,6 @@
   }
 }
 
-
 .button2 {
   background-color: #f16f23;
   font-family: 'renner';
@@ -70,6 +69,18 @@
   letter-spacing: 2px;
   padding: 22px 50px;
   cursor: pointer;
+  width: fit-content;
+
+  &.BGCBlack {
+    background-color: #282828;
+  }
+
+  &.normal {
+    &:hover {
+      background-color: #f16f23;
+    }
+  }
+
 
   &.inActive {
     background-color: #f2f1ef;

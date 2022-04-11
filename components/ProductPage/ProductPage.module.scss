@@ -178,5 +178,6 @@
 
 .displayGrid4 {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 30px;
 }

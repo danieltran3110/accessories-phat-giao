@@ -1,0 +1,49 @@
+@import 'assets/scss/mixin.module';
+@import 'assets/scss/fonts.module';
+
+.titleBox {
+  font-family: 'reforma', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+.comment {
+  margin-bottom: 30px;
+  padding: 50px;
+  margin-top: 30px;
+
+  .wrapperComment {
+    border-bottom: 2px solid #e7e4df;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .adminState {
+      font-family: 'reforma', sans-serif;
+      letter-spacing: 2px;
+      font-weight: bold;
+      font-size: 14px;
+
+      span {
+        color: #7e7e7e;
+      }
+    }
+
+    .name {
+      font-family: 'renner';
+      letter-spacing: 1px;
+      font-weight: 500;
+      font-size: 20px;
+      transition: 0.5s;
+      cursor: pointer;
+
+      &:hover {
+        color: #f16f23;
+      }
+    }
+  }
+}

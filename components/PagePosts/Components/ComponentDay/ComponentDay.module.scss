@@ -1,0 +1,33 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
+.time {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #282828;
+  color: white;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  font-family: 'renner';
+  line-height: 1.2;
+  font-weight: normal;
+
+  &.colorRevert {
+    background-color: white;
+    color: black;
+  }
+
+  .day {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+
+  .month {
+    margin-top: 0;
+    font-size: 18px;
+  }
+}

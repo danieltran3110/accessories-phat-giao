@@ -34,6 +34,9 @@ import course7 from '../assets/images/course7.jpg';
 import course8 from '../assets/images/course8.jpg';
 import course3full from '../assets/images/course3full.jpg';
 import review from '../assets/images/user.png';
+import news1 from '../assets/images/news1.jpg';
+import news2 from '../assets/images/news2.jpg';
+import post1 from '../assets/images/post1.jpg';
 
 export const socialIcon = [
   {
@@ -248,7 +251,7 @@ export const navigationData = {
     },
     {
       title: 'Shop',
-      url: '/shop'
+      url: '/shop',
     },
     {
       title: 'Visiting',
@@ -651,7 +654,7 @@ export const dataCourses = [
     beginning: 'SEPTEMBER 12, 2022',
     duration: '3 WEEKS',
     cost: 'FREE',
-    urlLearn: '/course'
+    urlLearn: '/course',
   },
   {
     src: course2,
@@ -660,7 +663,7 @@ export const dataCourses = [
     beginning: 'JUNE 2, 2022',
     duration: '3 WEEKS',
     cost: '$150',
-    urlLearn: '/course'
+    urlLearn: '/course',
   },
   {
     src: course3,
@@ -669,7 +672,7 @@ export const dataCourses = [
     beginning: 'APRIL 8, 2022',
     duration: '2 WEEKS',
     cost: 'FREE',
-    urlLearn: '/course'
+    urlLearn: '/course',
   },
   {
     src: course4,
@@ -678,7 +681,7 @@ export const dataCourses = [
     beginning: 'APRIL 15, 2022',
     duration: '1 MONTH',
     cost: '$130',
-    urlLearn: '/course'
+    urlLearn: '/course',
   },
   {
     src: course5,
@@ -687,7 +690,7 @@ export const dataCourses = [
     beginning: 'JULY 4, 2022',
     duration: '4 WEEKS',
     cost: '$100',
-    urlLearn: '/course'
+    urlLearn: '/course',
   },
   {
     src: course6,
@@ -696,7 +699,7 @@ export const dataCourses = [
     beginning: 'JULY 15, 2022',
     duration: '3 WEEKS',
     cost: 'FREE',
-    urlLearn: '/course'
+    urlLearn: '/course',
   },
   {
     src: course7,
@@ -705,7 +708,7 @@ export const dataCourses = [
     beginning: 'AUGUST 9, 2022',
     duration: '3 WEEKS',
     cost: '$150',
-    urlLearn: '/course'
+    urlLearn: '/course',
   },
   {
     src: course8,
@@ -714,9 +717,9 @@ export const dataCourses = [
     beginning: 'SEPTEMBER 3, 2022',
     duration: '3 MONTHS',
     cost: '$200',
-    urlLearn: '/course'
+    urlLearn: '/course',
   },
-]
+];
 
 export const dataAlsoLike = {
   src: course3full,
@@ -726,31 +729,31 @@ export const dataAlsoLike = {
   beginning: 'APRIL 8, 2022',
   duration: '2 WEEKS',
   cost: 'FREE',
-  urlLearn: '/'
-}
+  urlLearn: '/',
+};
 
 export const dataReaction = [
   {
     className: 'fa fa-heart',
     count: 0,
-    title: 'COOL'
+    title: 'COOL',
   },
   {
     className: 'fa fa-heartbeat',
     count: 0,
-    title: 'BAD'
+    title: 'BAD',
   },
   {
     className: 'fa fa-smile-o',
     count: 2,
-    title: 'HAPPY'
+    title: 'HAPPY',
   },
   {
     className: 'fa fa-frown-o',
     count: 0,
-    title: 'SAD'
+    title: 'SAD',
   },
-]
+];
 
 
 export const dataMayLike = [
@@ -761,7 +764,7 @@ export const dataMayLike = [
     beginning: 'SEPTEMBER 12, 2022',
     duration: '3 WEEKS',
     cost: 'FREE',
-    urlLearn: '/'
+    urlLearn: '/',
   },
   {
     src: course2,
@@ -770,7 +773,7 @@ export const dataMayLike = [
     beginning: 'JUNE 2, 2022',
     duration: '3 WEEKS',
     cost: '$150',
-    urlLearn: '/'
+    urlLearn: '/',
   },
   {
     src: course3,
@@ -779,9 +782,9 @@ export const dataMayLike = [
     beginning: 'APRIL 8, 2022',
     duration: '2 WEEKS',
     cost: 'FREE',
-    urlLearn: '/'
-  }
-]
+    urlLearn: '/',
+  },
+];
 
 
 export const dataProductDetail = {
@@ -797,22 +800,22 @@ export const dataProductDetail = {
   products: [
     {
       src: book2,
-      alt: 'book2'
+      alt: 'book2',
     },
     {
       src: book3,
-      alt: 'book2'
+      alt: 'book2',
     },
     {
       src: book6,
-      alt: 'book2'
+      alt: 'book2',
     },
     {
       src: book7,
-      alt: 'book2'
+      alt: 'book2',
     },
-  ]
-}
+  ],
+};
 
 export const dataReview = {
   src: review,
@@ -820,5 +823,104 @@ export const dataReview = {
   person: 'Imogene Martin',
   time: 'April 29, 2019',
   comment: 'Great!',
+};
 
-}
+export const dataNews = [
+  {
+    src: news1,
+    alt: 'news 1',
+    day: '04',
+    month: 'April',
+    title: 'The Storms of Spiritual Life',
+    author: 'IMOGENE MARTIN',
+  },
+  {
+    src: news2,
+    alt: 'news 2',
+    day: '05',
+    month: 'March',
+    title: 'Should I Believe in Rebirth?',
+    author: 'IMOGENE MARTIN',
+  },
+];
+
+export const dataFirstPost = {
+  titlePost: 'Buddhist Festivals & Ceremonies',
+  authorPost: 'IMOGENE MARTIN',
+  content: 'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
+  day: '04',
+  month: 'March',
+};
+
+export const dataAllPosts = [
+  {
+    titlePost: 'Should I Believe in Rebirth?',
+    authorPost: 'IMOGENE MARTIN',
+    content: 'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
+    urlBtn: '/',
+    day: '04',
+    month: 'March',
+    urlPic: '/',
+    src: post1,
+  },
+  {
+    titlePost: 'My Favourite Blockquote',
+    authorPost: 'IMOGENE MARTIN',
+    urlBtn: '/',
+    day: '04',
+    month: 'March',
+    slogan: 'World belongs to humanity, not this leader, that leader or that king or prince or religious leader. World belongs to humanity.',
+    authorSlogan: 'DALAI LAMA',
+  },
+  {
+    titlePost: 'Managing Relationships',
+    authorPost: 'IMOGENE MARTIN',
+    content: 'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
+    urlBtn: '/',
+    day: '04',
+    month: 'March',
+
+    urlPic: dharma2,
+    urlAudio: 'https://samadhi.axiomthemes.com/wp-content/uploads/2019/03/sample-melody.mp3',
+    title: 'Managing Relationships',
+    author: 'ALAN BRAHM',
+  },
+  {
+    titlePost: 'What is Ganesha Position in Buddhism?',
+    authorPost: 'IMOGENE MARTIN',
+    content: 'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
+    urlBtn: '/',
+    day: '04',
+    month: 'March',
+  },
+  {
+    titlePost: 'The Buddha’s Teaching Of Non-Clinging',
+    authorPost: 'IMOGENE MARTIN',
+    content: 'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
+    urlBtn: '/',
+    day: '04',
+    month: 'March',
+    urlVideo: 'https://player.vimeo.com/video/45830194?h=2c5541d8bc&color=ffffff&title=0&byline=0&portrait=0&badge=0'
+  },
+  {
+    titlePost: 'Should I Believe in Rebirth?',
+    authorPost: 'IMOGENE MARTIN',
+    content: 'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
+    urlBtn: '/',
+    day: '04',
+    month: 'March',
+    urlPic: '/',
+    src: post1,
+  },
+];
+
+export const dataStateComment = [
+  {
+    state: 'ON',
+    name: 'The Tibetan Book of the Dead',
+  },
+  {
+    state: 'OFF',
+    name: 'Should I Believe in Rebirth?',
+  },
+]
