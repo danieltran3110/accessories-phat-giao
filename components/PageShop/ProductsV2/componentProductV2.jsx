@@ -1,15 +1,13 @@
 import React from 'react';
-import styles from './componentProductV2.module.scss';
+import styles from './ComponentProductV2.module.scss';
 import Image from 'next/image';
 import Stars from '../Products/component/componentStars';
 
-
 const ProductsV2 = ({ currentItems }) => {
-
   return (
     <div className={styles.wrapperProduct}>
       <div className={styles.listProduct2}>
-        {currentItems.map((_data, index) =>
+        {currentItems.map((_data, index) => (
           <div className={styles.item} key={index}>
             <div className={styles.picture}>
               <div className={styles.wrapperImage}>
@@ -18,8 +16,12 @@ const ProductsV2 = ({ currentItems }) => {
                 </figure>
               </div>
               <div className={styles.detailInfo}>
-                <p className={`${styles.icon}`}><i className={'fa fa-shopping-cart'} aria-hidden /></p>
-                <p className={`${styles.icon} ${styles.icon2}`}><i className={'fa fa-eye'} aria-hidden /></p>
+                <p className={`${styles.icon}`}>
+                  <i className={'fa fa-shopping-cart'} aria-hidden />
+                </p>
+                <p className={`${styles.icon} ${styles.icon2}`}>
+                  <i className={'fa fa-eye'} aria-hidden />
+                </p>
               </div>
             </div>
             <div className={styles.infoProduct}>
@@ -28,8 +30,8 @@ const ProductsV2 = ({ currentItems }) => {
               <p className={styles.content}>{_data.content}</p>
               <p className={styles.money}>${_data.money}</p>
             </div>
-          </div>,
-        )}
+          </div>
+        ))}
       </div>
     </div>
   );
