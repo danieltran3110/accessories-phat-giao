@@ -157,50 +157,6 @@
       height: 7px;
       padding: 8px 0;
       width: 100%;
-
-      :global(.css-187mznn-MuiSlider-root) {
-        margin-left: 10px;
-        padding-right: 10px;
-        cursor: e-resize;
-
-      }
-
-      :global(.css-14pt78w-MuiSlider-rail) {
-        display: none;
-        cursor: e-resize;
-
-      }
-
-      :global(.css-eg0mwd-MuiSlider-thumb) {
-        border-radius: 0;
-        width: 15px;
-        height: 15px;
-        cursor: e-resize;
-
-        &:after {
-          display: none;
-        }
-
-        &:hover {
-          box-shadow: none;
-        }
-      }
-
-      :global(.css-6cwnna-MuiSlider-mark ) {
-        display: none;
-      }
-
-      :global(.css-1tfve6q-MuiSlider-mark) {
-        display: none;
-      }
-
-      :global(.Mui-active) {
-        box-shadow: none;
-      }
-
-      :global(.Mui-focusVisible) {
-        box-shadow: none;
-      }
     }
 
     .price {
