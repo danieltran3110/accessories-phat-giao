@@ -69,13 +69,14 @@
   .infoProduct {
     .moneyStars {
       display: flex;
-      align-items: center;
+      align-items: start;
       justify-content: space-between;
 
       .money {
         font-family: 'reforma', sans-serif;
         font-weight: bold;
         font-size: 28px;
+        margin-top: 0;
       }
 
       .stars {

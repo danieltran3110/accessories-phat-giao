@@ -18,13 +18,27 @@
     grid-template-columns: 100%;
   }
 
-  @media only screen and (min-width: 992px) {
-    &.sticky {
-      position: fixed;
-      top: -555px;
-      z-index: -1;
-    }
+  //@media only screen and (min-width: 992px) {
+  &.sticky {
+    position: fixed;
+    float: none;
+    display: block!important;
+    top: 10px;
+    z-index: -1;
+    inset: auto auto 30px 291.667px;
+    width: 400px;
+    //bottom: 0;
   }
+
+  //.sticky {
+  //  position: -webkit-sticky;
+  //  position: sticky;
+  //  //top: -555px;
+  //  z-index: -1;
+  //  bottom: 0;
+  //}
+
+  //}
 
   .backgroundColorOrange {
     background-color: #ffac4b;

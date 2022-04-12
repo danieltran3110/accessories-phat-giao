@@ -1,6 +1,8 @@
 @import 'assets/scss/fonts.module';
 @import 'assets/scss/mixin.module';
 
+
+
 .formInfo {
   display: grid;
   grid-template-columns: calc(50% - 25px) calc(50% - 25px);
@@ -24,6 +26,10 @@
     }
   }
 
+  .colorRed {
+    color: red;
+  }
+
   .stars {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -37,6 +43,7 @@
     letter-spacing: 2px;
     transition: all 0.5s;
     border: 2px solid #e7e4df;
+    font-family: 'renner';
 
     &:active {
       border-color: #f16f23;

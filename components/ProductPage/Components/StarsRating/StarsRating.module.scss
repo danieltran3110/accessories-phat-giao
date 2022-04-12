@@ -1,36 +1,27 @@
 //@import "assets/images/star.png";
+.title {
+  font-family: 'renner';
+  font-weight: bold;
+}
 
 .starRating {
 
-    //color: #f16f23!important;
+  button {
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.3s;
+  }
 
-    button {
-      background-color: white;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      font-size: 25px;
-      transition: 0.3s;
-    }
+  .on {
+    color: #f16f23;
+  }
 
-    .on {
-      color: #f16f23;
-    }
-
-    .off {
-      //color: #f16f23;
-      color: #7e7e7e;
-    }
-
-
-
-
-
-
-
-
-
-
+  .off {
+    color: #7e7e7e;
+  }
 
 
   //.rating {

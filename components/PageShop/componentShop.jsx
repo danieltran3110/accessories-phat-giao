@@ -9,26 +9,6 @@ import Script from 'next/script';
 
 const Shop = () => {
 
-  // useEffect(() => {
-  //   //   var sidebar = new StickySidebar('#sidebar', {
-  //   //     containerSelector: '#main-content',
-  //   //     innerWrapperSelector: '.sidebar__inner',
-  //   //     topSpacing: 20,
-  //   //     bottomSpacing: 20,
-  //   //   });
-  //   // // },[]);
-  //   // var sidebar = new StickySidebar('.sidebar', {topSpacing: 50});
-  //   //
-  //   // $('#sidebar').stickySidebar({
-  //   //   topSpacing: 60,
-  //   //   bottomSpacing: 60
-  //   let sidebar = new StickySidebar('#sidebar', {
-  //     bottomSpacing: 20,
-  //     topSpacing: 20,
-  //     // containerSelector: '.container',
-  //     // innerWrapperSelector: '.sidebar__inner',
-  //   });
-  // });
   const [showStickyBar, setShowStickyBar] = useState(false);
 
   // useEffect(() => {

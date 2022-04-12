@@ -33,30 +33,22 @@
 
   .formSubscribe {
     margin-bottom: 25px;
+    width: 100%;
 
     input {
       padding: 30px;
-      width: 68%;
+      width: 100%;
       color: #ffffff;
-      border-color: #ffbc6f;
       background-color: #ffbc6f;
       font-size: 14px;
       font-weight: 400;
       letter-spacing: 2px;
       transition: 0.5s;
-      border: none;
+      border: none #ffbc6f;
+      margin: 5px 0;
 
       @include Responsive(L) {
         padding: 20px;
-      }
-
-      @include Responsive(S) {
-        width: 55%;
-      }
-
-      @include Responsive(XS) {
-        width: 100%;
-        display: block;
       }
 
       &::placeholder {
@@ -73,15 +65,15 @@
 
     .btnSubscribe {
       font-family: 'reforma', sans-serif;
-      width: 27%;
+      width: fit-content;
+      display: block;
       padding: 30px;
       text-align: center;
       letter-spacing: 2px;
       font-weight: bold;
-      margin-left: 20px;
       border: none;
       transition: 0.5s;
-      margin-bottom: 20px;
+      margin: auto;
 
       @include Responsive(L) {
         padding: 20px;
@@ -109,6 +101,7 @@
     padding-left: 35px;
     padding-top: 5px;
     font-family: 'renner';
+    display: block;
 
     @include Responsive(L) {
       font-size: 12px;
