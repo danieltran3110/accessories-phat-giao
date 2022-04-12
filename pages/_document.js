@@ -1,4 +1,4 @@
-import Document, { Html,Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { StyleSheetServer } from 'aphrodite';
 import React from 'react';
 
@@ -21,7 +21,6 @@ export default class MyDocument extends Document {
   }
 
   render() {
-
     /* Make sure to use data-aphrodite attribute in the style tag here
     so that aphrodite knows which style tag it's in control of when
     the client goes to render styles. If you don't you'll get a second
@@ -33,12 +32,10 @@ export default class MyDocument extends Document {
             data-aphrodite
             dangerouslySetInnerHTML={{ __html: this.props.css.content }}
           />
-          <script src='https://kit.fontawesome.com/618a331a9e.js' crossOrigin='anonymous'/>
-          <script src='https://sp.zalo.me/plugins/sdk.js' />
         </Head>
         <body>
-        <Main />
-        <NextScript />
+          <Main />
+          <NextScript />
         </body>
       </Html>
     );

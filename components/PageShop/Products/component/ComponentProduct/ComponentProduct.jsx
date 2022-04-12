@@ -4,10 +4,9 @@ import Image from 'next/image';
 import Stars from '../componentStars';
 import Link from 'next/link';
 
-const Product = ({ _data, index, detail }) => {
-
+const Product = ({ _data, detail }) => {
   return (
-    <div className={styles.item} key={index}>
+    <div className={styles.item}>
       <Link href={'/product'}>
         <a>
           <div className={styles.wrapperImage}>
@@ -17,18 +16,22 @@ const Product = ({ _data, index, detail }) => {
           </div>
         </a>
       </Link>
-      {detail &&
-      <>
-        <div className={styles.infoProduct}>
-          <p className={styles.name}>{_data.name}</p>
-          {_data.numStars && <Stars numStars={_data.numStars} />}
-          <p className={styles.money}>${_data.money}</p>
-        </div>
-      </>
-      }
+      {detail && (
+        <>
+          <div className={styles.infoProduct}>
+            <p className={styles.name}>{_data.name}</p>
+            {_data.numStars && <Stars numStars={_data.numStars} />}
+            <p className={styles.money}>${_data.money}</p>
+          </div>
+        </>
+      )}
       <div className={styles.detailInfo}>
-        <p className={`${styles.icon}`}><i className={'fa fa-shopping-cart'} aria-hidden /></p>
-        <p className={`${styles.icon2}`}><i className={'fa fa-eye'} aria-hidden /></p>
+        <p className={`${styles.icon}`}>
+          <i className={'fa fa-shopping-cart'} aria-hidden />
+        </p>
+        <p className={`${styles.icon2}`}>
+          <i className={'fa fa-eye'} aria-hidden />
+        </p>
       </div>
     </div>
   );

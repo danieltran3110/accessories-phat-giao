@@ -7,7 +7,6 @@ import { zoomIn } from 'react-animations';
 import Audio from '../../../../Audio/Audio';
 
 const AudioBox = () => {
-
   const styles2 = StyleSheet.create({
     zoomIn: {
       visibility: 'visible',
@@ -21,9 +20,9 @@ const AudioBox = () => {
   return (
     <section className={stylesGlobal.section + ' ' + css(styles2.zoomIn)}>
       <div className={styles.dharma}>
-        {dataDharma.map((_data, index) =>
-          <Audio _data={_data} index={index} />
-        )}
+        {dataDharma.map((_data, index) => (
+          <Audio _data={_data} key={index} />
+        ))}
       </div>
     </section>
   );

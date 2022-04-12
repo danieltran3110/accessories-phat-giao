@@ -43,15 +43,27 @@ const ProductDetail = () => {
           <figure className={styles.picProduct}>
             <Image src={_data.src} alt={_data.alt} />
           </figure>
-          <i className={`fas fa-search  ${styles.searchIcon}`} onClick={() => setPopUp(true)} />
+          <i
+            className={`fas fa-search  ${styles.searchIcon}`}
+            onClick={() => setPopUp(true)}
+          />
         </div>
-        {popUp && <div className={styles.popUpImage} onClick={() => setPopUp(false)}>
-          <figure className={styles.picPopUp}>
-            <Image src={_data.src} alt={_data.alt} />
-          </figure>
-          <i className='fa fa-times' aria-hidden='true' onClick={() => setPopUp(false)} />
-          <i className={`fas fa-expand ${styles.iconFullScreen}`} onClick={()=> toggleFullScreen()} />
-        </div>}
+        {popUp && (
+          <div className={styles.popUpImage} onClick={() => setPopUp(false)}>
+            <figure className={styles.picPopUp}>
+              <Image src={_data.src} alt={_data.alt} />
+            </figure>
+            <i
+              className='fa fa-times'
+              aria-hidden='true'
+              onClick={() => setPopUp(false)}
+            />
+            <i
+              className={`fas fa-expand ${styles.iconFullScreen}`}
+              onClick={() => toggleFullScreen()}
+            />
+          </div>
+        )}
         <div className={styles.infoProduct}>
           <div className={styles.moneyStars}>
             <p className={styles.money}>$ {_data.money}</p>
@@ -59,43 +71,63 @@ const ProductDetail = () => {
               {_data.numStars && <Stars numStars={_data.numStars} />}
             </div>
           </div>
-          <p className={styles.content}>
-            {_data.content}
-          </p>
+          <p className={styles.content}>{_data.content}</p>
           <div className={styles.buy}>
             <div className={styles.input}>
               <p className={styles.inputNumber}>{numInput}</p>
-              <span className={styles.inputInc} onClick={() => handleIncNum()}><i className='fa fa-angle-up'
-                                                                                  aria-hidden='true' /></span>
-              <span className={styles.inputDes} onClick={() => handleDesNum()}><i className='fa fa-angle-down'
-                                                                                  aria-hidden='true' /></span>
+              <span className={styles.inputInc} onClick={() => handleIncNum()}>
+                <i className='fa fa-angle-up' aria-hidden='true' />
+              </span>
+              <span className={styles.inputDes} onClick={() => handleDesNum()}>
+                <i className='fa fa-angle-down' aria-hidden='true' />
+              </span>
             </div>
-            <button className={`${stylesGlobal.button} ${styles.btnBuy}`}>BUY NOW</button>
+            <button className={`${stylesGlobal.button} ${styles.btnBuy}`}>
+              BUY NOW
+            </button>
           </div>
           <div className={styles.type}>
-            <p className={styles.typeDetail}><b>CATEGORIES:</b> {_data.categories}</p>
-            <p className={styles.typeDetail}><b>TAGS:</b> {_data.tags}</p>
-            <p className={styles.typeDetail}><b>PRODUCT ID:</b> {_data.productID}</p>
+            <p className={styles.typeDetail}>
+              <b>CATEGORIES:</b> {_data.categories}
+            </p>
+            <p className={styles.typeDetail}>
+              <b>TAGS:</b> {_data.tags}
+            </p>
+            <p className={styles.typeDetail}>
+              <b>PRODUCT ID:</b> {_data.productID}
+            </p>
           </div>
         </div>
       </div>
       <div className={styles.descriptionReviews}>
         <div className={styles.btn}>
-          <div className={`${stylesGlobal.button2} ${styles.btnDescription} ${view && stylesGlobal.inActive}`}
-               onClick={() => setView(!view)}>DESCRIPTION
+          <div
+            className={`${stylesGlobal.button2} ${styles.btnDescription} ${
+              view && stylesGlobal.inActive
+            }`}
+            onClick={() => setView(!view)}
+          >
+            DESCRIPTION
           </div>
-          <div className={`${stylesGlobal.button2} ${styles.btnReviews} ${!view && stylesGlobal.inActive}`}
-               onClick={() => setView(!view)}>REVIEWS (1)
+          <div
+            className={`${stylesGlobal.button2} ${styles.btnReviews} ${
+              !view && stylesGlobal.inActive
+            }`}
+            onClick={() => setView(!view)}
+          >
+            REVIEWS (1)
           </div>
         </div>
-        {!view && <p className={styles.contentDescription}>{_data.description}</p>}
+        {!view && (
+          <p className={styles.contentDescription}>{_data.description}</p>
+        )}
         {view && <ReviewsUser />}
       </div>
       <SectionTitle title={'Related products'} />
       <div className={styles.displayGrid4}>
-        {_data.products.map((_data, index) =>
-          <Product _data={_data} index={index} detail={false} />,
-        )}
+        {_data.products.map((_data, index) => (
+          <Product _data={_data} key={index} detail={false} />
+        ))}
       </div>
     </div>
   );

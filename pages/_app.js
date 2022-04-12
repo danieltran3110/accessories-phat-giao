@@ -1,11 +1,11 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
 import { css, StyleSheet } from 'aphrodite';
 import { fadeIn, fadeInUp } from 'react-animations';
 import { useEffect } from 'react';
 import stylesGlobal from '../assets/scss/global.module.scss';
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
-
   const styles = StyleSheet.create({
     fadeInUp: {
       visibility: 'visible',
@@ -38,14 +38,27 @@ function MyApp({ Component, pageProps }) {
       },
       {
         threshold: 0.15,
-      },
+      }
     );
     document.querySelectorAll('section').forEach(section => {
       observer.observe(section);
     });
   });
 
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Script
+        src='https://kit.fontawesome.com/618a331a9e.js'
+        crossOrigin='anonymous'
+      ></Script>
+      <Script src='https://sp.zalo.me/plugins/sdk.js'></Script>
+      <Script
+        src='https://kit.fontawesome.com/618a331a9e.js'
+        crossOrigin='anonymous'
+      />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
