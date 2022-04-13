@@ -12,11 +12,11 @@
   padding: 30px 30px 30px 60px;
   column-gap: 90px;
 
-  @include Responsive(M){
+  @include Responsive(M) {
     padding: 20px 20px 20px 40px;
   }
 
-  @include Responsive(S){
+  @include Responsive(S) {
     flex-direction: column;
   }
 
@@ -28,12 +28,12 @@
     margin: 10px 0;
     color: white;
 
-    @include Responsive(M){
+    @include Responsive(M) {
       font-size: 12px;
       letter-spacing: 1px;
     }
 
-    @include Responsive(S){
+    @include Responsive(S) {
       margin: 5px 0;
     }
   }
@@ -47,7 +47,7 @@
   margin-top: 50px;
   margin-bottom: 60px;
 
-  @include Responsive(M){
+  @include Responsive(M) {
     font-size: 14px;
 
   }

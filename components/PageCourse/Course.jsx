@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Course.module.scss';
 import stylesGlobal from '../../assets/scss/global.module.scss';
 import Image from 'next/image';
@@ -13,7 +13,7 @@ const Course = () => {
   return (
     <div className={`${stylesGlobal.container1}`}>
       <figure className={styles.pic}>
-        <Image src={dataAlsoLike.src} alt={'may be you like'}/>
+        <Image src={dataAlsoLike.src} alt={'may be you like'} />
       </figure>
       <div className={styles.meta}>
         <p className={styles.time}><b>BEGINNING</b> {dataAlsoLike.beginning}</p>

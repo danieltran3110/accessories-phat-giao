@@ -5,7 +5,6 @@ import SideBarPosts from './Components/SideBarPosts/SideBarPosts';
 import PaginatedItems from './Components/PaginatedItems/PaginatedItemsProduct';
 
 const PagePosts = () => {
-
   return (
     <div className={`${stylesGlobal.container1}`}>
       <div className={styles.displayGrid}>

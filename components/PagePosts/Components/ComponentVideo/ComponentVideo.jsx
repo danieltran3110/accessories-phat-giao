@@ -1,7 +1,7 @@
 import styles from './ComponentVideo.module.scss';
 import Image from 'next/image';
 import video2 from '../../../../assets/images/video2.png';
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import ComponentDay from '../ComponentDay/ComponentDay';
 
 const ComponentVideo = ({ _data }) => {

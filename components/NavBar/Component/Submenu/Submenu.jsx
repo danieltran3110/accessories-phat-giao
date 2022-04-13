@@ -2,7 +2,7 @@ import styles from './Submenu.module.scss';
 import { fadeIn } from 'react-animations';
 import Link from 'next/link';
 
-import { StyleSheet, css } from 'aphrodite';
+import { css, StyleSheet } from 'aphrodite';
 
 const classes = StyleSheet.create({
   fadeIn: {
@@ -34,7 +34,7 @@ export default function Submenu(props) {
                 name={data.id}
               />
               <label className={styles.icon} htmlFor={data.id}>
-                <i className='fa fa-angle-right'/>
+                <i className='fa fa-angle-right' />
               </label>
               <div className={styles.subItem}>{data.title}</div>
               <Submenu submenu={data.submenu} classImplement={styles.submenu} />

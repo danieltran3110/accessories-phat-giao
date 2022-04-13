@@ -4,7 +4,6 @@ import stylesGlobal from '../../../../assets/scss/global.module.scss';
 import News from './Components/News';
 
 const RecentNews = () => {
-
   return (
     <div className={stylesGlobal.backgroundColor}>
       <div className={styles.wrapperRecentNews}>

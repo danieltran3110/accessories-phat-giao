@@ -5,7 +5,6 @@ import Footer from '../Footer/Footer';
 import ScrollButton from '../ScrollUpButton/ScrollUpButton';
 
 export default function Layout(props) {
-
   return (
     <>
       <NavBar />

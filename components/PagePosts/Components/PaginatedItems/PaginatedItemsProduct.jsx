@@ -2,14 +2,10 @@ import React, { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import styles from '../../../PageShop/PaginatedItems/PaginatedItems.module.scss';
 import styles2 from './PaginatedItemsProduct.module.scss';
-
-import { dataAllPosts, dataFirstPost } from '../../../../utils/data-config';
+import { dataAllPosts } from '../../../../utils/data-config';
 import Posts from '../ComponentPosts/ComponentPosts';
-import ComponentDay from '../ComponentDay/ComponentDay';
-
 
 function PaginatedItems({ itemsPerPage }) {
-
   // We start with an empty list of items.
   const [currentItems, setCurrentItems] = useState(dataAllPosts);
   const [pageCount, setPageCount] = useState(0);

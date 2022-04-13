@@ -53,6 +53,13 @@
           max-height: 40px;
         }
       }
+
+      &.hideLogo {
+          display: none;
+        @include Responsive(S) {
+          display: block;
+        }
+      }
     }
 
     .navigationRight {
@@ -123,6 +130,7 @@
           height: fit-content;
           max-height: 500px;
         }
+
         input[type='checkbox']:checked ~ .icon {
           @include Responsive(M) {
             transform: rotate(-90deg);

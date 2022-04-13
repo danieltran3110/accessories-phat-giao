@@ -24,13 +24,13 @@ const ProductDetail = () => {
     }
   }
 
-  const handleIncNum = () => {
+  const handleIncreaseNumber = () => {
     if (numInput >= 0) {
       setNumInput(numInput + 1);
     }
   };
 
-  const handleDesNum = () => {
+  const handleDecreaseNumber = () => {
     if (numInput > 0) {
       setNumInput(numInput - 1);
     }
@@ -75,10 +75,10 @@ const ProductDetail = () => {
           <div className={styles.buy}>
             <div className={styles.input}>
               <p className={styles.inputNumber}>{numInput}</p>
-              <span className={styles.inputInc} onClick={() => handleIncNum()}>
+              <span className={styles.inputInc} onClick={() => handleIncreaseNumber()}>
                 <i className='fa fa-angle-up' aria-hidden='true' />
               </span>
-              <span className={styles.inputDes} onClick={() => handleDesNum()}>
+              <span className={styles.inputDes} onClick={() => handleDecreaseNumber()}>
                 <i className='fa fa-angle-down' aria-hidden='true' />
               </span>
             </div>

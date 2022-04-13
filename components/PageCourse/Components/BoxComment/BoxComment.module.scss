@@ -1,8 +1,6 @@
 @import 'assets/scss/fonts.module';
 @import 'assets/scss/mixin.module';
 
-
-
 .formInfo {
   display: grid;
   grid-template-columns: calc(50% - 25px) calc(50% - 25px);
@@ -221,11 +219,11 @@
 }
 
 .active {
-  background-color: #f16f23!important;
+  background-color: #f16f23 !important;
   cursor: pointer;
 
   &:hover {
-    background-color: #333333!important;
+    background-color: #333333 !important;
   }
 }
 

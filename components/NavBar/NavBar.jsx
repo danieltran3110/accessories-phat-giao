@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import icon from '../../assets/images/logo1_retina.png';
 import icon2 from '../../assets/images/iconNarrow.jpg';
-import NavBarRightSide from '../PageHome/NavBar/components/navBarRightSide';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './NavBar.module.scss';
 import { navigationData } from '../../utils/data-config';
 import Submenu from './Component/Submenu/Submenu';
 import SocialIcon from './Component/SocialIcon/SocialIcon';
-import { StyleSheet, css } from 'aphrodite';
+import { css, StyleSheet } from 'aphrodite';
 import { fadeIn } from 'react-animations';
 import BoxSearch from './Component/BoxSearch/BoxSearch';
+import CalenderDonate from './Component/CalenderDonate/CalenderDonate';
 
 const classes = StyleSheet.create({
   fadeIn: {
@@ -31,16 +31,16 @@ const NavBar = ({ hideLogo }) => {
     const navbar = document.getElementById('navbar');
     let sticky = navbar.offsetTop;
 
-    function FuncSticky() {
+    const functionSticky = () => {
       if ((window.pageYOffset - 1) >= sticky) {
         navbar.classList.add(styles.sticky);
       } else {
         navbar.classList.remove(styles.sticky);
       }
-    }
+    };
 
     window.onscroll = function() {
-      FuncSticky();
+      functionSticky();
     };
   });
 
@@ -51,11 +51,11 @@ const NavBar = ({ hideLogo }) => {
     >
       <div className='container'>
         <div className={styles.navigationInner}>
-          {!hideLogo && <Link href='/'>
-            <a className={styles.logo}>
+          <Link href='/'>
+            <a className={`${styles.logo} ${hideLogo && styles.hideLogo}`}>
               <Image src={icon} alt={'logo'} />
             </a>
-          </Link>}
+          </Link>
           <div
             className={`${styles.navigationRight} ${css(classes.fadeIn)} ${
               navigationOpen && styles.open
@@ -123,7 +123,7 @@ const NavBar = ({ hideLogo }) => {
             </button>
           </div>
           {openSearch && <BoxSearch cancelBox={cancelBox} />}
-          <NavBarRightSide />
+          <CalenderDonate />
         </div>
       </div>
     </div>

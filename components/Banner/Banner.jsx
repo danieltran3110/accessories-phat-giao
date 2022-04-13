@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Banner.scss';
+import styles from './Banner.module.scss';
 import Image from 'next/image';
 import { dataBanner } from '../../utils/data-config';
 import { fadeInUp } from 'react-animations';
@@ -18,7 +18,7 @@ const Banner = ({ title }) => {
   return (
     <div className={styles.banner}>
       <figure className={styles.picBanner}>
-        <Image className={styles.img} src={dataBanner.src} alt={dataBanner.alt} />
+        <Image src={dataBanner.src} alt={dataBanner.alt} />
         <figcaption className={`${styles.titleBanner} ${css(styles2.fadeInUp)}`}>
           {title}
           <p className={styles.subTitleBanner}>

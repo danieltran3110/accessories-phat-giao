@@ -1,6 +1,5 @@
 @import 'assets/scss/mixin.module';
 
-
 .sliderWrapper {
   :global(.swiper-pagination-bullet) {
     background: none;
@@ -46,13 +45,10 @@
 }
 
 .heightSwiper {
-  //height: 100%;
 
   .mySwiperSlide {
     height: 800px;
     width: 100%;
-    //width: 50%;
-    //left: 0;
     position: relative;
 
     @include Responsive(L) {

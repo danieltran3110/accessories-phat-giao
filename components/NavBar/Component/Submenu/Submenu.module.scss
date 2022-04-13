@@ -49,6 +49,7 @@
       height: fit-content;
       max-height: 500px;
     }
+
     input[type='checkbox']:checked ~ .icon {
       @include Responsive(S) {
         transform: rotate(-90deg);
@@ -105,10 +106,10 @@
       font-family: 'renner';
 
       &:hover {
-        color: #f16f23!important;
+        color: #f16f23 !important;
 
         .icon {
-          color: #f16f23!important;
+          color: #f16f23 !important;
         }
 
         @include Responsive(S) {

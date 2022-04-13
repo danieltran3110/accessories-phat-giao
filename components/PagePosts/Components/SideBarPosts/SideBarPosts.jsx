@@ -9,14 +9,13 @@ import RecentNews from '../RecentNews/RecentNews';
 import BoxComments from '../BoxComments/BoxComments';
 
 const SideBarPosts = () => {
-
   return (
     <div className={styles.sideBarInner}>
       <Search />
       <Categories data={dataCategoriesPost} />
       <RecentNews />
       <BoxCalendar />
-      <Tags data={dataTagsPosts}/>
+      <Tags data={dataTagsPosts} />
       <BoxComments _data={dataStateComment} />
     </div>
   );

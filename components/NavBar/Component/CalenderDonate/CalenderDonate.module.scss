@@ -1,0 +1,42 @@
+@import 'assets/scss/mixin.module';
+@import 'assets/scss/fonts.module';
+
+.rightSide {
+  display: flex;
+  align-items: center;
+
+  @include Responsive(L) {
+    display: none;
+  }
+
+  .title {
+    color: black;
+    font-weight: bolder;
+    margin-right: 15px;
+    letter-spacing: 2px;
+
+    &.displayXLNone {
+      @include Responsive(XL) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      color: #f16f23;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    > p {
+      font-size: 13px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+
+      > i {
+        padding-right: 10px;
+        font-size: 22px;
+      }
+    }
+  }
+}

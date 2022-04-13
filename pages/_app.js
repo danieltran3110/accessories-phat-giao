@@ -51,7 +51,6 @@ function MyApp({ Component, pageProps }) {
         src='https://kit.fontawesome.com/618a331a9e.js'
         crossOrigin='anonymous'
       />
-
       <Component {...pageProps} />
     </>
   );
