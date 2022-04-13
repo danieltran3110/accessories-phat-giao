@@ -1,6 +1,6 @@
-import Shop from '../../components/PageShop/componentShop.jsx';
+import PageShop from '../../components/PageShop/PageShop.jsx';
 import React from 'react';
-import Layout from '../../components/Layout/layout';
+import Layout from '../../components/Layout/Layout';
 import Head from 'next/head';
 
 export default function ShopPage() {
@@ -10,8 +10,8 @@ export default function ShopPage() {
       <Head>
         <title>Shop</title>
       </Head>
-      <Layout title={'Shop'}>
-        <Shop/>
+      <Layout title={'PageShop'}>
+        <PageShop/>
       </Layout>
     </div>
   );

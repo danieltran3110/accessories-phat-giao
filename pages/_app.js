@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }) {
       },
       {
         threshold: 0.15,
-      }
+      },
     );
     document.querySelectorAll('section').forEach(section => {
       observer.observe(section);
@@ -50,12 +50,8 @@ function MyApp({ Component, pageProps }) {
       <Script
         src='https://kit.fontawesome.com/618a331a9e.js'
         crossOrigin='anonymous'
-      ></Script>
-      <Script src='https://sp.zalo.me/plugins/sdk.js'></Script>
-      <Script
-        src='https://kit.fontawesome.com/618a331a9e.js'
-        crossOrigin='anonymous'
       />
+
       <Component {...pageProps} />
     </>
   );

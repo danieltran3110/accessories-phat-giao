@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styles from './TeachingTraining.module.scss';
 import stylesGlobal from '../../assets/scss/global.module.scss';
-import SectionTitle from '../SectionTitle/componentSectionTitle';
-import Courses from './components/Courses/Courses';
-import FormSubscribe from './components/FormSubscribe/FormSubscribe';
+import SectionTitle from '../SectionTitle/SectionTitle';
+import Courses from './Components/Courses/Courses';
+import FormSubscribe from './Components/FormSubscribe/FormSubscribe';
 
 const TeachingTraining = () => {
 

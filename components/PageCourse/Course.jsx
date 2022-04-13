@@ -4,9 +4,9 @@ import stylesGlobal from '../../assets/scss/global.module.scss';
 import Image from 'next/image';
 
 import { dataAlsoLike } from '../../utils/data-config';
-import Reactions from './components/Reations/Reactions';
-import MayLike from './components/MayLike/MayLike';
-import BoxComment from './components/BoxComment/BoxComment';
+import Reactions from './Components/Reations/Reactions';
+import MayLike from './Components/MayLike/MayLike';
+import BoxComment from './Components/BoxComment/BoxComment';
 
 const Course = () => {
 

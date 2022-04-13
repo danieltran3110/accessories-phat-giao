@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../../components/Layout/layout';
+import Layout from '../../components/Layout/Layout';
 import Head from 'next/head';
-import Product from '../../components/ProductPage/ProductPage';
+import Product from '../../components/PageProduct/PageProduct';
 
 export default function ProductPage() {
   return (

@@ -1,16 +1,16 @@
-import SlideIntro from '../../components/PageHome/BeginSlide/componentSwiper';
+import SlideIntro from '../../components/PageHome/BeginSlide/BeginSlide';
 import React from 'react';
-import Proverb from '../../components/PageHome/Proverb/componentsProverb';
-import Welcome from '../../components/PageHome/Welcome/componentWelcome';
-import Mend from '../../components/PageHome/Mend/componentMend';
-import Event from '../../components/PageHome/Event/componentEvent';
-import Feature from '../../components/PageHome/Feature/componentFeature';
-import Vision from '../../components/PageHome/Vision/componentVison';
-import Dharma from '../../components/PageHome/Dharma/componentDharma';
+import Proverb from '../../components/PageHome/Proverb/Proverb';
+import Welcome from '../../components/PageHome/Welcome/Welcome';
+import Mend from '../../components/PageHome/Mend/Mend';
+import Event from '../../components/PageHome/Event/Event';
+import Feature from '../../components/PageHome/Feature/Feature';
+import Vision from '../../components/PageHome/Vision/Vison';
+import Dharma from '../../components/PageHome/Dharma/Dharma';
 import Zalo from '../../components/Zalo/zalo';
-import ScrollButton from '../../components/ScrollButton/componentScrollButton';
+import ScrollButton from '../../components/ScrollUpButton/ScrollUpButton';
 import Script from 'next/script';
-import Navbar from '../../components/NavBar/componentNavBar';
+import Navbar from '../../components/NavBar/NavBar';
 
 export default function HomePage() {
 
