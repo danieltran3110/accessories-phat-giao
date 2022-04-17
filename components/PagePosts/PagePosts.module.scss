@@ -1,5 +1,18 @@
+@import 'assets/scss/mixin.module';
+@import 'assets/scss/fonts.module';
+
 .displayGrid {
   display: grid;
   grid-template-columns: 65% calc(35% - 40px);
   column-gap: 40px;
+
+  @include Responsive(M) {
+    grid-template-columns: 90%;
+    row-gap: 40px;
+    justify-content: center;
+  }
+
+  @include Responsive(S) {
+    grid-template-columns: 100%;
+  }
 }

@@ -3,29 +3,59 @@
 
 .displayFlex {
   display: flex;
-  column-gap: 50px;
+  column-gap: 40px;
+
+  @include Responsive(S) {
+    display: block;
+  }
 
   .userReview {
     width: 45%;
+
+    @include Responsive(S) {
+      width: 100%;
+    }
 
     .countView {
       font-family: 'reforma', sans-serif;
       font-weight: bold;
       font-size: 24px;
+
+      @include Responsive(S) {
+        font-size: 18px;
+      }
     }
 
     .userComment {
       font-family: 'reforma', sans-serif;
       font-weight: bold;
       color: #7e7e7e;
-      display: flex;
+      display: grid;
+      grid-template-columns: auto auto auto;
+
+      @include Responsive(S) {
+        grid-template-columns: auto auto;
+        column-gap: 30px;
+      }
 
       .pic {
         margin: 0;
+
+        @include Responsive(S) {
+          justify-self: end;
+        }
       }
 
       .content {
         margin: 0 0 0 20px;
+
+        @include Responsive(L) {
+          margin: 0;
+        }
+
+        @include Responsive(S) {
+          font-size: 14px;
+        }
 
         .time {
           font-family: 'renner';
@@ -41,6 +71,14 @@
         margin-left: 70px;
         color: #ffac4b;
         letter-spacing: 3px;
+
+        @include Responsive(L) {
+          grid-row-start: 2;
+          grid-row-end: 3;
+          grid-column-start: 2;
+          grid-column-end: 3;
+          margin-left: 0;
+        }
       }
     }
   }

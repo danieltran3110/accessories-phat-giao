@@ -1,0 +1,42 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
+.popUpImage {
+  position: fixed;
+  width: 100vw;
+  background-color: black;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 99999999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+
+  i {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color: white;
+    font-size: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.iconFullScreen {
+      right: 80px;
+    }
+  }
+
+  .picPopUp {
+    img {
+      min-height: 500px;
+
+      @include Responsive(XS) {
+        min-height: 300px;
+      }
+    }
+  }
+}

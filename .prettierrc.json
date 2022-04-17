@@ -7,5 +7,7 @@
   "quoteProps": "as-needed",
   "singleQuote": true,
   "tabWidth": 2,
-  "trailingComma": "es5"
+  "trailingComma": "es5",
+  "singleAttributePerLine": true,
+  "proseWrap": "preserve"
 }

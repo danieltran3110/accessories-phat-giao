@@ -1,0 +1,30 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
+.descriptionReviews {
+  margin-top: 30px;
+
+  .btn {
+    display: flex;
+    column-gap: 10px;
+
+    .btnDescription {
+
+    }
+
+    .btnReviews {
+
+    }
+  }
+
+  .contentDescription {
+    font-family: 'renner';
+    color: #7e7e7e;
+    font-size: 18px;
+
+    @include Responsive(S) {
+      font-size: 12px;
+    }
+  }
+}
+

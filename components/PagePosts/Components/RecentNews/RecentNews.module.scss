@@ -2,7 +2,21 @@
 @import 'assets/scss/fonts.module';
 
 .wrapperRecentNews {
-  padding: 50px;
+  margin-bottom: 25px;
+  padding: 35px 50px 40px;
+
+  @include Responsive(L) {
+    padding: 35px 50px 40px;
+  }
+
+  @include Responsive(M) {
+    height: fit-content;
+    padding: 20px;
+  }
+
+  @include Responsive(S) {
+    font-size: 14px;
+  }
 
   .name {
     font-family: 'reforma', sans-serif;
@@ -10,5 +24,9 @@
     font-weight: bold;
     color: black;
     letter-spacing: 2px;
+
+    @include Responsive(S) {
+      font-size: 18px;
+    }
   }
 }

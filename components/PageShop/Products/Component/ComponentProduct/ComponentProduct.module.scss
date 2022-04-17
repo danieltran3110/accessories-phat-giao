@@ -5,22 +5,58 @@
 .item {
   position: relative;
   transition: 0.5s;
-  cursor: pointer;
-
   max-width: 370px;
   width: 100%;
 
   &:hover {
-    .detailInfo {
-      .icon {
-        opacity: 1;
-        animation: bounce 0.5s;
+    .wrapperImage {
+      .picProduct {
+        .detailInfo {
+          .icon {
+            opacity: 1;
+            animation: bounce 0.5s;
+          }
+
+          .icon2 {
+            opacity: 1;
+            animation: bounce2 1s;
+          }
+        }
+      }
+    }
+  }
+
+  &.item2 {
+    display: flex;
+    column-gap: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px rgba(128, 128, 128, 0.3) solid;
+    margin-bottom: 80px;
+    max-width: 100%;
+
+    .wrapperImage {
+      padding: 50px 40px;
+      border: 1px rgba(128, 128, 128, 0.3) solid;
+      width: 300px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .infoProduct {
+      margin-top: 0;
+
+      @include Responsive(S) {
+        margin-top: 30px;
       }
 
-      .icon2 {
-        opacity: 1;
-        animation: bounce2 1s;
+      .name {
+        margin-top: 0;
       }
+    }
+
+    @include Responsive(XS) {
+      flex-direction: column;
+      margin-bottom: 40px;
     }
   }
 
@@ -29,14 +65,18 @@
     border: 3px rgba(128, 128, 128, 0.3) solid;
     height: 385px;
     margin: 0 auto;
-
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 
+    @include Responsive(M) {
+      //height: 305px;
+      padding: 30px 30px;
+    }
+
     @include Responsive(S) {
-      padding: 30px 40px;
+      padding: 15px 20px;
     }
 
     @include Responsive(XXS) {
@@ -48,6 +88,34 @@
       width: 100%;
       margin: 0;
 
+      .detailInfo {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        height: fit-content;
+        width: fit-content;
+        color: #282828;
+        transition: 0.5s;
+
+        .icon,
+        .icon2 {
+          opacity: 0;
+          width: 50px;
+          height: 50px;
+          color: white;
+          font-size: 20px;
+          text-align: center;
+          padding-top: 11px;
+          background-color: #ffac4b;
+          border-radius: 50%;
+          transition: 0.5s;
+          animation: bounceReverse 0.4s;
+        }
+
+        .icon2 {
+          animation: bounceReverse 1.5s;
+        }
+      }
     }
   }
 
@@ -76,35 +144,6 @@
     .money {
       color: #7e7e7e;
       opacity: 0.7;
-    }
-  }
-
-  .detailInfo {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    height: fit-content;
-    width: fit-content;
-    color: #282828;
-    transition: 0.5s;
-
-    .icon,
-    .icon2 {
-      opacity: 0;
-      width: 50px;
-      height: 50px;
-      color: white;
-      font-size: 20px;
-      text-align: center;
-      padding-top: 11px;
-      background-color: #ffac4b;
-      border-radius: 50%;
-      transition: 0.5s;
-      animation: bounceReverse 0.4s;
-    }
-
-    .icon2 {
-      animation: bounceReverse 1.5s;
     }
   }
 }

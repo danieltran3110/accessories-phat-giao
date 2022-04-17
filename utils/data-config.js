@@ -82,56 +82,7 @@ export const navigationData = {
   menuItems: [
     {
       title: 'Home',
-      submenu: [
-        {
-          title: 'Homepage one',
-          url: '/',
-          id: 'homepage1',
-        },
-        {
-          title: 'Homepage two',
-          url: '#',
-          id: 'homepage2',
-        },
-        {
-          title: 'Homepage three',
-          id: 'homepage3',
-          submenu: [
-            {
-              title: 'Homepage one',
-              url: '#',
-              id: 'homepage31',
-            },
-            {
-              title: 'Homepage two',
-              url: '#',
-              id: 'homepage32',
-            },
-            {
-              title: 'Homepage three',
-              id: 'homepage33',
-              // url: '#',
-              submenu: [
-                {
-                  title: 'Homepage one',
-                  url: '#',
-                  id: 'homepage331',
-                },
-                {
-                  title: 'Homepage two',
-                  url: '#',
-                  id: 'homepage332',
-                },
-                {
-                  title: 'Homepage three',
-                  url: '#',
-                  id: 'homepage333',
-                },
-              ],
-            },
-          ],
-        },
-      ],
+      url: '/',
     },
     {
       title: 'About',
@@ -739,17 +690,17 @@ export const dataReaction = [
     title: 'COOL',
   },
   {
-    className: 'fa fa-heartbeat',
+    className: 'fa fa-heart-crack',
     count: 0,
     title: 'BAD',
   },
   {
-    className: 'fa fa-smile-o',
+    className: 'fa-solid fa-face-laugh',
     count: 2,
     title: 'HAPPY',
   },
   {
-    className: 'fa fa-frown-o',
+    className: 'fa-solid fa-face-frown',
     count: 0,
     title: 'SAD',
   },
@@ -924,3 +875,9 @@ export const dataStateComment = [
     name: 'Should I Believe in Rebirth?',
   },
 ]
+
+export const dataPolicy = {
+  saveInfo: 'SAVE MY NAME, EMAIL, AND WEBSITE IN THIS BROWSER FOR THE NEXT TIME I COMMENT.',
+  agreePolicy: 'I AGREE THAT MY SUBMITTED DATA IS BEING COLLECTED AND STORED. FOR FURTHER DETAILS ON HANDLING USER DATA, SEE OUR ',
+  agreeData: 'I AGREE THAT MY SUBMITTED DATA IS BEING COLLECTED AND STORED.'
+}

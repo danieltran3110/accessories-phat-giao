@@ -9,9 +9,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: fit-content;
 
   &.maxHeight {
     max-height: 170px;
+  }
+
+  .img {
+    //height: 200px;
+    //width: 200px;
   }
 
   &:hover {
@@ -76,6 +82,12 @@
     &:hover {
       background-color: #f16f23;
       cursor: pointer;
+    }
+
+    @include Responsive(S) {
+      width: 70px;
+      height: 70px;
+      line-height: 6;
     }
   }
 }

@@ -6,7 +6,9 @@ import stylesGlobal from '../../../../assets/scss/global.module.scss';
 const BoxCalendar = () => {
   return (
     <div className={stylesGlobal.backgroundColor}>
-      <Calendar className={styles.calendar} />
+      <div className={styles.wrapperBox}>
+        <Calendar className={styles.calendar} />
+      </div>
     </div>
   );
 };

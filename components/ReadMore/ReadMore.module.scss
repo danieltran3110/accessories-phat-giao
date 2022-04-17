@@ -1,0 +1,19 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
+.content {
+  font-family: 'renner';
+  line-height: 1.5;
+  color: #7e7e7e;
+  white-space: pre-line;
+  font-size: 18px;
+
+  @include Responsive(S) {
+    font-size: 12px;
+  }
+
+  .readOrHide {
+    color: #f16f23;
+    cursor: pointer;
+  }
+}

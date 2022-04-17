@@ -6,6 +6,10 @@
   background-color: #ffac4b;
   padding: 60px;
 
+  @include Responsive(S) {
+    padding: 30px;
+  }
+
   .content {
     font-size: 2.322rem;
     line-height: normal;
@@ -21,7 +25,6 @@
 
     @include Responsive(S) {
       font-size: 1.4rem;
-      margin-top: 30px;
     }
 
     @include Responsive(XXS) {

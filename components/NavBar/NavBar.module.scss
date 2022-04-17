@@ -121,6 +121,10 @@
           margin: 0 auto;
         }
 
+        @include Responsive(XXS) {
+          width: 260px;
+        }
+
         .checkbox {
           display: none;
         }
@@ -203,6 +207,11 @@
               color: #f16f23;
             }
           }
+
+          @include Responsive(XXS) {
+            padding: 2px 15px 2px 0;
+
+          }
         }
       }
 
@@ -215,6 +224,10 @@
           display: block;
           width: 370px;
           margin: 30px auto 0;
+        }
+
+        @include Responsive(XXS) {
+          width: 240px;
         }
 
         label {

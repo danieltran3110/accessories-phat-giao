@@ -1,14 +1,29 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
 .addReview {
   width: 55%;
   color: #7e7e7e;
 
+  @include Responsive(S) {
+    width: 100%;
+  }
+
   .addAReview {
     font-family: 'reforma', sans-serif;
     font-size: 28px;
+
+    @include Responsive(S) {
+      font-size: 20px;
+    }
   }
 
   .require {
     font-family: 'renner';
     font-size: 18px;
+
+    @include Responsive(S) {
+      font-size: 14px;
+    }
   }
 }

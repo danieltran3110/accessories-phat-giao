@@ -1,0 +1,35 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
+.wrapperImage {
+  border: 3px rgba(128, 128, 128, 0.3) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: fit-content;
+  cursor: pointer;
+  margin: 0;
+
+  .picProduct {
+    padding: 80px 100px;
+
+    @include Responsive(S) {
+      padding: 30px 40px;
+    }
+
+    img {
+      min-width: 200px;
+
+      @include Responsive(S) {
+        min-width: unset;
+      }
+    }
+  }
+
+  .searchIcon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}

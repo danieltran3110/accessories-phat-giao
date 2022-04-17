@@ -1,6 +1,20 @@
 import React, { useState } from 'react';
 import styles from './FormSubscribe.module.scss';
-import { Formik, Field, Form } from 'formik';
+import { ErrorMessage, Field, Form, Formik } from 'formik';
+import * as Yup from 'yup';
+import { dataPolicy } from '../../../../utils/data-config';
+
+const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+
+const ReviewSchema =
+  Yup.object().shape({
+                       name: Yup.string()
+                         .min(5, 'The name must be more than 5 and less than 50 characters!')
+                         .max(50, 'The name must be more than 5 and less than 50 characters!')
+                         .required('Required'),
+                       email: Yup.string().email('Invalid email').required('Required'),
+                       phone: Yup.string().matches(phoneRegExp, 'Phone number is not valid'),
+                     });
 
 const FormSubscribe = () => {
 
@@ -11,72 +25,39 @@ const FormSubscribe = () => {
     setChecked(target.checked);
   }
 
-  function validateUsername(value) {
-    let error;
-    if (!value) {
-      error = 'Name *';
-    } else {
-      error = 'Name';
-    }
-    return error;
-  }
-
-  function validateEmail(value) {
-    let error = 'Email';
-    if (!value) {
-      error = 'Email *';
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-      error = 'Invalid email address';
-    }
-    return error;
-  }
-
-  function validatePhone(value) {
-    let error = 'Phone';
-    if (!value) {
-      error = 'Phone *';
-    } else if (!/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/.test(value)) {
-      error = 'Invalid phone number';
-    }
-    return error;
-  }
-
   return (
     <div className={styles.subscribe}>
       <p className={styles.invite}>Join our mailing list to keep informed of the happenings at The Buddhist Society.</p>
       <Formik
-        initialValues={{ name: '', email: '' }}
-        onSubmit={async (values) => {
-          await new Promise((resolve) => setTimeout(resolve, 500));
-          if (checked) {
-            // Send to backend
-          } else {
-            // Don't send to backend
-            alert('Agree term to subscribe');
-          }
+        initialValues={{ name: '', email: '', phone: '' }}
+        validationSchema={ReviewSchema}
+        onSubmit={(values, { setSubmitting }) => {
+          setTimeout(() => {
+            if (checked) {
+              alert(JSON.stringify(values, null, 2));
+              setSubmitting(false);
+            }
+          }, 400);
         }}
       >
-        {({ errors, touched, validateField, validateForm }) => (
-          <Form className={styles.formSubscribe}>
-            {(errors.username && touched.username && <div>{errors.username}</div>)}
-            <Field name='username' placeholder={'NAME'} validate={validateUsername} />
-            {(errors.email && touched.email && <div>{errors.email}</div>)}
-            <Field name='email' type='email' placeholder={'EMAIL'} validate={validateEmail} />
-            {(errors.phone && touched.phone && <div>{errors.phone}</div>)}
-            <Field name='phone' type='phone' placeholder={'PHONE'} validate={validatePhone} />
-            <label className={styles.checkbox} htmlFor='agree'>I AGREE THAT MY SUBMITTED DATA IS BEING COLLECTED AND
-              STORED.
-              <input id='agree' type='checkbox'
-                     checked={checked}
-                     onChange={(e) => handleInputChange(e)}
-              />
-              <span className={styles.checkMark} />
-            </label>
-            <button className={`${styles.btnSubscribe} ${checked && styles.hover}`} id={'btnSub'}
-                    type='submit'>SUBSCRIBE NOW
-            </button>
-          </Form>
-        )}
+        <Form className={styles.formSubscribe}>
+          <ErrorMessage name='name' render={msg => <div className={styles.error}>{msg}</div>} />
+          <Field name='name' placeholder={'NAME'} type={'text'} />
+          <ErrorMessage render={msg => <div className={styles.error}>{msg}</div>} name='email' />
+          <Field name='email' type='email' placeholder={'EMAIL'} />
+          <ErrorMessage render={msg => <div className={styles.error}>{msg}</div>} name='phone' />
+          <Field name='phone' type='text' placeholder={'PHONE'} />
+          <label className={styles.checkbox} htmlFor='agree'>{dataPolicy.agreeData}
+            <input id='agree' type='checkbox'
+                   checked={checked}
+                   onChange={(e) => handleInputChange(e)}
+            />
+            <span className={styles.checkMark} />
+          </label>
+          <button className={`${styles.btnSubscribe} ${checked && styles.hover}`} id={'btnSub'}
+                  type='submit'>SUBSCRIBE NOW
+          </button>
+        </Form>
       </Formik>
     </div>);
 };

@@ -2,54 +2,73 @@
 @import 'assets/scss/fonts.module';
 
 .backgroundColor {
-  padding: 50px;
   background-color: #f16f23;
-  margin-bottom: 30px;
+  height: fit-content;
 
-  .name {
-    font-family: 'reforma', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
-    letter-spacing: 2px;
-  }
+  .wrapperBox {
+    margin-bottom: 25px;
+    padding: 35px 50px 40px;
 
-  .boxSearch {
-    position: relative;
+    @include Responsive(L) {
+      padding: 35px 50px 40px;
+    }
 
+    @include Responsive(M) {
+      height: fit-content;
+      padding: 20px;
+    }
 
     @include Responsive(S) {
-      display: block;
-      width: 370px;
-      margin: 30px auto 0;
+      font-size: 14px;
     }
-
-    label {
-      position: absolute;
-      right: 5%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+    .name {
+      font-family: 'reforma', sans-serif;
+      font-size: 25px;
+      font-weight: bold;
       color: white;
+      letter-spacing: 2px;
 
-      i {
+      @include Responsive(S) {
         font-size: 18px;
       }
     }
 
-    input {
-      width: 100%;
-      padding: 1.5em 3em 1.5em 1.5em !important;
-      background-color: #f78b4b;
-      color: white !important;
-      border: none;
+    .boxSearch {
+      position: relative;
 
-      &::placeholder {
-        color: white;
-        font-size: 18px;
+      @include Responsive(S) {
+        display: block;
+        width: 100%;
+        margin: 30px auto 0;
       }
 
-      &:focus-visible {
-        outline: 0 !important;
+      label {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+
+        i {
+          font-size: 18px;
+        }
+      }
+
+      input {
+        width: 100%;
+        padding: 1.5em 3em 1.5em 1.5em !important;
+        background-color: #f78b4b;
+        color: white !important;
+        border: none;
+
+        &::placeholder {
+          color: white;
+          font-size: 18px;
+        }
+
+        &:focus-visible {
+          outline: 0 !important;
+        }
       }
     }
   }

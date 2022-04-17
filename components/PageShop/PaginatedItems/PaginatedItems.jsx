@@ -3,7 +3,6 @@ import ReactPaginate from 'react-paginate';
 import styles from './PaginatedItems.module.scss';
 import { dataProducts } from '../../../utils/data-config';
 import Products from '../Products/Products';
-import ProductsV2 from '../ProductsV2/ProductV2';
 
 
 function PaginatedItems({ itemsPerPage }) {
@@ -33,9 +32,9 @@ function PaginatedItems({ itemsPerPage }) {
     <div className={styles.wrapperPaginate}>
       <div className={styles.view}>
         <div className={styles.icon}>
-          <i className={`fa fa-th-large ${view ? styles.blur : ''}`} aria-hidden='true'
+          <i className={`fa fa-th-large ${view && styles.blur}`} aria-hidden='true'
              onClick={() => setView(!view)} />
-          <i className={`fa fa-th-list ${!view ? styles.blur : ''}`} aria-hidden='true'
+          <i className={`fa fa-th-list ${!view && styles.blur}`} aria-hidden='true'
              onClick={() => setView(!view)} />
         </div>
         <div className={styles.selectSort}>
@@ -48,7 +47,7 @@ function PaginatedItems({ itemsPerPage }) {
           </select>
         </div>
       </div>
-      {!view ? <Products currentItems={currentItems} /> : <ProductsV2 currentItems={currentItems} />}
+      {!view ? <Products currentItems={currentItems} /> : <Products currentItems={currentItems} version2={true} />}
       <ReactPaginate
         nextLabel='→'
         onPageChange={handlePageClick}
@@ -68,7 +67,6 @@ function PaginatedItems({ itemsPerPage }) {
         containerClassName={styles.pagination}
         activeClassName={styles.active}
         renderOnZeroPageCount={null}
-
       />
     </div>
   );

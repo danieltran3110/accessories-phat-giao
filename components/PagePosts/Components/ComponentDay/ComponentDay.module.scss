@@ -15,19 +15,41 @@
   line-height: 1.2;
   font-weight: normal;
 
+  @include Responsive(S) {
+    width: 65px;
+    height: 65px;
+  }
+
   &.colorRevert {
     background-color: white;
     color: black;
+  }
+
+  &.padding {
+    //padding: 40px;
+    //padding-top: 0;
+    //margin: 40px;
+    width: 105px;
+    height: 105px;
   }
 
   .day {
     margin-top: 15px;
     margin-bottom: 0;
     font-size: 28px;
+
+    @include Responsive(S) {
+      font-size: 20px;
+      margin-top: 10px;
+    }
   }
 
   .month {
     margin-top: 0;
     font-size: 18px;
+
+    @include Responsive(S) {
+      font-size: 14px;
+    }
   }
 }

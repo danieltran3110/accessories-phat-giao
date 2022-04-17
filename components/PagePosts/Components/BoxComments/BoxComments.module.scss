@@ -6,12 +6,30 @@
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 25px;
+
+  @include Responsive(S) {
+    font-size: 17px;
+  }
 }
 
 .comment {
   margin-bottom: 30px;
   padding: 50px;
   margin-top: 30px;
+
+  @include Responsive(L) {
+    padding: 35px 50px 40px;
+  }
+
+  @include Responsive(M) {
+    height: fit-content;
+    padding: 20px;
+    margin-top: 0;
+  }
+
+  @include Responsive(S) {
+    font-size: 14px;
+  }
 
   .wrapperComment {
     border-bottom: 2px solid #e7e4df;
@@ -31,6 +49,10 @@
       span {
         color: #7e7e7e;
       }
+
+      @include Responsive(S) {
+        font-size: 12px;
+      }
     }
 
     .name {
@@ -43,6 +65,10 @@
 
       &:hover {
         color: #f16f23;
+      }
+
+      @include Responsive(S) {
+        font-size: 14px;
       }
     }
   }

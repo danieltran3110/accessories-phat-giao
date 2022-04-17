@@ -1,0 +1,17 @@
+@import 'assets/scss/fonts.module';
+@import 'assets/scss/mixin.module';
+
+.displayGrid4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 30px;
+
+  @include Responsive(S) {
+    grid-template-columns: auto auto;
+    row-gap: 30px;
+  }
+
+  @include Responsive(XXS) {
+    grid-template-columns: auto;
+  }
+}
