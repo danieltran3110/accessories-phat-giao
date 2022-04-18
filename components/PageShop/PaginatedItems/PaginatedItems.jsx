@@ -31,12 +31,12 @@ function PaginatedItems({ itemsPerPage }) {
       <div className={styles.view}>
         <div className={styles.icon}>
           <i
-            className={`fa fa-th-large ${view && styles.blur}`}
+            className={`fa fa-th ${view && styles.blur}`}
             aria-hidden='true'
             onClick={() => setView(!view)}
           />
           <i
-            className={`fa fa-th-list ${!view && styles.blur}`}
+            className={`fa-solid fa-list ${!view && styles.blur}`}
             aria-hidden='true'
             onClick={() => setView(!view)}
           />

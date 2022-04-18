@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './TeachingTraining.module.scss';
 import stylesGlobal from '../../assets/scss/global.module.scss';
 import SectionTitle from '../SectionTitle/SectionTitle';

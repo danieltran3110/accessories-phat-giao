@@ -65,7 +65,6 @@ const NavBar = ({ hideLogo }) => {
             } ${hideLogo && styles.margin0}`}
           >
             <div
-              // type='button'
               className={styles.closeButton}
               onClick={() => setNavigationOpen(!navigationOpen)}
             >
