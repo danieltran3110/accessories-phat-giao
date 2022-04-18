@@ -19,8 +19,16 @@ const ProductDetail = () => {
   return (
     <div className={`${stylesGlobal.container1}`}>
       <div className={styles.displayGrid}>
-        <ImageProduct _data={_data} showPopUp={showPopUp} />
-        {popUp && (<PopUpImage _data={_data} showPopUp={showPopUp} />)}
+        <ImageProduct
+          _data={_data}
+          showPopUp={showPopUp}
+        />
+        {popUp && (
+          <PopUpImage
+            _data={_data}
+            showPopUp={showPopUp}
+          />
+        )}
         <InfoProduct _data={_data} />
       </div>
       <DescriptionReview _data={_data} />

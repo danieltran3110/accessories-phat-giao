@@ -14,9 +14,15 @@ const PopUpImage = ({ _data, showPopUp }) => {
   }
 
   return (
-    <div className={styles.popUpImage} onClick={() => showPopUp()}>
+    <div
+      className={styles.popUpImage}
+      onClick={() => showPopUp()}
+    >
       <figure className={styles.picPopUp}>
-        <Image src={_data.src} alt={_data.alt} />
+        <Image
+          src={_data.src}
+          alt={_data.alt}
+        />
       </figure>
       <i
         className='fa fa-times'

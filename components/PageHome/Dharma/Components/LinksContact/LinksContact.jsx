@@ -7,8 +7,14 @@ const LinksContact = () => {
     <div className={styles.linksContact}>
       {dataLinksContact.map((_data, index) => {
         return (
-          <div className={styles.icon} key={index}>
-            <i aria-hidden className={_data.iconName}/>
+          <div
+            className={styles.icon}
+            key={index}
+          >
+            <i
+              aria-hidden
+              className={_data.iconName}
+            />
             {_data.name}
           </div>
         );

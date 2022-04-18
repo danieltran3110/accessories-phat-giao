@@ -19,19 +19,33 @@ const Vision = () => {
     <div className={stylesGlobal.container1}>
       <div className={styles.visionWrapper}>
         <div className={styles.vision}>
-          <SectionTitle title={dataVision.title} left={true} />
+          <SectionTitle
+            title={dataVision.title}
+            left={true}
+          />
           <p className={styles.contentVision}>{dataVision.content}</p>
           <section className={stylesGlobal.section}>
             <div className={styles.videoSpeech}>
               <figure className={styles.video}>
-                {showing && <> <Image className={styles.img} src={dataVision.urlPic1} alt='Vision' />
-                  <figcaption
-                    className={styles.btnPlay}
-                    onClick={() => handleIsPlay()}
-                  >
-                    <i aria-hidden className='fas fa-caret-right' />
-                  </figcaption>
-                </>}
+                {showing && (
+                  <>
+                    {' '}
+                    <Image
+                      className={styles.img}
+                      src={dataVision.urlPic1}
+                      alt='Vision'
+                    />
+                    <figcaption
+                      className={styles.btnPlay}
+                      onClick={() => handleIsPlay()}
+                    >
+                      <i
+                        aria-hidden
+                        className='fas fa-caret-right'
+                      />
+                    </figcaption>
+                  </>
+                )}
                 {isPlay && (
                   <div className={styles.embedVideo}>
                     <iframe
@@ -55,7 +69,11 @@ const Vision = () => {
         </div>
         <figure className={styles.meditation}>
           <section className={stylesGlobal.section}>
-            <Image className={styles.img} src={dataVision.urlPic2} alt='Vision 2' />
+            <Image
+              className={styles.img}
+              src={dataVision.urlPic2}
+              alt='Vision 2'
+            />
           </section>
         </figure>
       </div>

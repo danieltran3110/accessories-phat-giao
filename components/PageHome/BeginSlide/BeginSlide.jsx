@@ -15,7 +15,6 @@ import { css, StyleSheet } from 'aphrodite';
 import { fadeInUp } from 'react-animations';
 
 const SlideIntro = () => {
-
   const styles2 = StyleSheet.create({
     fadeInUp: {
       animationName: fadeInUp,
@@ -29,7 +28,7 @@ const SlideIntro = () => {
 
   const pagination = {
     clickable: true,
-    renderBullet: function(index, className) {
+    renderBullet: function (index, className) {
       return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
     },
   };
@@ -46,20 +45,35 @@ const SlideIntro = () => {
         >
           {dataSwiper.map((_data, index) => {
             return (
-              <SwiperSlide className={styles.slide} key={index}>
+              <SwiperSlide
+                className={styles.slide}
+                key={index}
+              >
                 <div className={styles.wrapperInfo}>
                   <div className={styles.placeName}>
                     <p className={styles.place + ' ' + css(styles2.fadeInUp)}>
                       {_data.title} <br /> {_data.subtitle}
                     </p>
-                    <div className={`${styles.learnMore} ${css(styles2.zoomIn)}`}>{_data.titleBtn}</div>
+                    <div
+                      className={`${styles.learnMore} ${css(styles2.zoomIn)}`}
+                    >
+                      {_data.titleBtn}
+                    </div>
                   </div>
                   <figure className={styles.logo}>
-                    <Image className={styles.img} src={logo} alt='logo' />
+                    <Image
+                      className={styles.img}
+                      src={logo}
+                      alt='logo'
+                    />
                   </figure>
                 </div>
                 <figure className={styles.picSlider}>
-                  <Image className={styles.img} src={_data.url} alt='Slide' />
+                  <Image
+                    className={styles.img}
+                    src={_data.url}
+                    alt='Slide'
+                  />
                 </figure>
               </SwiperSlide>
             );

@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }) {
       },
       {
         threshold: 0.15,
-      },
+      }
     );
     document.querySelectorAll('section').forEach(section => {
       observer.observe(section);

@@ -8,11 +8,17 @@ import Link from 'next/link';
 const Courses = () => {
   return (
     <>
-      {dataCourses.map((_data, index) =>
-        <div className={stylesGlobal.backgroundColor} key={index}>
+      {dataCourses.map((_data, index) => (
+        <div
+          className={stylesGlobal.backgroundColor}
+          key={index}
+        >
           <div className={styles.courses}>
             <figure className={styles.pic}>
-              <Image src={_data.src} alt={'courses'} />
+              <Image
+                src={_data.src}
+                alt={'courses'}
+              />
               <figcaption className={styles.btnView}>VIEW</figcaption>
             </figure>
             <div className={styles.coursesWrapper}>
@@ -21,16 +27,25 @@ const Courses = () => {
                 <p className={styles.content}>{_data.content}</p>
               </div>
               <div className={styles.meta}>
-                <p className={styles.time}><b>BEGINNING</b> {_data.beginning}</p>
-                <p className={styles.time}><b>DURATION</b> {_data.duration}</p>
-                <p className={styles.time}><b>COST</b> {_data.cost}</p>
+                <p className={styles.time}>
+                  <b>BEGINNING</b> {_data.beginning}
+                </p>
+                <p className={styles.time}>
+                  <b>DURATION</b> {_data.duration}
+                </p>
+                <p className={styles.time}>
+                  <b>COST</b> {_data.cost}
+                </p>
               </div>
-              <Link href={_data.urlLearn}><a className={styles.btnLearn}>LEARN</a></Link>
+              <Link href={_data.urlLearn}>
+                <a className={styles.btnLearn}>LEARN</a>
+              </Link>
             </div>
           </div>
-        </div>,
-      )}
-    </>);
+        </div>
+      ))}
+    </>
+  );
 };
 
 export default Courses;

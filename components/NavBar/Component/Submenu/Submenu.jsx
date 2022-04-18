@@ -20,7 +20,10 @@ export default function Submenu(props) {
       className={`${styles.submenu} ${classImplement} ${css(classes.fadeIn)}`}
     >
       {submenu.map((data, index) => (
-        <div className={styles.subItemWrap} key={index}>
+        <div
+          className={styles.subItemWrap}
+          key={index}
+        >
           {data.url ? (
             <Link href={data.url}>
               <a className={styles.subItem}>{data.title}</a>
@@ -33,11 +36,17 @@ export default function Submenu(props) {
                 id={data.id}
                 name={data.id}
               />
-              <label className={styles.icon} htmlFor={data.id}>
+              <label
+                className={styles.icon}
+                htmlFor={data.id}
+              >
                 <i className='fa fa-angle-right' />
               </label>
               <div className={styles.subItem}>{data.title}</div>
-              <Submenu submenu={data.submenu} classImplement={styles.submenu} />
+              <Submenu
+                submenu={data.submenu}
+                classImplement={styles.submenu}
+              />
             </>
           )}
         </div>

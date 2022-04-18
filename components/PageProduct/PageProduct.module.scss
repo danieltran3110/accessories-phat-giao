@@ -7,6 +7,6 @@
   column-gap: 50px;
 
   @include Responsive(S) {
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
   }
 }

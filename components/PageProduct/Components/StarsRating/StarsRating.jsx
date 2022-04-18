@@ -1,62 +1,80 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './StarsRating.module.scss';
-import Rating from '@mui/material/Rating';
 
-const StarsRating = () => {
-  // const [rating, setRating] = useState(0);
-  // const [hover, setHover] = useState(0);
-  // const [filled, setFilled] = useState('fa fa-star');
-  //
-  const [value, setValue] = React.useState(0);
-  // const handleHover = (index) => {
-  //   setHover(index);
-  //   // setFilled('fa fa-star');
-  // };
-  //
+const StarsRating = ({ className, field, form: { values } }) => {
+  const value = values.rating;
+
   return (
-    // <div className={styles.starRating}>
-    //   {[...Array(5)].map((star, index) => {
-    //     index += 1;
-    //     return (
-    //       <button
-    //         type='button'
-    //         key={index}
-    //         className={index <= (hover || rating) ? styles.on : styles.off}
-    //         onClick={() => setRating(index)}
-    //         onMouseEnter={() => handleHover(index)}
-    //         onMouseLeave={() => handleHover(rating)}
-    //       >
-    //         <i className={`${filled} ${styles.customStars}`} aria-hidden='true' />
-    //       </button>
-    //     );
-    //   })}
-    // </div>
     <>
-      <p className={styles.title}>Your Rating *</p>
-      <Rating
-        className={styles.starRating}
-        name='simple-controlled'
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
-        sx={{
-          color: '#f16f23',
-          '& .MuiRating-iconHover': {
-            transform: 'scale(1)',
-
-            '&:hover & .MuiRating-iconFilled': {
-              color: '#282828',
-            },
-          },
-          '& .MuiRating-icon': {
-            color: '#f16f23',
-          },
-        }}
-      />
+      <p className={styles.title}>Your Rating</p>
+      <div
+        className={`${styles.starRatingInput} ${className} ${
+          value ? styles.checked : styles.unChecked
+        }`}
+      >
+        <label
+          className={`${styles.starItem}`}
+          htmlFor='star1'
+        >
+          ☆
+        </label>
+        <input
+          type='radio'
+          {...field}
+          value='1'
+          id='star1'
+        />
+        <label
+          className={`${styles.starItem}`}
+          htmlFor='star2'
+        >
+          ☆
+        </label>
+        <input
+          type='radio'
+          {...field}
+          value='2'
+          id='star2'
+        />
+        <label
+          className={`${styles.starItem}`}
+          htmlFor='star3'
+        >
+          ☆
+        </label>
+        <input
+          type='radio'
+          {...field}
+          value='3'
+          id='star3'
+        />
+        <label
+          className={`${styles.starItem}`}
+          htmlFor='star4'
+        >
+          ☆
+        </label>
+        <input
+          type='radio'
+          {...field}
+          value='4'
+          id='star4'
+        />
+        <label
+          className={`${styles.starItem}`}
+          htmlFor='star5'
+        >
+          ☆
+        </label>
+        <input
+          type='radio'
+          {...field}
+          value='5'
+          id='star5'
+        />
+      </div>
     </>
   );
-
 };
 
 export default StarsRating;

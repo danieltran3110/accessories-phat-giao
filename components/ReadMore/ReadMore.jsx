@@ -10,11 +10,14 @@ const ReadMore = ({ children }) => {
   return (
     <p className={styles.content}>
       {isReadMore ? text.slice(0, 450) : text}
-      <span onClick={toggleReadMore} className={styles.readOrHide}>
+      <span
+        onClick={toggleReadMore}
+        className={styles.readOrHide}
+      >
         {isReadMore ? '...Read more' : ' Show less'}
       </span>
     </p>
   );
 };
 
-export default ReadMore
+export default ReadMore;

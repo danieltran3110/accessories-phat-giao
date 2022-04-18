@@ -8,9 +8,14 @@ const Tags = ({ data }) => {
       <div className={styles.wrapperBox}>
         <h2 className={styles.title}>Tags</h2>
         <div className={styles.itemTag}>
-          {data.map((_data, index) =>
-            <a href={_data.href} key={index}>{_data.item}</a>
-          )}
+          {data.map((_data, index) => (
+            <a
+              href={_data.href}
+              key={index}
+            >
+              {_data.item}
+            </a>
+          ))}
         </div>
       </div>
     </div>

@@ -21,8 +21,8 @@ function PaginatedItems({ itemsPerPage }) {
   }, [itemOffset, itemsPerPage]);
 
   // Invoke when user click to request another page.
-  const handlePageClick = (event) => {
-    const newOffset = event.selected * itemsPerPage % dataAllPosts.length;
+  const handlePageClick = event => {
+    const newOffset = (event.selected * itemsPerPage) % dataAllPosts.length;
     setItemOffset(newOffset);
   };
 

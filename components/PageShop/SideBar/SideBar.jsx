@@ -8,11 +8,17 @@ import { dataCategories, dataTags } from '../../../utils/data-config';
 
 const SideBar = () => {
   return (
-    <div className={styles.sideBarInner} id={'boxCategories'}>
+    <div
+      className={styles.sideBarInner}
+      id={'boxCategories'}
+    >
       <Cart />
       <Filter />
       <Categories data={dataCategories} />
-      <div className={styles.sticky} id={'tags'}>
+      <div
+        className={styles.sticky}
+        id={'tags'}
+      >
         <Tags data={dataTags} />
       </div>
     </div>

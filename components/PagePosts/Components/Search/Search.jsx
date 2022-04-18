@@ -7,8 +7,15 @@ const Search = () => {
       <div className={styles.wrapperBox}>
         <p className={styles.name}>Search</p>
         <div className={styles.boxSearch}>
-          <label htmlFor='search'><i className={`fas fa-search`} /></label>
-          <input type='text' id='search' name='search' placeholder={'Search'} />
+          <label htmlFor='search'>
+            <i className={`fas fa-search`} />
+          </label>
+          <input
+            type='text'
+            id='search'
+            name='search'
+            placeholder={'Search'}
+          />
         </div>
       </div>
     </div>

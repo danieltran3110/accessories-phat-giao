@@ -10,7 +10,7 @@ export default function ShopPage() {
         <title>Shop</title>
       </Head>
       <Layout title={'PageShop'}>
-        <PageShop/>
+        <PageShop />
       </Layout>
     </div>
   );

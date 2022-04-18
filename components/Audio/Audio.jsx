@@ -5,8 +5,16 @@ import Image from 'next/image';
 const Audio = ({ _data }) => {
   return (
     <figure className={styles.picDharma}>
-      <Image className={styles.img} src={_data.urlPic} alt='Dharma' />
-      <audio className={styles.audio} src={_data.urlAudio} controls={true} />
+      <Image
+        className={styles.img}
+        src={_data.urlPic}
+        alt='Dharma'
+      />
+      <audio
+        className={styles.audio}
+        src={_data.urlAudio}
+        controls={true}
+      />
       <figcaption className={styles.topicAuthor}>
         <p className={styles.topic}>{_data.title}</p>
         <span className={styles.author}>

@@ -7,12 +7,17 @@ const BoxComments = ({ _data }) => {
     <div className={stylesGlobal.backgroundColor}>
       <div className={styles.comment}>
         <p className={styles.titleBox}>Recent Comments</p>
-        {_data.map((_data, index) =>
-          <div className={styles.wrapperComment} key={index}>
-            <p className={styles.adminState}>ADMIN <span>{_data.state}</span></p>
+        {_data.map((_data, index) => (
+          <div
+            className={styles.wrapperComment}
+            key={index}
+          >
+            <p className={styles.adminState}>
+              ADMIN <span>{_data.state}</span>
+            </p>
             <p className={styles.name}>{_data.name}</p>
-          </div>,
-        )}
+          </div>
+        ))}
       </div>
     </div>
   );

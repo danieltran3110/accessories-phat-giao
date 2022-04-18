@@ -12,13 +12,22 @@ const ComponentVideo = ({ _data }) => {
 
   return (
     <figure className={styles.videoMend}>
-      {!isPlay && <div className={styles.pic}>
-        <Image className={styles.img} src={video2} alt='Video Introduce' />
-        <figcaption className={styles.btnPlay} onClick={() => handleIsPlay()}>
-          PLAY
-        </figcaption>
-        <ComponentDay _data={_data} />
-      </div>}
+      {!isPlay && (
+        <div className={styles.pic}>
+          <Image
+            className={styles.img}
+            src={video2}
+            alt='Video Introduce'
+          />
+          <figcaption
+            className={styles.btnPlay}
+            onClick={() => handleIsPlay()}
+          >
+            PLAY
+          </figcaption>
+          <ComponentDay _data={_data} />
+        </div>
+      )}
       {isPlay && (
         <div className={styles.embedVideo}>
           <iframe

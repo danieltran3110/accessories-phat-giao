@@ -8,13 +8,20 @@ const BoxEvents = () => {
     <>
       {dataEvent.map((_data, index) => {
         return (
-          <div className={styles.dateEvent} key={index}>
+          <div
+            className={styles.dateEvent}
+            key={index}
+          >
             <p className={styles.dateMonth}>
               <span className={styles.date}>{_data.date}</span>
               <br /> {_data.month}
             </p>
             <figure className={styles.picEvent}>
-              <Image className={styles.img} src={_data.url} alt='Event' />
+              <Image
+                className={styles.img}
+                src={_data.url}
+                alt='Event'
+              />
             </figure>
             <div className={styles.detailEvent}>
               <div className={styles.title}>{_data.title}</div>

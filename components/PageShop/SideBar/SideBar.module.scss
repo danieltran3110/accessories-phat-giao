@@ -10,7 +10,7 @@
     grid-row: 4;
     margin-top: 70px;
     display: grid;
-    grid-template-columns: calc(50% - 15px)  calc(50% - 15px);
+    grid-template-columns: calc(50% - 15px) calc(50% - 15px);
     gap: 30px;
   }
 
@@ -22,7 +22,7 @@
   &.sticky {
     position: fixed;
     float: none;
-    display: block!important;
+    display: block !important;
     top: 10px;
     z-index: -1;
     inset: auto auto 30px 291.667px;
@@ -132,7 +132,6 @@
         font-weight: 400;
         @include Responsive(XS) {
           padding: 10px 18px;
-
         }
 
         &:hover {

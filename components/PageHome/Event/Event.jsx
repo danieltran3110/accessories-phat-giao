@@ -11,7 +11,7 @@ const Event = () => {
         <div className={stylesGlobal.container2}>
           <div className={styles.event}>
             <div className={styles.titleEvent}>
-              <SectionTitle title={'Upcoming Events'}/>
+              <SectionTitle title={'Upcoming Events'} />
               <p className={styles.seeComingEvent}>SEE UPCOMING EVENTS</p>
             </div>
             <BoxEvents />

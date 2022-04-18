@@ -12,7 +12,7 @@ const Dharma = () => {
       <div className={stylesGlobal.container2}>
         <div className={styles.dharmaWrapper}>
           <div className={styles.titleDharma}>
-            <SectionTitle title={'Dharma Talks'}/>
+            <SectionTitle title={'Dharma Talks'} />
           </div>
           <AudioBox />
           <LinksContact />

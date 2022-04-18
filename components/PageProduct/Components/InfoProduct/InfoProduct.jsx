@@ -4,7 +4,7 @@ import Stars from '../../../PageShop/Products/Component/ComponentStars';
 import ReadMore from '../../../ReadMore/ReadMore';
 import stylesGlobal from '../../../../assets/scss/global.module.scss';
 
-const InfoProduct = ({_data}) => {
+const InfoProduct = ({ _data }) => {
   const [numInput, setNumInput] = useState(0);
 
   const handleIncreaseNumber = () => {
@@ -27,18 +27,28 @@ const InfoProduct = ({_data}) => {
           {_data.numStars && <Stars numStars={_data.numStars} />}
         </div>
       </div>
-      <ReadMore>
-        {_data.content}
-      </ReadMore>
+      <ReadMore>{_data.content}</ReadMore>
       <div className={styles.buy}>
         <div className={styles.input}>
           <p className={styles.inputNumber}>{numInput}</p>
-          <span className={styles.inputInc} onClick={() => handleIncreaseNumber()}>
-                <i className='fa fa-angle-up' aria-hidden='true' />
-              </span>
-          <span className={styles.inputDes} onClick={() => handleDecreaseNumber()}>
-                <i className='fa fa-angle-down' aria-hidden='true' />
-              </span>
+          <span
+            className={styles.inputInc}
+            onClick={() => handleIncreaseNumber()}
+          >
+            <i
+              className='fa fa-angle-up'
+              aria-hidden='true'
+            />
+          </span>
+          <span
+            className={styles.inputDes}
+            onClick={() => handleDecreaseNumber()}
+          >
+            <i
+              className='fa fa-angle-down'
+              aria-hidden='true'
+            />
+          </span>
         </div>
         <button className={`${stylesGlobal.button} ${styles.btnBuy}`}>
           BUY NOW

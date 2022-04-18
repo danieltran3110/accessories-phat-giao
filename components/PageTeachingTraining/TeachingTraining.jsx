@@ -6,8 +6,6 @@ import Courses from './Components/Courses/Courses';
 import FormSubscribe from './Components/FormSubscribe/FormSubscribe';
 
 const TeachingTraining = () => {
-
-
   return (
     <div className={`${stylesGlobal.container1}`}>
       <SectionTitle title={'Dharma School'} />

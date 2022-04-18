@@ -1,41 +1,41 @@
 @import 'assets/scss/mixin.module';
 
 .welcome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f2f1ef;
-    padding-bottom: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f1ef;
+  padding-bottom: 350px;
 
-    @include Responsive(XS) {
-        padding-top: 0;
+  @include Responsive(XS) {
+    padding-top: 0;
+  }
+
+  @include Responsive(XXS) {
+    padding-bottom: 180px;
+  }
+
+  .place {
+    text-align: center;
+
+    .introduction {
+      color: #2828286b;
+      font-weight: bold;
+      font-size: 16px;
+      max-width: 75%;
+      margin: 0 auto;
+
+      @include Responsive(L) {
+        font-size: 13px;
+      }
     }
 
-    @include Responsive(XXS) {
-        padding-bottom: 180px;
+    .author {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: #f16f23;
+      letter-spacing: 2px;
     }
-
-    .place {
-        text-align: center;
-
-        .introduction {
-            color: #2828286b;
-            font-weight: bold;
-            font-size: 16px;
-            max-width: 75%;
-            margin: 0 auto;
-
-            @include Responsive(L) {
-                font-size: 13px;
-            }
-        }
-
-        .author {
-            margin-top: 30px;
-            margin-bottom: 30px;
-            color: #f16f23;
-            letter-spacing: 2px;
-        }
-    }
+  }
 }

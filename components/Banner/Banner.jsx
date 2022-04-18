@@ -7,7 +7,6 @@ import { css, StyleSheet } from 'aphrodite';
 import Link from 'next/link';
 
 const Banner = ({ title }) => {
-
   const styles2 = StyleSheet.create({
     fadeInUp: {
       animationName: fadeInUp,
@@ -18,11 +17,19 @@ const Banner = ({ title }) => {
   return (
     <div className={styles.banner}>
       <figure className={styles.picBanner}>
-        <Image src={dataBanner.src} alt={dataBanner.alt} />
-        <figcaption className={`${styles.titleBanner} ${css(styles2.fadeInUp)}`}>
+        <Image
+          src={dataBanner.src}
+          alt={dataBanner.alt}
+        />
+        <figcaption
+          className={`${styles.titleBanner} ${css(styles2.fadeInUp)}`}
+        >
           {title}
           <p className={styles.subTitleBanner}>
-            <Link href={'/'}><a>HOME</a></Link> - <i>{title}</i>
+            <Link href={'/'}>
+              <a>HOME</a>
+            </Link>{' '}
+            - <i>{title}</i>
           </p>
         </figcaption>
       </figure>

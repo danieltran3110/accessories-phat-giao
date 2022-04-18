@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import styles from './ScrollUpButton.module.scss';
 
 const ScrollButton = () => {
-
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {
@@ -25,13 +24,15 @@ const ScrollButton = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', toggleVisible);
-
   });
 
   return (
-    <p className={`${styles.btnScrollUp}`} onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none' }}>
-      <i className={`${'fa fa-caret-up'}`}
-      />
+    <p
+      className={`${styles.btnScrollUp}`}
+      onClick={scrollToTop}
+      style={{ display: visible ? 'inline' : 'none' }}
+    >
+      <i className={`${'fa fa-caret-up'}`} />
     </p>
   );
 };

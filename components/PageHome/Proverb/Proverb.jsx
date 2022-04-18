@@ -10,12 +10,14 @@ const Proverb = () => {
       <section className={stylesGlobal.section}>
         <div className={styles.proverb}>
           <figure className={styles.picProverb}>
-            <Image className={styles.img} src={dataProverb.url} alt='Proverb' />
+            <Image
+              className={styles.img}
+              src={dataProverb.url}
+              alt='Proverb'
+            />
           </figure>
           <div className={styles.contentProverb}>
-            <p className={styles.detailProverb}>
-              {dataProverb.proverb}
-            </p>
+            <p className={styles.detailProverb}>{dataProverb.proverb}</p>
             <p className={styles.author}>
               {' '}
               <b>HIS HOLINESS</b> the <br /> <b>{dataProverb.author}</b>{' '}

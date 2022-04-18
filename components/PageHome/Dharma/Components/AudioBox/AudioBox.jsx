@@ -21,7 +21,10 @@ const AudioBox = () => {
     <section className={stylesGlobal.section + ' ' + css(styles2.zoomIn)}>
       <div className={styles.dharma}>
         {dataDharma.map((_data, index) => (
-          <Audio _data={_data} key={index} />
+          <Audio
+            _data={_data}
+            key={index}
+          />
         ))}
       </div>
     </section>

@@ -12,13 +12,23 @@ const Product = ({ _data, detail, version2, style }) => {
         <a>
           <div className={`${styles.wrapperImage}`}>
             <figure className={styles.picProduct}>
-              <Image src={_data.src} alt={_data.alt} layout={'responsive'} />
+              <Image
+                src={_data.src}
+                alt={_data.alt}
+                layout={'responsive'}
+              />
               <figcaption className={styles.detailInfo}>
                 <p className={`${styles.icon}`}>
-                  <i className={'fa fa-shopping-cart'} aria-hidden />
+                  <i
+                    className={'fa fa-shopping-cart'}
+                    aria-hidden
+                  />
                 </p>
                 <p className={`${styles.icon2}`}>
-                  <i className={'fa fa-eye'} aria-hidden />
+                  <i
+                    className={'fa fa-eye'}
+                    aria-hidden
+                  />
                 </p>
               </figcaption>
             </figure>

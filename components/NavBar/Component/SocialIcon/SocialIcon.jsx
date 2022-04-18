@@ -5,8 +5,12 @@ export default function SocialIcon() {
   return (
     <div className={styles.socialIconWrap}>
       {socialIcon.map((data, index) => (
-        <a href={data.url} key={index} className={styles.iconInfo}>
-          <i className={data.icon}/>
+        <a
+          href={data.url}
+          key={index}
+          className={styles.iconInfo}
+        >
+          <i className={data.icon} />
         </a>
       ))}
     </div>

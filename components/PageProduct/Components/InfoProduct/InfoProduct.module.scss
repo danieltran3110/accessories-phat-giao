@@ -2,7 +2,6 @@
 @import 'assets/scss/mixin.module';
 
 .infoProduct {
-
   @include Responsive(S) {
     margin-top: 30px;
   }

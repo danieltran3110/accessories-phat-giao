@@ -5,7 +5,6 @@ import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 
 const Filter = () => {
-
   const [value, setValue] = React.useState([8, 12]);
 
   const handleChange = (event, newValue) => {
@@ -51,7 +50,6 @@ const Filter = () => {
                 },
                 '&:hover': {
                   boxShadow: 'none',
-
                 },
               },
 
@@ -61,11 +59,15 @@ const Filter = () => {
               '& .Mui-focusVisible': {
                 boxShadow: 'none',
               },
-            }
-            }
+            }}
           />
         </Box>
-        <p className={styles.price}>PRICE: <span>${value[0]} - ${value[1]}</span></p>
+        <p className={styles.price}>
+          PRICE:{' '}
+          <span>
+            ${value[0]} - ${value[1]}
+          </span>
+        </p>
         <p className={styles.btnFilter}>FILTER</p>
       </div>
     </div>

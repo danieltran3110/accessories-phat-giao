@@ -1,7 +1,11 @@
 import React from 'react';
 import styles from './SideBarPosts.module.scss';
 import Categories from '../../../PageShop/SideBar/Component/Categories/Categories';
-import { dataCategoriesPost, dataStateComment, dataTagsPosts } from '../../../../utils/data-config';
+import {
+  dataCategoriesPost,
+  dataStateComment,
+  dataTagsPosts,
+} from '../../../../utils/data-config';
 import Search from '../Search/Search';
 import Tags from '../../../PageShop/SideBar/Component/Tags/Tags';
 import BoxCalendar from '../BoxCalendar/BoxCalendar';

@@ -2,14 +2,13 @@
 @import 'assets/scss/mixin.module';
 
 .margin {
-
   @include Responsive(XS) {
     margin-top: 25px !important;
   }
 
   .shop {
     display: grid;
-    grid-template-columns: 32%  calc(68% - 50px);
+    grid-template-columns: 32% calc(68% - 50px);
     column-gap: 50px;
 
     @include Responsive(M) {

@@ -11,18 +11,26 @@ const ReviewsUser = () => {
   return (
     <div className={styles.displayFlex}>
       <div className={styles.userReview}>
-        <p className={styles.countView}>{`1 review for The Buddha’s Way of Happiness`}</p>
+        <p
+          className={styles.countView}
+        >{`1 review for The Buddha’s Way of Happiness`}</p>
         <div className={styles.userComment}>
           <figure className={styles.pic}>
-            <Image src={_data.src} alt={_data.alt} />
+            <Image
+              src={_data.src}
+              alt={_data.alt}
+            />
           </figure>
-          <p className={styles.content}>{_data.person} – <span className={styles.time}>{_data.time}</span>
-            <span className={styles.comment}> {_data.comment}</span></p>
+          <p className={styles.content}>
+            {_data.person} – <span className={styles.time}>{_data.time}</span>
+            <span className={styles.comment}> {_data.comment}</span>
+          </p>
           <div className={styles.stars}>{<Stars numStars={5} />}</div>
         </div>
       </div>
       <FormReviews />
-    </div>);
+    </div>
+  );
 };
 
 export default ReviewsUser;

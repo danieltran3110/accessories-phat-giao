@@ -55,7 +55,7 @@
       }
 
       &.hideLogo {
-          display: none;
+        display: none;
         @include Responsive(S) {
           display: block;
         }
@@ -210,7 +210,6 @@
 
           @include Responsive(XXS) {
             padding: 2px 15px 2px 0;
-
           }
         }
       }

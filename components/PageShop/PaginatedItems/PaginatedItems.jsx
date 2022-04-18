@@ -4,9 +4,7 @@ import styles from './PaginatedItems.module.scss';
 import { dataProducts } from '../../../utils/data-config';
 import Products from '../Products/Products';
 
-
 function PaginatedItems({ itemsPerPage }) {
-
   const [view, setView] = useState(false);
   // We start with an empty list of items.
   const [currentItems, setCurrentItems] = useState(dataProducts);
@@ -23,8 +21,8 @@ function PaginatedItems({ itemsPerPage }) {
   }, [itemOffset, itemsPerPage]);
 
   // Invoke when user click to request another page.
-  const handlePageClick = (event) => {
-    const newOffset = event.selected * itemsPerPage % dataProducts.length;
+  const handlePageClick = event => {
+    const newOffset = (event.selected * itemsPerPage) % dataProducts.length;
     setItemOffset(newOffset);
   };
 
@@ -32,13 +30,23 @@ function PaginatedItems({ itemsPerPage }) {
     <div className={styles.wrapperPaginate}>
       <div className={styles.view}>
         <div className={styles.icon}>
-          <i className={`fa fa-th-large ${view && styles.blur}`} aria-hidden='true'
-             onClick={() => setView(!view)} />
-          <i className={`fa fa-th-list ${!view && styles.blur}`} aria-hidden='true'
-             onClick={() => setView(!view)} />
+          <i
+            className={`fa fa-th-large ${view && styles.blur}`}
+            aria-hidden='true'
+            onClick={() => setView(!view)}
+          />
+          <i
+            className={`fa fa-th-list ${!view && styles.blur}`}
+            aria-hidden='true'
+            onClick={() => setView(!view)}
+          />
         </div>
         <div className={styles.selectSort}>
-          <select name='SORT BY LATEST' id='lattes' className={styles.selectInner}>
+          <select
+            name='SORT BY LATEST'
+            id='lattes'
+            className={styles.selectInner}
+          >
             <option value='popularity'>SORT BY LATEST</option>
             <option value='popularity'>SORT BY POPULARITY</option>
             <option value='average'>SORT BY AVERAGE RATING</option>
@@ -47,7 +55,14 @@ function PaginatedItems({ itemsPerPage }) {
           </select>
         </div>
       </div>
-      {!view ? <Products currentItems={currentItems} /> : <Products currentItems={currentItems} version2={true} />}
+      {!view ? (
+        <Products currentItems={currentItems} />
+      ) : (
+        <Products
+          currentItems={currentItems}
+          version2={true}
+        />
+      )}
       <ReactPaginate
         nextLabel='→'
         onPageChange={handlePageClick}

@@ -32,14 +32,14 @@ const NavBar = ({ hideLogo }) => {
     let sticky = navbar.offsetTop;
 
     const functionSticky = () => {
-      if ((window.pageYOffset - 1) >= sticky) {
+      if (window.pageYOffset - 1 >= sticky) {
         navbar.classList.add(styles.sticky);
       } else {
         navbar.classList.remove(styles.sticky);
       }
     };
 
-    window.onscroll = function() {
+    window.onscroll = function () {
       functionSticky();
     };
   });
@@ -53,7 +53,10 @@ const NavBar = ({ hideLogo }) => {
         <div className={styles.navigationInner}>
           <Link href='/'>
             <a className={`${styles.logo} ${hideLogo && styles.hideLogo}`}>
-              <Image src={icon} alt={'logo'} />
+              <Image
+                src={icon}
+                alt={'logo'}
+              />
             </a>
           </Link>
           <div
@@ -66,16 +69,25 @@ const NavBar = ({ hideLogo }) => {
               className={styles.closeButton}
               onClick={() => setNavigationOpen(!navigationOpen)}
             >
-              <i className='fa fa-times'> <span>CLOSE</span></i>
+              <i className='fa fa-times'>
+                {' '}
+                <span>CLOSE</span>
+              </i>
             </div>
             <Link href='/'>
               <a className={styles.logo}>
-                <Image src={icon2} alt='logo' />
+                <Image
+                  src={icon2}
+                  alt='logo'
+                />
               </a>
             </Link>
 
             {navigationData.menuItems.map((data, index) => (
-              <div className={styles.menuItemWrap} key={index}>
+              <div
+                className={styles.menuItemWrap}
+                key={index}
+              >
                 {data.url ? (
                   <Link href={data.url}>
                     <a className={styles.menuItem}>{data.title}</a>
@@ -88,7 +100,10 @@ const NavBar = ({ hideLogo }) => {
                       id={data.title}
                       name={data.title}
                     />
-                    <label className={styles.icon} htmlFor={data.title}>
+                    <label
+                      className={styles.icon}
+                      htmlFor={data.title}
+                    >
                       <i className='fa fa-angle-right' />
                     </label>
                     <div className={styles.menuItem}>{data.title}</div>
@@ -101,8 +116,15 @@ const NavBar = ({ hideLogo }) => {
               </div>
             ))}
             <div className={styles.boxSearch}>
-              <label htmlFor='search'><i className={`${'fas fa-search'}`} /></label>
-              <input type='text' id='search' name='search' placeholder={'SEARCH'} />
+              <label htmlFor='search'>
+                <i className={`${'fas fa-search'}`} />
+              </label>
+              <input
+                type='text'
+                id='search'
+                name='search'
+                placeholder={'SEARCH'}
+              />
             </div>
             <SocialIcon />
           </div>

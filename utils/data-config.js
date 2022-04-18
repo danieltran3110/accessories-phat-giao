@@ -220,7 +220,8 @@ export const dataProverb = {
 
 export const dataWelcome = {
   place: 'Welcome to Samadhi Buddhist Center',
-  intro: 'Our center offers a diverse programme of lessons and training courses in different spheres, such as Buddhism teachings, meditation practices, yoga, concentration and so on. Classes take place in shrine rooms and yoga studio almost every day. You are welcome!',
+  intro:
+    'Our center offers a diverse programme of lessons and training courses in different spheres, such as Buddhism teachings, meditation practices, yoga, concentration and so on. Classes take place in shrine rooms and yoga studio almost every day. You are welcome!',
   author: 'LUIS SHAH',
   signature: signature,
 };
@@ -258,7 +259,6 @@ export const dataMend = [
     iconName: 'fa fa-adjust',
     nameMend: 'Arts',
   },
-
 ];
 
 export const dataEvent = [
@@ -270,7 +270,8 @@ export const dataEvent = [
     timeOpen: '8:00AM',
     timeClose: '5:00PM',
     cost: '150',
-    content: 'The starting course for Buddhist practices is a great way to try free sessions of meditation practices, yoga lessons, mindfullness lectures and more.',
+    content:
+      'The starting course for Buddhist practices is a great way to try free sessions of meditation practices, yoga lessons, mindfullness lectures and more.',
   },
   {
     date: '09',
@@ -280,7 +281,8 @@ export const dataEvent = [
     timeOpen: '9:30AM',
     timeClose: '8:00PM',
     cost: 'FREE',
-    content: 'An annual meditation meeting for spiritual trainers and practitioners from all over the world. Everyone is welcome. Prior registration is required.',
+    content:
+      'An annual meditation meeting for spiritual trainers and practitioners from all over the world. Everyone is welcome. Prior registration is required.',
   },
   {
     date: '13',
@@ -290,39 +292,45 @@ export const dataEvent = [
     timeOpen: '9:30AM',
     timeClose: '8:00PM',
     cost: 'FREE',
-    content: 'Buddhas birthday, also known as Vesak Day, is celebrated in spring throughout the world. Buddhists celebrate the most important stages in life of Buddha on Vesak',
+    content:
+      'Buddhas birthday, also known as Vesak Day, is celebrated in spring throughout the world. Buddhists celebrate the most important stages in life of Buddha on Vesak',
   },
-
 ];
 
 export const dataFeature = [
   {
     title: 'Art & Culture',
     url: feature1,
-    content: 'Buddhism is not only an abstract philosophy. It considers the emotions as well as the intellect and creates a new understanding of the world through art and culture.',
+    content:
+      'Buddhism is not only an abstract philosophy. It considers the emotions as well as the intellect and creates a new understanding of the world through art and culture.',
   },
   {
     title: 'Residency',
     url: feature2,
-    content: 'The atmosphere of Samadhi Monastery helps to retreat from the anxieties of everyday life and concentrate your mind on spiritual practices.',
+    content:
+      'The atmosphere of Samadhi Monastery helps to retreat from the anxieties of everyday life and concentrate your mind on spiritual practices.',
   },
   {
     title: 'Philosophy',
     url: feature3,
-    content: 'Buddhism is a way to wisdom, peace, harmony of mind and soul, an exploration of the life in all its forms.',
+    content:
+      'Buddhism is a way to wisdom, peace, harmony of mind and soul, an exploration of the life in all its forms.',
   },
   {
     title: 'Meditation',
     url: feature4,
-    content: 'Meditation is a training to your mind just like sport is training to your body. Different meditation practices require different mental skills.',
+    content:
+      'Meditation is a training to your mind just like sport is training to your body. Different meditation practices require different mental skills.',
   },
 ];
 
 export const dataVision = {
   title: 'Our Core Vision',
-  content: 'Meditation is one of the greatest ways to obtain inner peace and harmony. It is believed that meditation helps to accustom mind to positive thinking and calmness. When our mind is serene, it means that we are free from stress and open to true happiness. Everyone is invited to join our meditation lesson and enjoy the process.',
+  content:
+    'Meditation is one of the greatest ways to obtain inner peace and harmony. It is believed that meditation helps to accustom mind to positive thinking and calmness. When our mind is serene, it means that we are free from stress and open to true happiness. Everyone is invited to join our meditation lesson and enjoy the process.',
   urlPic1: vision1,
-  urlAudio: 'https://player.vimeo.com/video/45830194?h=2c5541d8bc&color=ffffff&title=0&byline=0&portrait=0&badge=0',
+  urlAudio:
+    'https://player.vimeo.com/video/45830194?h=2c5541d8bc&color=ffffff&title=0&byline=0&portrait=0&badge=0',
   urlPic2: vision2,
   proverb: 'Meditate… do not delay, lest you later regret it.',
   author: 'GAUTAMA BUDDHA',
@@ -331,13 +339,15 @@ export const dataVision = {
 export const dataDharma = [
   {
     urlPic: dharma1,
-    urlAudio: 'https://samadhi.axiomthemes.com/wp-content/uploads/2019/03/sample-melody.mp3',
+    urlAudio:
+      'https://samadhi.axiomthemes.com/wp-content/uploads/2019/03/sample-melody.mp3',
     title: 'Managing Relationships',
     author: 'ALAN BRAHM',
   },
   {
     urlPic: dharma2,
-    urlAudio: 'https://samadhi.axiomthemes.com/wp-content/uploads/2019/03/sample-melody.mp3',
+    urlAudio:
+      'https://samadhi.axiomthemes.com/wp-content/uploads/2019/03/sample-melody.mp3',
     title: 'Managing Relationships',
     author: 'ALAN BRAHM',
   },
@@ -363,7 +373,8 @@ export const dataLinksContact = [
 ];
 
 export const dataBeginningBox = {
-  content: 'Samandhi Monastery invites and welcomes every person seeking refuge in the ancient teachings of wisdom and compassion to practice.',
+  content:
+    'Samandhi Monastery invites and welcomes every person seeking refuge in the ancient teachings of wisdom and compassion to practice.',
   btnName: 'BEGINNING INSTRUCTION',
 };
 
@@ -427,7 +438,6 @@ export const dataCategoriesPost = [
   },
 ];
 
-
 export const dataTags = [
   {
     item: 'buddhism',
@@ -450,7 +460,6 @@ export const dataTags = [
     href: '#',
   },
 ];
-
 
 export const dataTagsPosts = [
   {
@@ -491,7 +500,8 @@ export const dataTagsPosts = [
 export const dataProducts = [
   {
     name: 'The Buddha’s Way of Happiness',
-    content: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+    content:
+      'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
     src: book1,
     alt: 'book1',
     money: '15.00',
@@ -499,7 +509,8 @@ export const dataProducts = [
   },
   {
     name: 'The Four Noble Truths of Love',
-    content: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+    content:
+      'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
     src: book2,
     alt: 'book2',
     money: '11.00',
@@ -507,21 +518,24 @@ export const dataProducts = [
   },
   {
     name: 'Meditations from the Mat',
-    content: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+    content:
+      'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
     src: book3,
     alt: 'book3',
     money: '10.00',
   },
   {
     name: 'The Buddha’s Way of Happiness',
-    content: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+    content:
+      'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
     src: book4,
     alt: 'book4',
     money: '12.00',
   },
   {
     name: 'The Four Noble Truths of Love',
-    content: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+    content:
+      'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
     src: book5,
     alt: 'book5',
     money: '11.00',
@@ -529,14 +543,16 @@ export const dataProducts = [
   },
   {
     name: 'Meditations from the Mat',
-    content: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+    content:
+      'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
     src: book6,
     alt: 'book6',
     money: '10.00',
   },
   {
     name: 'The Buddha’s Way of Happiness',
-    content: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+    content:
+      'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
     src: book7,
     alt: 'book7',
     money: '15.00',
@@ -544,7 +560,8 @@ export const dataProducts = [
   },
   {
     name: 'The Four Noble Truths of Love',
-    content: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+    content:
+      'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
     src: book8,
     alt: 'book8 ',
     money: '11.00',
@@ -552,21 +569,24 @@ export const dataProducts = [
   },
   {
     name: 'Meditations from the Mat',
-    content: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+    content:
+      'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
     src: book9,
     alt: 'book9',
     money: '10.00',
   },
   {
     name: 'Meditations from the Mat',
-    content: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+    content:
+      'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
     src: book6,
     alt: 'book6',
     money: '10.00',
   },
   {
     name: 'The Four Noble Truths of Love',
-    content: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+    content:
+      'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
     src: book2,
     alt: 'book2',
     money: '11.00',
@@ -574,14 +594,16 @@ export const dataProducts = [
   },
   {
     name: 'Meditations from the Mat',
-    content: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+    content:
+      'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
     src: book3,
     alt: 'book3',
     money: '10.00',
   },
   {
     name: 'The Buddha’s Way of Happiness',
-    content: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+    content:
+      'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
     src: book1,
     alt: 'book1',
     money: '15.00',
@@ -589,7 +611,8 @@ export const dataProducts = [
   },
   {
     name: 'The Four Noble Truths of Love',
-    content: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+    content:
+      'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur. magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
     src: book3,
     alt: 'book3 ',
     money: '11.00',
@@ -601,7 +624,8 @@ export const dataCourses = [
   {
     src: course1,
     title: 'Art & Culture',
-    content: 'It is believed that art is a form of meditation. Creative practices help to relieve stress and bring peace to one heart and mind.',
+    content:
+      'It is believed that art is a form of meditation. Creative practices help to relieve stress and bring peace to one heart and mind.',
     beginning: 'SEPTEMBER 12, 2022',
     duration: '3 WEEKS',
     cost: 'FREE',
@@ -610,7 +634,8 @@ export const dataCourses = [
   {
     src: course2,
     title: 'Tibetan Language',
-    content: 'You have a chance to learn the language of the Dalai Lama and the language of dharma to understand buddhist teaching in depth.',
+    content:
+      'You have a chance to learn the language of the Dalai Lama and the language of dharma to understand buddhist teaching in depth.',
     beginning: 'JUNE 2, 2022',
     duration: '3 WEEKS',
     cost: '$150',
@@ -619,7 +644,8 @@ export const dataCourses = [
   {
     src: course3,
     title: 'Meditation School',
-    content: 'You’ll be a full-time part of Samadhi Monastery to support your training, practice, and spiritual life. Find the way to inner harmony.',
+    content:
+      'You’ll be a full-time part of Samadhi Monastery to support your training, practice, and spiritual life. Find the way to inner harmony.',
     beginning: 'APRIL 8, 2022',
     duration: '2 WEEKS',
     cost: 'FREE',
@@ -628,7 +654,8 @@ export const dataCourses = [
   {
     src: course4,
     title: 'Cooking Classes',
-    content: 'Throw your dreams into space like a kite, and you do not know what it will bring back, a new life, a new friend, a new love, a new country.',
+    content:
+      'Throw your dreams into space like a kite, and you do not know what it will bring back, a new life, a new friend, a new love, a new country.',
     beginning: 'APRIL 15, 2022',
     duration: '1 MONTH',
     cost: '$130',
@@ -637,7 +664,8 @@ export const dataCourses = [
   {
     src: course5,
     title: 'Dreams and Reality',
-    content: 'Throw your dreams into space like a kite, and you do not know what it will bring back, a new life, a new friend, a new love, a new country.',
+    content:
+      'Throw your dreams into space like a kite, and you do not know what it will bring back, a new life, a new friend, a new love, a new country.',
     beginning: 'JULY 4, 2022',
     duration: '4 WEEKS',
     cost: '$100',
@@ -646,7 +674,8 @@ export const dataCourses = [
   {
     src: course6,
     title: 'Find Happiness',
-    content: 'Throw your dreams into space like a kite, and you do not know what it will bring back, a new life, a new friend, a new love, a new country.',
+    content:
+      'Throw your dreams into space like a kite, and you do not know what it will bring back, a new life, a new friend, a new love, a new country.',
     beginning: 'JULY 15, 2022',
     duration: '3 WEEKS',
     cost: 'FREE',
@@ -655,7 +684,8 @@ export const dataCourses = [
   {
     src: course7,
     title: 'Transform Your Life',
-    content: 'Throw your dreams into space like a kite, and you do not know what it will bring back, a new life, a new friend, a new love, a new country.',
+    content:
+      'Throw your dreams into space like a kite, and you do not know what it will bring back, a new life, a new friend, a new love, a new country.',
     beginning: 'AUGUST 9, 2022',
     duration: '3 WEEKS',
     cost: '$150',
@@ -664,7 +694,8 @@ export const dataCourses = [
   {
     src: course8,
     title: 'Yoga School',
-    content: 'Throw your dreams into space like a kite, and you do not know what it will bring back, a new life, a new friend, a new love, a new country.',
+    content:
+      'Throw your dreams into space like a kite, and you do not know what it will bring back, a new life, a new friend, a new love, a new country.',
     beginning: 'SEPTEMBER 3, 2022',
     duration: '3 MONTHS',
     cost: '$200',
@@ -675,8 +706,10 @@ export const dataCourses = [
 export const dataAlsoLike = {
   src: course3full,
   title: 'Meditation School',
-  content: 'You’ll be a full-time part of Samadhi Monastery to support your training, practice, and spiritual life. Find the way to inner harmony.',
-  fullContent: 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
+  content:
+    'You’ll be a full-time part of Samadhi Monastery to support your training, practice, and spiritual life. Find the way to inner harmony.',
+  fullContent:
+    'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?',
   beginning: 'APRIL 8, 2022',
   duration: '2 WEEKS',
   cost: 'FREE',
@@ -706,12 +739,12 @@ export const dataReaction = [
   },
 ];
 
-
 export const dataMayLike = [
   {
     src: course1,
     title: 'Art & Culture',
-    content: 'It is believed that art is a form of meditation. Creative practices help to relieve stress and bring peace to one heart and mind.',
+    content:
+      'It is believed that art is a form of meditation. Creative practices help to relieve stress and bring peace to one heart and mind.',
     beginning: 'SEPTEMBER 12, 2022',
     duration: '3 WEEKS',
     cost: 'FREE',
@@ -720,7 +753,8 @@ export const dataMayLike = [
   {
     src: course2,
     title: 'Tibetan Language',
-    content: 'You have a chance to learn the language of the Dalai Lama and the language of dharma to understand buddhist teaching in depth.',
+    content:
+      'You have a chance to learn the language of the Dalai Lama and the language of dharma to understand buddhist teaching in depth.',
     beginning: 'JUNE 2, 2022',
     duration: '3 WEEKS',
     cost: '$150',
@@ -729,14 +763,14 @@ export const dataMayLike = [
   {
     src: course3,
     title: 'Meditation School',
-    content: 'You’ll be a full-time part of Samadhi Monastery to support your training, practice, and spiritual life. Find the way to inner harmony.',
+    content:
+      'You’ll be a full-time part of Samadhi Monastery to support your training, practice, and spiritual life. Find the way to inner harmony.',
     beginning: 'APRIL 8, 2022',
     duration: '2 WEEKS',
     cost: 'FREE',
     urlLearn: '/',
   },
 ];
-
 
 export const dataProductDetail = {
   src: book1,
@@ -747,7 +781,8 @@ export const dataProductDetail = {
   categories: 'BOOK, BUDDHISM, PHILOSOPHY, TEACHING',
   tags: 'BUDDHISM, HAPPINESS, MEDITATION, SOUL',
   productID: 379,
-  description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.',
+  description:
+    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.',
   products: [
     {
       src: book2,
@@ -798,7 +833,8 @@ export const dataNews = [
 export const dataFirstPost = {
   titlePost: 'Buddhist Festivals & Ceremonies',
   authorPost: 'IMOGENE MARTIN',
-  content: 'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
+  content:
+    'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
   day: '04',
   month: 'March',
 };
@@ -807,7 +843,8 @@ export const dataAllPosts = [
   {
     titlePost: 'Should I Believe in Rebirth?',
     authorPost: 'IMOGENE MARTIN',
-    content: 'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
+    content:
+      'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
     urlBtn: '/',
     day: '04',
     month: 'March',
@@ -820,26 +857,30 @@ export const dataAllPosts = [
     urlBtn: '/',
     day: '04',
     month: 'March',
-    slogan: 'World belongs to humanity, not this leader, that leader or that king or prince or religious leader. World belongs to humanity.',
+    slogan:
+      'World belongs to humanity, not this leader, that leader or that king or prince or religious leader. World belongs to humanity.',
     authorSlogan: 'DALAI LAMA',
   },
   {
     titlePost: 'Managing Relationships',
     authorPost: 'IMOGENE MARTIN',
-    content: 'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
+    content:
+      'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
     urlBtn: '/',
     day: '04',
     month: 'March',
 
     urlPic: dharma2,
-    urlAudio: 'https://samadhi.axiomthemes.com/wp-content/uploads/2019/03/sample-melody.mp3',
+    urlAudio:
+      'https://samadhi.axiomthemes.com/wp-content/uploads/2019/03/sample-melody.mp3',
     title: 'Managing Relationships',
     author: 'ALAN BRAHM',
   },
   {
     titlePost: 'What is Ganesha Position in Buddhism?',
     authorPost: 'IMOGENE MARTIN',
-    content: 'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
+    content:
+      'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
     urlBtn: '/',
     day: '04',
     month: 'March',
@@ -847,16 +888,19 @@ export const dataAllPosts = [
   {
     titlePost: 'The Buddha’s Teaching Of Non-Clinging',
     authorPost: 'IMOGENE MARTIN',
-    content: 'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
+    content:
+      'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
     urlBtn: '/',
     day: '04',
     month: 'March',
-    urlVideo: 'https://player.vimeo.com/video/45830194?h=2c5541d8bc&color=ffffff&title=0&byline=0&portrait=0&badge=0'
+    urlVideo:
+      'https://player.vimeo.com/video/45830194?h=2c5541d8bc&color=ffffff&title=0&byline=0&portrait=0&badge=0',
   },
   {
     titlePost: 'Should I Believe in Rebirth?',
     authorPost: 'IMOGENE MARTIN',
-    content: 'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
+    content:
+      'Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards? I find this argument as sad as the argument that without a belief in…',
     urlBtn: '/',
     day: '04',
     month: 'March',
@@ -874,10 +918,12 @@ export const dataStateComment = [
     state: 'OFF',
     name: 'Should I Believe in Rebirth?',
   },
-]
+];
 
 export const dataPolicy = {
-  saveInfo: 'SAVE MY NAME, EMAIL, AND WEBSITE IN THIS BROWSER FOR THE NEXT TIME I COMMENT.',
-  agreePolicy: 'I AGREE THAT MY SUBMITTED DATA IS BEING COLLECTED AND STORED. FOR FURTHER DETAILS ON HANDLING USER DATA, SEE OUR ',
-  agreeData: 'I AGREE THAT MY SUBMITTED DATA IS BEING COLLECTED AND STORED.'
-}
+  saveInfo:
+    'SAVE MY NAME, EMAIL, AND WEBSITE IN THIS BROWSER FOR THE NEXT TIME I COMMENT.',
+  agreePolicy:
+    'I AGREE THAT MY SUBMITTED DATA IS BEING COLLECTED AND STORED. FOR FURTHER DETAILS ON HANDLING USER DATA, SEE OUR ',
+  agreeData: 'I AGREE THAT MY SUBMITTED DATA IS BEING COLLECTED AND STORED.',
+};

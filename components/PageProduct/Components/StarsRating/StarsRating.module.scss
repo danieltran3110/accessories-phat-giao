@@ -1,53 +1,49 @@
+@import 'assets/scss/fonts.module';
+
 .title {
   font-family: 'renner';
-  font-weight: bold;
+  margin: 0;
 }
 
-.starRating {
+.starRatingInput {
+  font-size: 25px;
+  color: #f16f23;
 
-  button {
-    background-color: white;
-    border: none;
-    outline: none;
+  .starItem {
+    margin-right: 5px;
     cursor: pointer;
-    font-size: 25px;
-    transition: 0.3s;
+
+    &:hover {
+      color: #000;
+    }
   }
 
-  .on {
-    color: #f16f23;
+  input {
+    display: none;
   }
 
-  .off {
-    color: #7e7e7e;
+  &.unChecked {
+    &:hover {
+      .starItem {
+        &::before {
+          content: '\2605';
+          position: absolute;
+        }
+
+        &:hover ~ .starItem:before {
+          content: none;
+        }
+      }
+    }
   }
 
-
-  //.rating {
-  //  unicode-bidi: bidi-override;
-  //  direction: rtl;
-  //
-  //  > span {
-  //    display: inline-block;
-  //    position: relative;
-  //    width: 1.1em;
-  //
-  //    &:hover::before,
-  //    &:hover ~span ::before {
-  //      content: "\2605";
-  //      color: #f16f23;
-  //      //position: absolute;
-  //    }
-  //  }
-  //}
-
-  //.rating > i {
-  //
-  //}
-  //
-  //.rating > i:hover:before,
-  //.rating > i:hover ~ i:before {
-  //  content: "\2605";
-  //  position: absolute;
-  //}
+  &.checked {
+    .starItem::before {
+      content: '\2605';
+      position: absolute;
+    }
+    input:checked ~ .starItem:before {
+      content: none;
+    }
+  }
 }

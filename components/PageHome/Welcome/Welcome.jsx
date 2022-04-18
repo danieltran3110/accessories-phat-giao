@@ -12,13 +12,19 @@ const Welcome = () => {
         <div className={stylesGlobal.container2}>
           <div className={styles.welcome}>
             <div className={styles.place}>
-              <SectionTitle title={dataWelcome.place} left={false}/>
-              <p className={styles.introduction}>
-                {dataWelcome.intro}
+              <SectionTitle
+                title={dataWelcome.place}
+                left={false}
+              />
+              <p className={styles.introduction}>{dataWelcome.intro}</p>
+              <p className={styles.author}>
+                SUPERVISING MINISTER <br /> <b>{dataWelcome.author}</b>
               </p>
-              <p className={styles.author}>SUPERVISING MINISTER <br /> <b>{dataWelcome.author}</b></p>
               <figure className={styles.signature}>
-                <Image src={dataWelcome.signature} alt='Signature' />
+                <Image
+                  src={dataWelcome.signature}
+                  alt='Signature'
+                />
               </figure>
             </div>
           </div>
