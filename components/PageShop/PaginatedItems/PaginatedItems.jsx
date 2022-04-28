@@ -71,14 +71,14 @@ function PaginatedItems({ itemsPerPage }) {
         pageCount={pageCount}
         previousLabel='←'
         pageClassName={`${styles.pageItem} ${styles.decoration} `}
-        pageLinkClassName={`${styles.pageLinkNumber}`}
+        pageLinkClassName='page-link'
         previousClassName={`${styles.pageItem} ${styles.iconLeft}`}
         previousLinkClassName={styles.pageLink}
         nextClassName={`${styles.pageItem} ${styles.iconRight}`}
         nextLinkClassName={styles.pageLink}
         breakLabel='/'
         breakClassName='page-item'
-        breakLinkClassName={`${styles.pageLinkNumber}`}
+        breakLinkClassName='page-link'
         containerClassName={styles.pagination}
         activeClassName={styles.active}
         renderOnZeroPageCount={null}
