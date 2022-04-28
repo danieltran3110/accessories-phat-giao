@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './PagePosts.module.scss';
 import stylesGlobal from '../../assets/scss/global.module.scss';
 import SideBarPosts from './Components/SideBarPosts/SideBarPosts';
