@@ -1,13 +1,11 @@
 {
   "name": "accessories-phat-giao",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "export": "npm run build && next export"
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
@@ -16,31 +14,24 @@
     "@mui/material": "^5.5.0",
     "aphrodite": "^2.4.0",
     "formik": "^2.2.9",
-    "fs-extra": "^10.1.0",
-    "gray-matter": "^4.0.3",
     "jquery": "^3.6.0",
     "lodash": "^4.17.21",
-    "next": "^12.1.5",
-    "react": "^18.0.0",
+    "next": "12.0.10",
+    "react": "17.0.2",
     "react-animations": "^1.0.0",
     "react-calendar": "^3.7.0",
-    "react-dom": "^18.0.0",
+    "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
-    "react-markdown": "^8.0.3",
     "react-paginate": "^8.1.2",
     "sass": "^1.49.7",
     "semantic-ui-react": "^2.1.2",
     "sticky-sidebar": "^3.3.1",
     "styled-components": "^5.3.3",
     "swiper": "^7.4.1",
-    "yup": "^0.32.11",
-    "raw-loader": "^4.0.2"
+    "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.9",
-    "@babel/preset-react": "^7.16.7",
-    "eslint": "7.32.0",
-    "eslint-config-next": "12.1.5",
-    "frontmatter-markdown-loader": "^3.7.0"
+    "eslint": "^7.32.0",
+    "eslint-config-next": "12.0.10"
   }
 }

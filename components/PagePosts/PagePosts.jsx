@@ -8,7 +8,7 @@ const PagePosts = () => {
   return (
     <div className={`${stylesGlobal.container1}`}>
       <div className={styles.displayGrid}>
-        {/*<PaginatedItems itemsPerPage={5} />*/}
+        <PaginatedItems itemsPerPage={5} />
         <SideBarPosts />
       </div>
     </div>
