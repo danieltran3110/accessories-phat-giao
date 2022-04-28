@@ -11,7 +11,7 @@ import { EffectFade, Pagination } from 'swiper';
 import styles from './BeginSlide.module.scss';
 import logo from '../../../assets/images/logo2_retina.png';
 import { dataSwiper } from '../../../utils/data-config';
-import { css, StyleSheet } from 'aphrodite';
+import { css, StyleSheet } from 'aphrodite/no-important';
 import { fadeInUp } from 'react-animations';
 
 const SlideIntro = () => {

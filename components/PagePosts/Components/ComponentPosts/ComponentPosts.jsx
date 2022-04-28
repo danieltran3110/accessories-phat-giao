@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from './ComponentPosts.module.scss';
 import stylesGlobal from '../../../../assets/scss/global.module.scss';
 import ComponentDay from '../ComponentDay/ComponentDay';
@@ -27,28 +28,30 @@ const Posts = ({ currentItems }) => {
           className={styles.wrapperPosts}
           key={index}
         >
-          {_data.src && <ComponentPicture _data={_data} />}
-          {_data.slogan && <ComponentSlogan _data={_data} />}
-          {_data.urlAudio && (
-            <Audio
-              _data={_data}
-              index={index}
-            />
-          )}
-          {_data.urlVideo && <ComponentVideo _data={_data} />}
-          <p className={styles.title}>
-            {_data.titlePost}
-            {!_data.src && !_data.urlVideo && <ComponentDay _data={_data} />}
-          </p>
-          <p className={styles.author}>
-            <span>POSTED BY</span> {_data.authorPost}
-          </p>
-          {_data.content && <p className={styles.content}>{_data.content}</p>}
-          <div
-            className={`${stylesGlobal.button2} ${stylesGlobal.normal} ${stylesGlobal.BGCBlack}`}
-          >
-            LEARN MORE
-          </div>
+          {/*{_data.src && <ComponentPicture _data={_data} />}*/}
+          {/*{_data.slogan && <ComponentSlogan _data={_data} />}*/}
+          {/*{_data.urlAudio && (*/}
+          {/*  <Audio*/}
+          {/*    _data={_data}*/}
+          {/*    index={index}*/}
+          {/*  />*/}
+          {/*)}*/}
+          {/*{_data.urlVideo && <ComponentVideo _data={_data} />}*/}
+          <Link href={`/posts/${_data.slug}`}>
+            <a className={styles.title}>
+              {_data.title}
+              {/*{!_data.src && !_data.urlVideo && <ComponentDay _data={_data} />}*/}
+            </a>
+          </Link>
+          {/*<p className={styles.author}>*/}
+          {/*  <span>POSTED BY</span> {_data.authorPost}*/}
+          {/*</p>*/}
+          {/*{_data.content && <p className={styles.content}>{_data.content}</p>}*/}
+          {/*<div*/}
+          {/*  className={`${stylesGlobal.button2} ${stylesGlobal.normal} ${stylesGlobal.BGCBlack}`}*/}
+          {/*>*/}
+          {/*  LEARN MORE*/}
+          {/*</div>*/}
         </div>
       ))}
     </div>

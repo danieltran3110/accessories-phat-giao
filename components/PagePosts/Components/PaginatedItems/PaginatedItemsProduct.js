@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import styles from '../../../PageShop/PaginatedItems/PaginatedItems.module.scss';
 import styles2 from './PaginatedItemsProduct.module.scss';
-import { dataAllPosts } from '../../../../utils/data-config';
+// import { dataAllPosts } from '../../../../utils/data-config';
 import Posts from '../ComponentPosts/ComponentPosts';
 
-function PaginatedItems({ itemsPerPage }) {
+
+export default function PaginatedItems({ itemsPerPage, posts }) {
   // We start with an empty list of items.
-  const [currentItems, setCurrentItems] = useState(dataAllPosts);
+  const [currentItems, setCurrentItems] = useState(posts);
+  console.log(posts);
   const [pageCount, setPageCount] = useState(0);
   // Here we use item offsets; we could also use page offsets
   // following the API or data you're working with.
@@ -16,19 +18,19 @@ function PaginatedItems({ itemsPerPage }) {
   useEffect(() => {
     // Fetch items from another resources.
     const endOffset = itemOffset + itemsPerPage;
-    setCurrentItems(dataAllPosts.slice(itemOffset, endOffset));
-    setPageCount(Math.ceil(dataAllPosts.length / itemsPerPage));
+    setCurrentItems(posts.slice(itemOffset, endOffset));
+    setPageCount(Math.ceil(posts.length / itemsPerPage));
   }, [itemOffset, itemsPerPage]);
 
   // Invoke when user click to request another page.
   const handlePageClick = event => {
-    const newOffset = (event.selected * itemsPerPage) % dataAllPosts.length;
+    const newOffset = (event.selected * itemsPerPage) % posts.length;
     setItemOffset(newOffset);
   };
 
   return (
     <div className={styles.wrapperPaginate}>
-      <Posts currentItems={currentItems} />
+      {/*<Posts currentItems={currentItems} />*/}
       <ReactPaginate
         nextLabel='→'
         onPageChange={handlePageClick}
@@ -53,4 +55,5 @@ function PaginatedItems({ itemsPerPage }) {
   );
 }
 
-export default PaginatedItems;
+// export default PaginatedItems;
+
