@@ -17,23 +17,30 @@
       grid-column-end: 2;
     }
 
-    .pageItem {
-      list-style: none;
+    :global(.page-link) {
+      display: block;
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      text-align: center;
       transition: 0.5s;
-      margin: 0 15px;
-      font-family: 'renner';
-      font-size: 14px;
-      font-weight: 900 !important;
 
       &:hover {
         cursor: pointer;
         color: white;
         background-color: #f16f23;
       }
+    }
+
+    .pageItem {
+      list-style: none;
+      border-radius: 50%;
+      text-align: center;
+      transition: 0.5s;
+      margin: 0 15px;
+      //padding: 0 10px;
+      font-family: 'renner';
+      font-size: 14px;
+      font-weight: 900 !important;
 
       &.decoration {
         position: relative;
@@ -96,6 +103,17 @@
       position: relative;
       font-size: 17px;
       color: #282828;
+      border-radius: 50%;
+      transition: 0.5s;
+      width: 40px;
+      height: 40px;
+      display: block;
+
+      &:hover {
+        cursor: pointer;
+        color: white;
+        background-color: #f16f23;
+      }
     }
 
     .active {
