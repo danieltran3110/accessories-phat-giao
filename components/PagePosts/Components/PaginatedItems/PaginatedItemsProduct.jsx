@@ -9,7 +9,6 @@ import { PostContext } from '../../../../pages/posts';
 function PaginatedItems({ itemsPerPage }) {
   const post = useContext(PostContext);
   const dataAllPosts = post.post;
-  console.log(dataAllPosts[0].date.split(',')[1]);
   // We start with an empty list of items.
   const [currentItems, setCurrentItems] = useState(dataAllPosts);
   const [pageCount, setPageCount] = useState(0);

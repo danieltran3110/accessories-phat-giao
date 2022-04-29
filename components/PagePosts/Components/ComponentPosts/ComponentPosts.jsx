@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styles from './ComponentPosts.module.scss';
+import Link from 'next/link';
 import stylesGlobal from '../../../../assets/scss/global.module.scss';
 import ComponentDay from '../ComponentDay/ComponentDay';
 import ComponentPicture from '../ComponentPicture/ComponentPicture';
 import ComponentSlogan from '../ComponentSlogan/ComponentSlogan';
 import Audio from '../../../Audio/Audio';
-import { dataFirstPost } from '../../../../utils/data-config';
 import ComponentVideo from '../ComponentVideo/ComponentVideo';
 
 const Posts = ({ currentItems }) => {
@@ -36,10 +36,12 @@ const Posts = ({ currentItems }) => {
             />
           )}
           {_data.urlVideo && <ComponentVideo _data={_data} />}
-          <p className={styles.title}>
-            {_data.titlePost}
-            {!_data.src && !_data.urlVideo && <ComponentDay _data={_data} />}
-          </p>
+          <Link href={`/course/${_data.slug}`}>
+            <a className={styles.title}>
+              {_data.titlePost}
+              {!_data.src && !_data.urlVideo && <ComponentDay _data={_data} />}
+            </a>
+          </Link>
           <p className={styles.author}>
             <span>POSTED BY</span> {_data.authorPost}
           </p>

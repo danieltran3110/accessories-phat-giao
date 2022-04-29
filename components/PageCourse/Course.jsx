@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './Course.module.scss';
 import stylesGlobal from '../../assets/scss/global.module.scss';
 import Image from 'next/image';
@@ -7,8 +7,10 @@ import { dataAlsoLike } from '../../utils/data-config';
 import Reactions from './Components/Reations/Reactions';
 import MayLike from './Components/MayLike/MayLike';
 import BoxComment from './Components/BoxComment/BoxComment';
+import { DetailPostContext } from '../../pages/course/[slug]';
 
 const Course = () => {
+  const detailPost = useContext(DetailPostContext);
   return (
     <div className={`${stylesGlobal.container1}`}>
       <figure className={styles.pic}>
@@ -28,7 +30,7 @@ const Course = () => {
           <b>COST</b> {dataAlsoLike.cost}
         </p>
       </div>
-      <p className={styles.content}>{dataAlsoLike.fullContent}</p>
+      <p className={styles.content}>{detailPost.frontMatter.content}</p>
       <Reactions />
       <MayLike />
       <BoxComment />
