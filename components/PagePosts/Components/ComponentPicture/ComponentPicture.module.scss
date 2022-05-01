@@ -6,19 +6,23 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
   width: fit-content;
 
   &.maxHeight {
     max-height: 170px;
   }
 
-  .img {
-    @include Responsive(M) {
-      height: 200px !important;
-      width: 200px !important;
+  .wrapperImg {
+    position: relative;
+
+    .img {
+      @include Responsive(M) {
+        height: 200px !important;
+        width: 200px !important;
+      }
     }
   }
 
