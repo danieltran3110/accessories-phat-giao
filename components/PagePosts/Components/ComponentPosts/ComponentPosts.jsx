@@ -45,7 +45,9 @@ const Posts = ({ currentItems }) => {
           <p className={styles.author}>
             <span>POSTED BY</span> {_data.authorPost}
           </p>
-          {_data.content && <p className={styles.content}>{_data.content}</p>}
+          {_data.content && <p className={styles.content}>
+            {_data.content}
+          </p>}
           <div
             className={`${stylesGlobal.button2} ${stylesGlobal.normal} ${stylesGlobal.BGCBlack}`}
           >

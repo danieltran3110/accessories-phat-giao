@@ -6,23 +6,15 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
-  width: fit-content;
 
   &.maxHeight {
     max-height: 170px;
   }
 
-  .wrapperImg {
-    position: relative;
-
-    .img {
-      @include Responsive(M) {
-        height: 200px !important;
-        width: 200px !important;
-      }
+  .img {
+    @include Responsive(M) {
+      height: 200px !important;
+      width: 200px !important;
     }
   }
 
@@ -54,6 +46,7 @@
     }
   }
 
+
   img {
     min-height: 220px;
     transition: 0.5s;
@@ -84,6 +77,11 @@
     letter-spacing: 2px;
     transition: 0.5s;
     z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 
     &:hover {
       background-color: #f16f23;

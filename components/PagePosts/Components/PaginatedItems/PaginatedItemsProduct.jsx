@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import styles from '../../../PageShop/PaginatedItems/PaginatedItems.module.scss';
 import styles2 from './PaginatedItemsProduct.module.scss';
-// import { dataAllPosts } from '../../../../utils/data-config';
 import Posts from '../ComponentPosts/ComponentPosts';
 import { PostContext } from '../../../../pages/posts';
 

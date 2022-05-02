@@ -8,6 +8,7 @@ import Reactions from './Components/Reations/Reactions';
 import MayLike from './Components/MayLike/MayLike';
 import BoxComment from './Components/BoxComment/BoxComment';
 import { DetailPostContext } from '../../pages/course/[slug]';
+import ReactMarkdown from 'react-markdown';
 
 const Course = () => {
   const detailPost = useContext(DetailPostContext);
@@ -30,7 +31,11 @@ const Course = () => {
           <b>COST</b> {dataAlsoLike.cost}
         </p>
       </div>
-      <p className={styles.content}>{detailPost.frontMatter.content}</p>
+      <p className={styles.content}>
+        <ReactMarkdown>
+          {detailPost.markdown}
+        </ReactMarkdown>
+      </p>
       <Reactions />
       <MayLike />
       <BoxComment />

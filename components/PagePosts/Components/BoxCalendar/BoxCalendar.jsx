@@ -1,23 +1,9 @@
-// import React from 'react';
 import styles from './BoxCalendar.module.scss';
-// import Calendar from 'react-calendar';
 import stylesGlobal from '../../../../assets/scss/global.module.scss';
-//
-// const BoxCalendar = () => {
-//   return (
-//     <div className={stylesGlobal.backgroundColor}>
-//       <div className={styles.wrapperBox}>
-//         <Calendar className={styles.calendar} />
-//       </div>
-//     </div>
-//   );
-// };
-//
-// export default BoxCalendar;
+
 import React, { useState } from 'react';
 import dayjs from 'dayjs';
 import range from 'lodash-es/range';
-// import './style.scss';
 
 const weekDays = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
@@ -71,12 +57,6 @@ const BoxCalendar = () => {
                 {i + 1}
               </div>
             ))}
-
-            {/*{range(6 - weekDayOfLast).map(i => (*/}
-            {/*  <div className={`${styles['dayCell']} ${styles['day-cell--faded']}`}  key={i}>*/}
-            {/*    {dayObjOfLast.add(i + 1, 'day').date()}*/}
-            {/*  </div>*/}
-            {/*))}*/}
           </div>
         </div>
       </div>
