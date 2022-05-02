@@ -16,6 +16,6 @@ collections:
       - { label: "Title Post", name: "titlePost", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL" }
       - { label: "Description", name: "content", widget: "text" }
-      - { label: "Slogan", name: "slogan", widget: "string" }
+#      - { label: "Slogan", name: "slogan", widget: "string" }
       - { label: "Image", name: "src", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
