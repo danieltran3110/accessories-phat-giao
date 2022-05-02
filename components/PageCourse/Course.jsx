@@ -32,9 +32,9 @@ const Course = () => {
         </p>
       </div>
       <p className={styles.content}>
-        <ReactMarkdown>
-          {detailPost.markdown}
-        </ReactMarkdown>
+        {/*<ReactMarkdown>*/}
+        {/*  {detailPost.markdown}*/}
+        {/*</ReactMarkdown>*/}
       </p>
       <Reactions />
       <MayLike />
