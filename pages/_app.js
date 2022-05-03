@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import { css, StyleSheet } from 'aphrodite';
 import { fadeIn, fadeInUp } from 'react-animations';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import stylesGlobal from '../assets/scss/global.module.scss';
 import Script from 'next/script';
 
@@ -52,6 +52,19 @@ function MyApp({ Component, pageProps }) {
         crossOrigin='anonymous'
       />
       <Script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+      {/* eslint-disable-next-line @next/next/inline-script-id */}
+      <Script dangerouslySetInnerHTML={{
+        __html: `
+              if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", user => {
+                  if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                      document.location.href = "/admin/";
+                    });
+                  }
+                });
+              }
+          `}}/>
       <Component {...pageProps} />
     </>
   );
