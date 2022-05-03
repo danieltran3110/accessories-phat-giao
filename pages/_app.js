@@ -47,11 +47,11 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
       <Script
         src='https://kit.fontawesome.com/618a331a9e.js'
         crossOrigin='anonymous'
       />
-      <Script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
       <Component {...pageProps} />
     </>
   );
