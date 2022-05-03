@@ -1,7 +1,8 @@
 backend:
-  name: github
-  repo: danieltran3110/accessories-phat-giao
+  name: git-gateway
+  branch: main
   local_backend: true
+  repo: danieltran3110/accessories-phat-giao
 
 media_folder: public/img # Where media files will be stored
 public_folder: /img # Where the media files can be accesed from the server
