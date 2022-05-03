@@ -1,7 +1,7 @@
 backend:
-name: github
-repo: danieltran3110/accessories-phat-giao
-local_backend: true
+  name: github
+  repo: danieltran3110/accessories-phat-giao
+  local_backend: true
 
 media_folder: public/img # Where media files will be stored
 public_folder: /img # Where the media files can be accesed from the server
