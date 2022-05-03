@@ -1,10 +1,10 @@
 backend:
   name: git-gateway
-  brand: main # Branch to update (optional; defaults to master)
-
+  branch: main # Branch to update (optional; defaults to master)
+  local_backend: true
+  repo: danieltran3110/accessories-phat-giao
 media_folder: "public/img" # Where media files will be stored
 public_folder: "/img" # Where the media files can be accesed from the server
-
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
