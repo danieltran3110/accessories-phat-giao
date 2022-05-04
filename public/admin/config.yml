@@ -8,20 +8,17 @@ media_folder: public/img # Where media files will be stored
 public_folder: /img # Where the media files can be accesed from the server
 
 collections:
-  - name: 'pages'
-    label: 'Pages'
-    files:
-    - name: "blog" # Used in routes, e.g., /admin/collections/blog
-      label: "Blog" # Used in the UI
-      folder: "content/posts" # The path to the folder where the documents are stored
-      create: true # Allow users to create new documents in this collection
-      slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-      fields: # The fields for each document, usually in front matter
-        - { label: "Title Post", name: "titlePost", widget: "string" }
-        - { label: "Author Post", name: "authorPost", widget: "string" }
-        - { label: "Publish Date", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL" }
-        - { label: "Description", name: "content", widget: "text" }
-  #      - { label: "Slogan", name: "slogan", widget: "string" }
-  #      - label: "Image"
-  #        name: "src"
-  #        widget: "image"
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "content/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title Post", name: "titlePost", widget: "string" }
+      - { label: "Author Post", name: "authorPost", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL" }
+      - { label: "Description", name: "content", widget: "text" }
+#      - { label: "Slogan", name: "slogan", widget: "string" }
+#      - label: "Image"
+#        name: "src"
+#        widget: "image"
