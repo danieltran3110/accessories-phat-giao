@@ -2,10 +2,9 @@
   "name": "accessories-phat-giao",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "export": "npm run build && next export"
   },
   "dependencies": {
