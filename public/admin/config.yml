@@ -6,27 +6,49 @@ backend:
 media_folder: public/img # Where media files will be stored
 public_folder: /img # Where the media files can be accesed from the server
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: 'home'
+    label: 'Home'
     files:
-      - label: "Home"
-        name: "home"
-        file: "content/home/home.md"
+      - label: 'Slide Introduce'
+        name: 'slideIntro'
+        file: 'content/home/slideIntroduce.md'
         fields:
-          - { label: "Title", name: "title", widget: "string"}
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "content/posts" # The path to the folder where the documents are stored
+          - { label: 'Proverb', name: 'proverb', widget: 'string' }
+          - { label: 'Author', name: 'author', widget: 'string' }
+          - { label: 'Image', name: 'src', widget: 'image', required: false }
+      - label: 'Welcome'
+        name: 'welcome'
+        file: 'content/home/welcome.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Author', name: 'author', widget: 'string' }
+          - { label: 'Content', name: 'content', widget: 'string', }
+      - label: 'Mends'
+        name: 'mends'
+        file: 'content/home/mend.md'
+        widget: list
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+  - name: 'blog' # Used in routes, e.g., /admin/collections/blog
+    label: 'Blog' # Used in the UI
+    folder: 'content/posts' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: "Title Post", name: "titlePost", widget: "string" }
-      - { label: "Author Post", name: "authorPost", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL" }
-      - { label: "Description", name: "content", widget: "text" }
-      - { label: "Slogan", name: "slogan", widget: "string" }
-      - label: "Image"
-        name: "src"
-        widget: "image"
+      - { label: 'Title Post', name: 'titlePost', widget: 'string' }
+      - { label: 'Author Post', name: 'authorPost', widget: 'string' }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
+          date_format: 'DD.MM.YYYY',
+          time_format: 'HH:mm',
+          format: 'LLL',
+        }
+      - { label: 'Description', name: 'content', widget: 'text' }
+      - { label: 'Slogan', name: 'slogan', widget: 'string' }
+      - label: 'Image'
+        name: 'src'
+        widget: 'image'
         required: false
       - { label: 'Blog post content', name: 'body', widget: 'markdown' }

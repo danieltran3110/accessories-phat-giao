@@ -145,7 +145,7 @@ export const dataMend = [
   },
   {
     iconName: 'fa fa-snowflake-o',
-    nameMend: 'Comunity',
+    nameMend: 'Community',
   },
   {
     iconName: 'fa fa-adjust',

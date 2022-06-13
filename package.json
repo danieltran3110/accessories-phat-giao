@@ -15,15 +15,16 @@
     "aphrodite": "^2.4.0",
     "dayjs": "^1.11.1",
     "formik": "^2.2.9",
+    "frontmatter-markdown-loader": "^3.7.0",
     "gray-matter": "^4.0.3",
     "jquery": "^3.6.0",
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
-    "next": "12.0.10",
-    "react": "17.0.2",
+    "next": "^12.0.10",
+    "react": "^17.0.2",
     "react-animations": "^1.0.0",
     "react-calendar": "^3.7.0",
-    "react-dom": "17.0.2",
+    "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-markdown": "^6.0.3",
     "react-paginate": "^8.1.2",
@@ -35,6 +36,8 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-react": "^7.17.12",
     "eslint": "^7.32.0",
     "eslint-config-next": "12.0.10"
   }

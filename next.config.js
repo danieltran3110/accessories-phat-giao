@@ -1,16 +1,11 @@
 module.exports = {
   reactStrictMode: true,
-  webpack: (cfg, { isServer }) => {
+  webpack: cfg => {
     cfg.module.rules.push({
-                            test: /\.md$/,
-                            loader: 'frontmatter-markdown-loader',
-                            options: { mode: ['react-component'] },
-                          });
-    if (!isServer) {
-      cfg.resolve.fallback = {
-        fs: false,
-      };
-    }
+      test: /\.md$/,
+      loader: 'frontmatter-markdown-loader',
+      options: { mode: ['react-component'] },
+    });
     return cfg;
   },
 };

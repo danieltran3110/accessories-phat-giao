@@ -24,6 +24,7 @@
     @include Responsive(S) {
       width: 100%;
       flex-direction: column;
+      margin-top: 40px;
     }
   }
 

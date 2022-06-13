@@ -4,6 +4,7 @@ import styles from './Mend.module.scss';
 import video2 from '../../../assets/images/video2.png';
 import stylesGlobal from '../../../assets/scss/global.module.scss';
 import MendGrid from './Components/MendGrid';
+import {attributes} from '../../../content/home/mend.md';
 
 const Mend = () => {
   const [isPlay, setIsPlay] = useState(false);
@@ -12,7 +13,7 @@ const Mend = () => {
     setIsPlay(true);
     // vidRef.current.play();
   };
-
+  let {image, linkVideo} = attributes;
   return (
     <div className={styles.backgroundColor}>
       <div className={stylesGlobal.container2}>
@@ -22,7 +23,10 @@ const Mend = () => {
               <>
                 <Image
                   className={styles.img}
-                  src={video2}
+                  src={image}
+                  width={16}
+                  height={9}
+                  layout={'responsive'}
                   alt='Video Introduce'
                 />
                 <figcaption
@@ -36,7 +40,7 @@ const Mend = () => {
             {isPlay && (
               <div className={styles.embedVideo}>
                 <iframe
-                  src='https://player.vimeo.com/video/45830194?h=2c5541d8bc&color=ffffff&title=0&byline=0&portrait=0&badge=0'
+                  src={linkVideo}
                   width={'inherit'}
                   height={'inherit'}
                   frameBorder={0}
