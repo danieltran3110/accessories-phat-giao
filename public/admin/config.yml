@@ -57,11 +57,21 @@ collections:
             name: items
             widget: list
             fields:
-              - { label: 'Image', name: 'src', widget: 'image' }
+              - { label: 'Image', name: 'url', widget: 'image' }
               - { label: 'Alt of Image', name: 'alt', widget: 'string' }
               - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Sub Title', name: 'subTitle', widget: 'string' }
-              - { label: 'Button Name', name: 'btnName', widget: 'string' }
+              - {
+                  label: 'Organize Date',
+                  name: 'date',
+                  widget: 'datetime',
+                  date_format: 'DD.MM.YYYY',
+                  time_format: 'HH:mm',
+                  format: 'LLL',
+                }
+              - { label: 'Content', name: 'content', widget: 'string' }
+              - { label: 'Content', name: 'content', widget: 'string' }
+              - { label: 'Time Open', name: 'timeOpen', widget: 'string' }
+              - { label: 'Time Close', name: 'timeClose', widget: 'string' }
       - label: 'Feature'
         name: 'feature'
         file: 'content/home/feature.md'
