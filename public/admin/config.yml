@@ -69,7 +69,7 @@ collections:
                   format: 'LLL',
                 }
               - { label: 'Content', name: 'content', widget: 'string' }
-              - { label: 'Content', name: 'content', widget: 'string' }
+              - { label: 'Cost', name: 'cost', widget: 'string' }
               - { label: 'Time Open', name: 'timeOpen', widget: 'string' }
               - { label: 'Time Close', name: 'timeClose', widget: 'string' }
       - label: 'Feature'
