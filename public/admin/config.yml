@@ -16,6 +16,7 @@ collections:
           - label: Items
             name: items
             widget: list
+            fields:
               - { label: 'Image', name: 'src', widget: 'image' }
               - { label: 'Alt of Image', name: 'alt', widget: 'string' }
               - { label: 'Title', name: 'title', widget: 'string' }

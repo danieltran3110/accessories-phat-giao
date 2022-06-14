@@ -1,5 +1,5 @@
 ---
-images: 
+items: 
     - src: '/img/slider1.jpg'
       alt: 'slider1'
       title: 'Buddhist Temple'

@@ -32,7 +32,7 @@ const SlideIntro = () => {
       return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
     },
   };
-  let { images } = attributes;
+  let { items } = attributes;
 
   return (
     <div className={styles.sliderWrapper}>
@@ -44,7 +44,7 @@ const SlideIntro = () => {
           modules={[EffectFade, Pagination]}
           className={styles.mySwiperSlide}
         >
-          {images.map((_data, index) => {
+          {items.map((_data, index) => {
             return (
               <SwiperSlide
                 className={styles.slide}
