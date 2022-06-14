@@ -8,7 +8,10 @@ const Audio = ({ _data }) => {
       <Image
         className={styles.img}
         src={_data.urlPic}
-        alt='Dharma'
+        alt={_data.alt}
+        width={3}
+        height={2}
+        layout={'responsive'}
       />
       <audio
         className={styles.audio}

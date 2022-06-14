@@ -3,15 +3,17 @@ import styles from './Event.module.scss';
 import BoxEvents from './Components/BoxEvents';
 import stylesGlobal from '../../../assets/scss/global.module.scss';
 import SectionTitle from '../../SectionTitle/SectionTitle';
+import { attributes } from '../../../content/home/event.md';
 
 const Event = () => {
+  let { title } = attributes;
   return (
     <div className={stylesGlobal.backgroundColor}>
       <section className={stylesGlobal.section}>
         <div className={stylesGlobal.container2}>
           <div className={styles.event}>
             <div className={styles.titleEvent}>
-              <SectionTitle title={'Upcoming Events'} />
+              <SectionTitle title={title} />
               <p className={styles.seeComingEvent}>SEE UPCOMING EVENTS</p>
             </div>
             <BoxEvents />

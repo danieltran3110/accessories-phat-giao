@@ -1,14 +1,15 @@
 import React from 'react';
 import styles from './Feature.module.scss';
-import { dataFeature } from '../../../utils/data-config';
 import stylesGlobal from '../../../assets/scss/global.module.scss';
 import Image from 'next/image';
+import { attributes } from '../../../content/home/feature.md';
 
 const Feature = () => {
+  let {features} = attributes;
   return (
     <section className={`${stylesGlobal.section} ${stylesGlobal.section2}`}>
       <div className={styles.feature}>
-        {dataFeature.map((_data, index) => {
+        {features.map((_data, index) => {
           return (
             <figure
               className={styles.picFeature}
@@ -17,7 +18,11 @@ const Feature = () => {
               <Image
                 className={styles.img}
                 src={_data.url}
-                alt='Feature'
+                alt={_data.alt}
+                width={180}
+                height={240}
+                layout={'responsive'}
+                objectFit={'cover'}
               />
               <figcaption className={styles.titleFeature}>
                 {_data.title} <br />

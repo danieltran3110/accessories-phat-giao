@@ -10,7 +10,7 @@
   grid-template-columns: 25% 25% 25% 25%;
   height: 100%;
   overflow: hidden;
-
+  position: relative;
   @include Responsive(L) {
     height: 100%;
   }
@@ -20,9 +20,10 @@
   }
 
   .picFeature {
-    display: flex;
     margin: 0;
     height: 100%;
+    width: auto;
+    max-height: 600px;
     position: relative;
     transition: all 0.5s ease;
     font-family: 'reforma', sans-serif;

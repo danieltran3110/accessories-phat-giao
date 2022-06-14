@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './BeginningBox.module.scss';
-import { dataBeginningBox } from '../../../../../utils/data-config';
-import stylesGlobal from '../../../../../assets/scss/global.module.scss';
+import { attributes } from '../../../../../content/home/instruction.md';
 
 const BeginningBox = () => {
+  let {content} = attributes;
   return (
     <div className={styles.beginningBox}>
-      <p className={styles.content}>{dataBeginningBox.content}</p>
-      <p className={styles.btnStart}>{dataBeginningBox.btnName}</p>
+      <p className={styles.content}>{content}</p>
+      <p className={styles.btnStart}>BEGINNING INSTRUCTION</p>
     </div>
   );
 };

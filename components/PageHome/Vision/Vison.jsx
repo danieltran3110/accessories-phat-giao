@@ -4,8 +4,20 @@ import styles from './Vision.module.scss';
 import stylesGlobal from '../../../assets/scss/global.module.scss';
 import { dataVision } from '../../../utils/data-config';
 import SectionTitle from '../../SectionTitle/SectionTitle';
+import { attributes } from '../../../content/home/vision.md';
 
 const Vision = () => {
+  let {
+    title,
+    content,
+    author,
+    proverb,
+    urlPictureVideo,
+    altPictureVideo,
+    urlAudio, 
+    urlPicture,
+    altPicture,
+  } = attributes;
   const [isPlay, setIsPlay] = useState(false);
   const [showing, setShowing] = useState(true);
 
@@ -20,10 +32,10 @@ const Vision = () => {
       <div className={styles.visionWrapper}>
         <div className={styles.vision}>
           <SectionTitle
-            title={dataVision.title}
+            title={title}
             left={true}
           />
-          <p className={styles.contentVision}>{dataVision.content}</p>
+          <p className={styles.contentVision}>{content}</p>
           <section className={stylesGlobal.section}>
             <div className={styles.videoSpeech}>
               <figure className={styles.video}>
@@ -32,8 +44,11 @@ const Vision = () => {
                     {' '}
                     <Image
                       className={styles.img}
-                      src={dataVision.urlPic1}
-                      alt='Vision'
+                      src={urlPictureVideo}
+                      alt={altPictureVideo}
+                      width={16}
+                      height={9}
+                      layout={'responsive'}
                     />
                     <figcaption
                       className={styles.btnPlay}
@@ -49,7 +64,7 @@ const Vision = () => {
                 {isPlay && (
                   <div className={styles.embedVideo}>
                     <iframe
-                      src={dataVision.urlAudio}
+                      src={urlAudio}
                       width={'inherit'}
                       height={'inherit'}
                       frameBorder={0}
@@ -61,8 +76,8 @@ const Vision = () => {
                 )}
               </figure>
               <div className={styles.speech}>
-                {dataVision.proverb}
-                <span className={styles.author}>{dataVision.author}</span>
+                {proverb}
+                <span className={styles.author}>{author}</span>
               </div>
             </div>
           </section>
@@ -71,8 +86,11 @@ const Vision = () => {
           <section className={stylesGlobal.section}>
             <Image
               className={styles.img}
-              src={dataVision.urlPic2}
-              alt='Vision 2'
+              src={urlPicture}
+              alt={altPicture}
+              width={200}
+              height={250}
+              layout={'responsive'}
             />
           </section>
         </figure>

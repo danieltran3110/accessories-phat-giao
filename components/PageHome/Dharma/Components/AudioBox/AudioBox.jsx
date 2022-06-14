@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from '../../Dharma.module.scss';
-import { dataDharma } from '../../../../../utils/data-config';
 import stylesGlobal from '../../../../../assets/scss/global.module.scss';
 import { StyleSheet, css } from 'aphrodite';
 import { zoomIn } from 'react-animations';
 import Audio from '../../../../Audio/Audio';
+import { attributes } from '../../../../../content/home/dharma.md';
 
 const AudioBox = () => {
+  let {audios} = attributes;
   const styles2 = StyleSheet.create({
     zoomIn: {
       visibility: 'visible',
@@ -20,7 +21,7 @@ const AudioBox = () => {
   return (
     <section className={stylesGlobal.section + ' ' + css(styles2.zoomIn)}>
       <div className={styles.dharma}>
-        {dataDharma.map((_data, index) => (
+        {audios.map((_data, index) => (
           <Audio
             _data={_data}
             key={index}

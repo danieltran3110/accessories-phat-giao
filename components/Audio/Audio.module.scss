@@ -2,14 +2,12 @@
 @import 'assets/scss/mixin.module';
 
 .picDharma {
-  display: flex;
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
+  height: 100%;
   position: relative;
-  max-height: 350px;
 
   @include Responsive(S) {
-    //width: 90%;
     margin-bottom: 20px;
   }
 
@@ -17,7 +15,7 @@
     width: 100%;
   }
 
-  &::after {
+  &::before {
     background: rgba(0, 0, 0, 0.5) !important;
     position: absolute;
     top: 0;
@@ -110,12 +108,4 @@
       }
     }
   }
-}
-
-.picDharma .img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  //opacity: 0.9;
-  //   background-color: rgba(0, 0, 0, 0.582);
 }

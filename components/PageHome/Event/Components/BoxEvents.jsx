@@ -1,26 +1,36 @@
 import React from 'react';
 import styles from '../Event.module.scss';
-import { dataEvent } from '../../../../utils/data-config';
 import Image from 'next/image';
+import { attributes } from '../../../../content/home/event.md';
 
 const BoxEvents = () => {
+  let { items } = attributes;
+  let day;
+  let month;
   return (
     <>
-      {dataEvent.map((_data, index) => {
+      {items.map((_data, index) => {
+        if (_data.date !== undefined) {
+          day = _data.date.split(',')[0];
+          month = _data.date.split(',')[1];
+        }
         return (
           <div
             className={styles.dateEvent}
             key={index}
           >
             <p className={styles.dateMonth}>
-              <span className={styles.date}>{_data.date}</span>
-              <br /> {_data.month}
+              <span className={styles.date}>{day}</span>
+              <br /> {month}
             </p>
             <figure className={styles.picEvent}>
               <Image
                 className={styles.img}
                 src={_data.url}
                 alt='Event'
+                width={16}
+                height={9}
+                layout='responsive'
               />
             </figure>
             <div className={styles.detailEvent}>
