@@ -10,9 +10,9 @@ import 'swiper/css/navigation';
 import { EffectFade, Pagination } from 'swiper';
 import styles from './BeginSlide.module.scss';
 import logo from '../../../assets/images/logo2_retina.png';
-import { dataSwiper } from '../../../utils/data-config';
 import { css, StyleSheet } from 'aphrodite';
 import { fadeInUp } from 'react-animations';
+import { attributes } from '../../../content/home/slideIntroduce.md';
 
 const SlideIntro = () => {
   const styles2 = StyleSheet.create({
@@ -32,6 +32,7 @@ const SlideIntro = () => {
       return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
     },
   };
+  let { images } = attributes;
 
   return (
     <div className={styles.sliderWrapper}>
@@ -43,7 +44,7 @@ const SlideIntro = () => {
           modules={[EffectFade, Pagination]}
           className={styles.mySwiperSlide}
         >
-          {dataSwiper.map((_data, index) => {
+          {images.map((_data, index) => {
             return (
               <SwiperSlide
                 className={styles.slide}
@@ -52,12 +53,12 @@ const SlideIntro = () => {
                 <div className={styles.wrapperInfo}>
                   <div className={styles.placeName}>
                     <p className={styles.place + ' ' + css(styles2.fadeInUp)}>
-                      {_data.title} <br /> {_data.subtitle}
+                      {_data.title} <br /> {_data.subTitle}
                     </p>
                     <div
                       className={`${styles.learnMore} ${css(styles2.zoomIn)}`}
                     >
-                      {_data.titleBtn}
+                      {_data.btnName}
                     </div>
                   </div>
                   <figure className={styles.logo}>
@@ -71,8 +72,9 @@ const SlideIntro = () => {
                 <figure className={styles.picSlider}>
                   <Image
                     className={styles.img}
-                    src={_data.url}
-                    alt='Slide'
+                    src={_data.src}
+                    alt={_data.alt}
+                    layout={'fill'}
                   />
                 </figure>
               </SwiperSlide>

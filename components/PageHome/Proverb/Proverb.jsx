@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './Proverb.module.scss';
 import stylesGlobal from '../../../assets/scss/global.module.scss';
-import { attributes } from '../../../content/home/slideIntroduce.md';
+import { attributes } from '../../../content/home/proverb.md';
 
 const Proverb = () => {
   let {proverb, image, author} = attributes;

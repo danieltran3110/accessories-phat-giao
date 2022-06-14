@@ -10,12 +10,22 @@ collections:
     label: 'Home'
     files:
       - label: 'Slide Introduce'
-        name: 'slideIntro'
+        name: 'slideIntroduce'
         file: 'content/home/slideIntroduce.md'
+        widget: list
+        fields:
+          - { label: 'Image', name: 'src', widget: 'image' }
+          - { label: 'Alt of Image', name: 'alt', widget: 'string' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Sub Title', name: 'subTitle', widget: 'string' }
+          - { label: 'Button Name', name: 'btnName', widget: 'string' }
+      - label: 'Proverb'
+        name: 'proverb'
+        file: 'content/home/proverb.md'
         fields:
           - { label: 'Proverb', name: 'proverb', widget: 'string' }
           - { label: 'Author', name: 'author', widget: 'string' }
-          - { label: 'Image', name: 'src', widget: 'image', required: false }
+          - { label: 'Image', name: 'src', widget: 'image' }
       - label: 'Welcome'
         name: 'welcome'
         file: 'content/home/welcome.md'
@@ -26,9 +36,15 @@ collections:
       - label: 'Mends'
         name: 'mends'
         file: 'content/home/mend.md'
-        widget: list
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Image', name: 'image', widget: 'image' }
+          - { label: 'Link Video', name: 'linkVideo', widget: 'image' }
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Icon Name', name: 'iconName', widget: 'string' }
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
     label: 'Blog' # Used in the UI
     folder: 'content/posts' # The path to the folder where the documents are stored

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from '../Mend.module.scss';
-import { dataMend } from '../../../../utils/data-config';
 import stylesGlobal from '../../../../assets/scss/global.module.scss';
 import {attributes} from '../../../../content/home/mend.md';
 

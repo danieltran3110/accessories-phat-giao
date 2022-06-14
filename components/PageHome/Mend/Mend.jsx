@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import styles from './Mend.module.scss';
-import video2 from '../../../assets/images/video2.png';
 import stylesGlobal from '../../../assets/scss/global.module.scss';
 import MendGrid from './Components/MendGrid';
 import {attributes} from '../../../content/home/mend.md';
