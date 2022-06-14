@@ -1,7 +1,7 @@
 ---
 image: '/img/video2.png'
 linkVideo: 'https://player.vimeo.com/video/45830194?h=2c5541d8bc&color=ffffff&title=0&byline=0&portrait=0&badge=0'
-mends: 
+items: 
     - title: Buddhism,
       iconName: fa fa-heart
     - title: Meditation

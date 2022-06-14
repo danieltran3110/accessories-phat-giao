@@ -12,13 +12,15 @@ collections:
       - label: 'Slide Introduce'
         name: 'slideIntroduce'
         file: 'content/home/slideIntroduce.md'
-        widget: list
         fields:
-          - { label: 'Image', name: 'src', widget: 'image' }
-          - { label: 'Alt of Image', name: 'alt', widget: 'string' }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Sub Title', name: 'subTitle', widget: 'string' }
-          - { label: 'Button Name', name: 'btnName', widget: 'string' }
+          - label: Items
+            name: items
+            widget: list
+              - { label: 'Image', name: 'src', widget: 'image' }
+              - { label: 'Alt of Image', name: 'alt', widget: 'string' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Sub Title', name: 'subTitle', widget: 'string' }
+              - { label: 'Button Name', name: 'btnName', widget: 'string' }
       - label: 'Proverb'
         name: 'proverb'
         file: 'content/home/proverb.md'
@@ -38,7 +40,7 @@ collections:
         file: 'content/home/mend.md'
         fields:
           - { label: 'Image', name: 'image', widget: 'image' }
-          - { label: 'Link Video', name: 'linkVideo', widget: 'image' }
+          - { label: 'Link Video', name: 'linkVideo', widget: 'string' }
           - label: Items
             name: items
             widget: list

@@ -4,11 +4,11 @@ import stylesGlobal from '../../../../assets/scss/global.module.scss';
 import {attributes} from '../../../../content/home/mend.md';
 
 const MendGrid = () => {
-  let {mends} = attributes;
+  let {items} = attributes;
   return (
     <section className={stylesGlobal.section}>
       <div className={styles.gridMend}>
-        {mends.map((_data, index) => {
+        {items.map((_data, index) => {
           return (
             <div
               className={styles.gridItem}
