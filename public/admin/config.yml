@@ -116,6 +116,25 @@ collections:
         file: 'content/home/instruction.md'
         fields:
           - { label: 'Content', name: 'content', widget: 'string' }
+  - name: 'Teaching&Training'
+    label: 'teachingTraining'
+    files:
+      - label: 'Courses'
+        name: 'courses'
+        file: 'content/teachingTraining/course.md'
+        fields:
+          - label: Courses
+            name: courses
+            widget: list
+            fields:
+              - { label: 'Image', name: 'src', widget: 'image' }
+              - { label: 'Alt of Image', name: 'alt', widget: 'string' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Content', name: 'content', widget: 'string' }
+              - { label: 'Beginning', name: 'beginning', widget: 'datetime', date_format: 'DD.MM.YYYY', time_format: 'HH:mm', format: 'LLL', }
+              - { label: 'Duration', name: 'duration', widget: 'string' }
+              - { label: 'Cost', name: 'cost', widget: 'string' }
+              - { label: 'Url Course', name: 'urlLearn', widget: 'string' }
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
     label: 'Blog' # Used in the UI
     folder: 'content/posts' # The path to the folder where the documents are stored
@@ -139,3 +158,4 @@ collections:
         widget: 'image'
         required: false
       - { label: 'Blog post content', name: 'body', widget: 'markdown' }
+
