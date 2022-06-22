@@ -5,8 +5,8 @@ const ComponentDay = ({ _data, colorRevert, padding }) => {
   let day;
   let month;
   if (_data.date !== undefined) {
-    day = _data.date.split(',')[0];
-    month = _data.date.split(',')[1];
+    day = _data.date.split(' ')[0];
+    month = _data.date.split(' ')[1];
   }
 
   return (

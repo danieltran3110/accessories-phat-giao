@@ -147,8 +147,7 @@ collections:
           label: 'Publish Date',
           name: 'date',
           widget: 'datetime',
-          date_format: 'DD.MM.YYYY',
-          time_format: 'HH:mm',
+          date_format: 'MM.DD.YYYY',
           format: 'LLL',
         }
       - { label: 'Description', name: 'content', widget: 'text' }
