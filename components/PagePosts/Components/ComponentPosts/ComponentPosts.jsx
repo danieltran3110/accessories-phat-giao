@@ -31,7 +31,7 @@ const Posts = ({ currentItems }) => {
           {_data.slogan && <ComponentSlogan _data={_data} />}
           {_data.audio && (
             <Audio
-              _data={_data}
+              _data={_data.audio}
               index={index}
             />
           )}

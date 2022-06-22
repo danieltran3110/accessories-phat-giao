@@ -16,6 +16,9 @@ const ComponentVideo = ({ _data }) => {
         <div className={styles.pic}>
           <Image
             className={styles.img}
+            width={16}
+            height={9}
+            layout='responsive'
             src={_data.video.urlPic}
             alt={_data.video.altPic}
           />

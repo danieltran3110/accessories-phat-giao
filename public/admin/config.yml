@@ -173,4 +173,6 @@ collections:
               - { label: 'Image', name: 'urlPic', widget: 'image' }
               - { label: 'Alt of Image', name: 'altPic', widget: 'string' }
               - { label: 'Url Audio', name: 'urlAudio', widget: 'string' }
+              - { label: 'Title Audio', name: 'title', widget: 'string' }
+              - { label: 'Author' Audio', name: 'author', widget: 'string' }
 
