@@ -1,7 +1,7 @@
 ---
 titlePost: My Second Blog
 authorPost: IMOGENE MARTIN
-date: 26, August, 2021
+date: August, 26, 2021
 content: 222Some Buddhist teachers insist that believing in rebirth is necessary
   for living an ethical life. Their concern is that if there is no fear of
   karmic repercussions in future lifetimes, what keeps hospice patients, for

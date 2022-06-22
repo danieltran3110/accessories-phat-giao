@@ -151,10 +151,26 @@ collections:
           format: 'LLL',
         }
       - { label: 'Description', name: 'content', widget: 'text' }
-      - { label: 'Slogan', name: 'slogan', widget: 'string', required: false }
-      - label: 'Image'
+      - { label: 'Blog post content', name: 'body', widget: 'markdown' }
+      - { label: '1. Slogan', name: 'slogan', widget: 'string', required: false }
+      - label: '2. Image'
         name: 'src'
         widget: 'image'
         required: false
-      - { label: 'Blog post content', name: 'body', widget: 'markdown' }
+      - label: '3. Video'
+        name: 'video' 
+        widget: 'object' 
+        required: false 
+        fields:
+              - { label: 'Image', name: 'urlPic', widget: 'image' }
+              - { label: 'Alt of Image', name: 'altPic', widget: 'string' }
+              - { label: 'Url Video', name: 'urlVideo', widget: 'string' }
+      - label: '4. Audio'
+        name: 'audio' 
+        widget: 'list' 
+        required: false 
+        fields:
+              - { label: 'Image', name: 'urlPic', widget: 'image' }
+              - { label: 'Alt of Image', name: 'altPic', widget: 'string' }
+              - { label: 'Url Audio', name: 'urlAudio', widget: 'string' }
 

@@ -16,8 +16,8 @@ const ComponentVideo = ({ _data }) => {
         <div className={styles.pic}>
           <Image
             className={styles.img}
-            src={video2}
-            alt='Video Introduce'
+            src={_data.urlPic}
+            alt={_data.altPic}
           />
           <figcaption
             className={styles.btnPlay}

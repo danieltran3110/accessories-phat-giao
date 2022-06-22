@@ -29,13 +29,13 @@ const Posts = ({ currentItems }) => {
         >
           {_data.src && <ComponentPicture _data={_data} />}
           {_data.slogan && <ComponentSlogan _data={_data} />}
-          {_data.urlAudio && (
+          {_data.audio && (
             <Audio
               _data={_data}
               index={index}
             />
           )}
-          {_data.urlVideo && <ComponentVideo _data={_data} />}
+          {_data.video && <ComponentVideo _data={_data} />}
           <Link href={`/course/${_data.slug}`}>
             <a className={styles.title}>
               {_data.titlePost}
