@@ -139,7 +139,7 @@ collections:
     label: 'Blog' # Used in the UI
     folder: 'content/posts' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: '{{slug}-titlePost}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: 'Title Post', name: 'titlePost', widget: 'string' }
       - { label: 'Author Post', name: 'authorPost', widget: 'string' }
@@ -167,7 +167,7 @@ collections:
               - { label: 'Url Video', name: 'urlVideo', widget: 'string' }
       - label: '4. Audio'
         name: 'audio' 
-        widget: 'list' 
+        widget: 'object' 
         required: false 
         fields:
               - { label: 'Image', name: 'urlPic', widget: 'image' }
