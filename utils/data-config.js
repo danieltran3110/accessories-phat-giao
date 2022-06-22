@@ -96,10 +96,6 @@ export const navigationData = {
       title: 'Shop',
       url: '/shop',
     },
-    {
-      title: 'Visiting',
-      url: '/',
-    },
   ],
 };
 

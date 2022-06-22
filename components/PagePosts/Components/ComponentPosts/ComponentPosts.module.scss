@@ -4,7 +4,7 @@
 .listPosts {
   max-width: 800px;
 
-  .firstPost {
+  .darkPost {
     display: none;
     background-color: #282828;
     padding: 50px;
@@ -79,9 +79,8 @@
 
   .wrapperPosts {
     border-bottom: 3px solid #e7e4df;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-    margin-top: 50px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
 
     &:last-child {
       border-bottom: none;
@@ -103,7 +102,8 @@
       cursor: pointer;
       padding-right: 80px;
       display: block;
-
+      padding-top: 20px;
+      
       &:hover {
         color: #f16f23;
       }

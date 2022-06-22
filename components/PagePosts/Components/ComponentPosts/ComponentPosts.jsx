@@ -36,18 +36,18 @@ const Posts = ({ currentItems }) => {
             />
           )}
           {_data.video && <ComponentVideo _data={_data} />}
-          <Link href={`/course/${_data.slug}`}>
-            <a className={styles.title}>
-              {_data.titlePost}
-              {!_data.src && !_data.urlVideo && <ComponentDay _data={_data} />}
-            </a>
-          </Link>
-          <p className={styles.author}>
-            <span>POSTED BY</span> {_data.authorPost}
-          </p>
-          {_data.content && <p className={styles.content}>
-            {_data.content}
-          </p>}
+          <div className={_data.darkMode && styles.darkPost}>
+            <Link href={`/course/${_data.slug}`}>
+              <a className={styles.title}>
+                {_data.titlePost}
+                {!_data.src && !_data.video && <ComponentDay _data={_data} />}
+              </a>
+            </Link>
+            <p className={styles.author}>
+              <span>POSTED BY</span> {_data.authorPost}
+            </p>
+            {_data.content && <p className={styles.content}>{_data.content}</p>}
+          </div>
           <div
             className={`${stylesGlobal.button2} ${stylesGlobal.normal} ${stylesGlobal.BGCBlack}`}
           >
