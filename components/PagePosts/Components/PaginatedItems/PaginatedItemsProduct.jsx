@@ -47,7 +47,7 @@ function PaginatedItems({ itemsPerPage }) {
         breakLabel='/'
         breakClassName='page-item'
         breakLinkClassName='page-link'
-        containerClassName={`${styles.pagination} ${styles2.pagination2}`}
+        containerClassName={`${styles.pagination} `}
         activeClassName={styles.active}
         renderOnZeroPageCount={null}
       />

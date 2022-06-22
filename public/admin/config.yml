@@ -117,7 +117,7 @@ collections:
         fields:
           - { label: 'Content', name: 'content', widget: 'string' }
   - name: 'Teaching&Training'
-    label: 'teachingTraining'
+    label: 'Teaching & Training'
     files:
       - label: 'Courses'
         name: 'courses'
@@ -152,7 +152,7 @@ collections:
           format: 'LLL',
         }
       - { label: 'Description', name: 'content', widget: 'text' }
-      - { label: 'Slogan', name: 'slogan', widget: 'string' }
+      - { label: 'Slogan', name: 'slogan', widget: 'string', required: false }
       - label: 'Image'
         name: 'src'
         widget: 'image'
