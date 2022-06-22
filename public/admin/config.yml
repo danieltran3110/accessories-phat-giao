@@ -162,17 +162,17 @@ collections:
         widget: 'object' 
         required: false 
         fields:
-              - { label: 'Image', name: 'urlPic', widget: 'image' }
-              - { label: 'Alt of Image', name: 'altPic', widget: 'string' }
-              - { label: 'Url Video', name: 'urlVideo', widget: 'string' }
+              - { label: 'Image', name: 'urlPic', widget: 'image', required: false  }
+              - { label: 'Alt of Image', name: 'altPic', widget: 'string', required: false }
+              - { label: 'Url Video', name: 'urlVideo', widget: 'string', required: false }
       - label: '4. Audio'
         name: 'audio' 
         widget: 'object' 
         required: false 
         fields:
-              - { label: 'Image', name: 'urlPic', widget: 'image' }
-              - { label: 'Alt of Image', name: 'altPic', widget: 'string' }
-              - { label: 'Url Audio', name: 'urlAudio', widget: 'string' }
-              - { label: 'Title Audio', name: 'title', widget: 'string' }
-              - { label: 'Author Audio', name: 'author', widget: 'string' }
+              - { label: 'Image', name: 'urlPic', widget: 'image', required: false }
+              - { label: 'Alt of Image', name: 'altPic', widget: 'string', required: false }
+              - { label: 'Url Audio', name: 'urlAudio', widget: 'string', required: false }
+              - { label: 'Title Audio', name: 'title', widget: 'string', required: false }
+              - { label: 'Author Audio', name: 'author', widget: 'string', required: false }
 
