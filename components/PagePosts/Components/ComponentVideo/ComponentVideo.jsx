@@ -16,8 +16,8 @@ const ComponentVideo = ({ _data }) => {
         <div className={styles.pic}>
           <Image
             className={styles.img}
-            src={_data.urlPic}
-            alt={_data.altPic}
+            src={_data.video.urlPic}
+            alt={_data.video.altPic}
           />
           <figcaption
             className={styles.btnPlay}
@@ -31,7 +31,7 @@ const ComponentVideo = ({ _data }) => {
       {isPlay && (
         <div className={styles.embedVideo}>
           <iframe
-            src={_data.urlVideo}
+            src={_data.video.urlVideo}
             width={'inherit'}
             height={'inherit'}
             frameBorder={0}
