@@ -19,10 +19,6 @@
     .title {
       color: white !important;
 
-      &:hover {
-        color: #f16f23;
-      }
-
       @include Responsive(S) {
         font-size: 1.356rem;
         margin-top: 0;
@@ -30,7 +26,15 @@
     }
 
     .author {
-      color: #7e7e7e;
+      color: #7e7e7e !important;
+      
+      &:hover {
+        color: #f16f23 !important;
+
+        span {
+          color: #f16f23 !important;
+        }
+      }
     }
 
     .content {
@@ -81,15 +85,21 @@
       cursor: pointer;
       letter-spacing: 2px;
       width: fit-content;
-      color: #7e7e7e;
+      color: #282828;
 
       &:hover {
         color: #f16f23;
+
+        span {
+          color: #f16f23 !important;
+        }
       }
 
       span {
         font-family: 'renner';
         font-weight: normal;
+        color: #7e7e7e;
+        transition: 0.5s;
       }
 
       @include Responsive(S) {
