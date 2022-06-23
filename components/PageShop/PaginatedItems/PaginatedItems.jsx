@@ -1,10 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import ReactPaginate from 'react-paginate';
 import styles from './PaginatedItems.module.scss';
 import { dataProducts } from '../../../utils/data-config';
 import Products from '../Products/Products';
+import { ShopContext } from '../../../pages/shop';
 
 function PaginatedItems({ itemsPerPage }) {
+  const shop = useContext(ShopContext);
+  const dataProducts = shop.shop;
+  console.log(shop);
   const [view, setView] = useState(false);
   // We start with an empty list of items.
   const [currentItems, setCurrentItems] = useState(dataProducts);

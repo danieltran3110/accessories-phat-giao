@@ -8,14 +8,17 @@ import ReadMore from '../../../../ReadMore/ReadMore';
 const Product = ({ _data, detail, version2, style }) => {
   return (
     <div className={`${styles.item} ${version2 && styles[style]}`}>
-      <Link href={'/product'}>
+      <Link href={`/product/${_data.slug}`}>
         <a>
           <div className={`${styles.wrapperImage}`}>
             <figure className={styles.picProduct}>
               <Image
                 src={_data.src}
                 alt={_data.alt}
+                width={2}
+                height={3}
                 layout={'responsive'}
+                objectFit={'cover'}
               />
               <figcaption className={styles.detailInfo}>
                 <p className={`${styles.icon}`}>

@@ -11,17 +11,6 @@ import ComponentVideo from '../ComponentVideo/ComponentVideo';
 const Posts = ({ currentItems }) => {
   return (
     <div className={styles.listPosts}>
-      {/*<div className={styles.firstPost}>*/}
-      {/*  <ComponentDay*/}
-      {/*    _data={dataFirstPost}*/}
-      {/*    colorRevert={true}*/}
-      {/*  />*/}
-      {/*  <p className={styles.title}> {dataFirstPost.titlePost} </p>*/}
-      {/*  <p className={styles.author}>*/}
-      {/*    <span>POSTED BY</span> {dataFirstPost.authorPost}*/}
-      {/*  </p>*/}
-      {/*  <p className={styles.content}>{dataFirstPost.content}</p>*/}
-      {/*</div>*/}
       {currentItems.map((_data, index) => (
         <div
           className={styles.wrapperPosts}
