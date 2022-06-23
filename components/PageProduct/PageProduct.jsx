@@ -12,6 +12,7 @@ import { DetailShopContext } from '../../pages/product/[slug]';
 const ProductDetail = () => {
   const detailShop = useContext(DetailShopContext);
   const _data = detailShop.frontMatter;
+  const _dataMarkdown = detailShop.markdown;
   const [popUp, setPopUp] = useState(false);
 
   const showPopUp = () => {
@@ -33,7 +34,7 @@ const ProductDetail = () => {
         )}
         <InfoProduct _data={_data} />
       </div>
-      <DescriptionReview _data={_data} />
+      <DescriptionReview _data={_dataMarkdown} />
       {_data.products && <RelatedProduct _data={_data} />}
     </div>
   );

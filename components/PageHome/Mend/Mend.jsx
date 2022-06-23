@@ -3,7 +3,8 @@ import Image from 'next/image';
 import styles from './Mend.module.scss';
 import stylesGlobal from '../../../assets/scss/global.module.scss';
 import MendGrid from './Components/MendGrid';
-import {attributes} from '../../../content/home/mend.md';
+import { attributes } from '../../../content/home/mend.md';
+import ComponentVideo from '../../PagePosts/Components/ComponentVideo/ComponentVideo';
 
 const Mend = () => {
   const [isPlay, setIsPlay] = useState(false);
@@ -12,44 +13,22 @@ const Mend = () => {
     setIsPlay(true);
     // vidRef.current.play();
   };
-  let {image, linkVideo} = attributes;
+  let { image, linkVideo } = attributes;
+  let urlPic = image;
+  let urlVideo = linkVideo;
+  let altPic = 'budhha';
+  let video = { urlPic, urlVideo, altPic };
+  let data = {video};
   return (
     <div className={styles.backgroundColor}>
       <div className={stylesGlobal.container2}>
         <div className={styles.mend}>
-          <figure className={styles.videoMend}>
-            {!isPlay && (
-              <>
-                <Image
-                  className={styles.img}
-                  src={image}
-                  width={16}
-                  height={9}
-                  layout={'responsive'}
-                  alt='Video Introduce'
-                />
-                <figcaption
-                  className={styles.btnPlay}
-                  onClick={() => handleIsPlay()}
-                >
-                  PLAY
-                </figcaption>
-              </>
-            )}
-            {isPlay && (
-              <div className={styles.embedVideo}>
-                <iframe
-                  src={linkVideo}
-                  width={'inherit'}
-                  height={'inherit'}
-                  frameBorder={0}
-                  allow={'autoplay; fullscreen; picture-in-picture'}
-                  allowFullScreen
-                  // ref={vidRef}
-                />
-              </div>
-            )}
-          </figure>
+          <div className={styles.video}>
+            <ComponentVideo
+              _data={data}
+              showDate={true}
+            />
+          </div>
           <MendGrid />
         </div>
       </div>

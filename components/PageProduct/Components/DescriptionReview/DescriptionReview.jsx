@@ -27,7 +27,7 @@ const DescriptionReview = ({ _data }) => {
         </div>
       </div>
       {!view && (
-        <p className={styles.contentDescription}>{_data.description}</p>
+        <p className={styles.contentDescription}>{_data}</p>
       )}
       {view && <ReviewsUser />}
     </div>

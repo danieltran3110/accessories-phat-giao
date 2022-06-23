@@ -4,7 +4,7 @@ import video2 from '../../../../assets/images/video2.png';
 import React, { useState } from 'react';
 import ComponentDay from '../ComponentDay/ComponentDay';
 
-const ComponentVideo = ({ _data }) => {
+const ComponentVideo = ({ _data, showDate }) => {
   const [isPlay, setIsPlay] = useState(false);
   const handleIsPlay = () => {
     setIsPlay(true);
@@ -28,7 +28,7 @@ const ComponentVideo = ({ _data }) => {
           >
             PLAY
           </figcaption>
-          <ComponentDay _data={_data} padding={_data.video}/>
+          {!showDate && <ComponentDay _data={_data} padding={_data.video}/>}
         </div>
       )}
       {isPlay && (
