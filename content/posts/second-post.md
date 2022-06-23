@@ -1,5 +1,5 @@
 ---
-titlePost: My Second Blog
+titlePost: My Favourite Blockquote
 authorPost: IMOGENE MARTIN
 date: August, 26, 2021
 content: 222Some Buddhist teachers insist that believing in rebirth is necessary
