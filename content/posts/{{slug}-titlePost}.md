@@ -1,8 +1,11 @@
 ---
-titlePost: Sixth
-authorPost: Toan
+titlePost: Managing Relationships
+authorPost: IMOGENE MARTIN
 date: April 11, 2022 6:00 PM
-content: qgsd
+content: Some Buddhist teachers insist that believing in rebirth is necessary
+  for living an ethical life. Their concern is that if there is no fear of
+  karmic repercussions in future lifetimes, what keeps hospice patients, for
+  example, from overcharging their credit cards?
 audio:
   urlPic: /img/course7.jpg
   altPic: rock
@@ -10,4 +13,4 @@ audio:
   title: Managing Relationships
   author: ALAN BRAHM
 ---
-dgfhdf
+Some Buddhist teachers insist that believing in rebirth is necessary for living an ethical life. Their concern is that if there is no fear of karmic repercussions in future lifetimes, what keeps hospice patients, for example, from overcharging their credit cards?
