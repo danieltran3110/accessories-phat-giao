@@ -26,17 +26,21 @@
   }
 
   &.padding {
-    //padding: 40px;
-    //padding-top: 0;
-    //margin: 40px;
     width: 105px;
     height: 105px;
+    padding-top: 8px;
+
+    @include Responsive(S) {
+      width: 65px;
+      height: 65px;
+      padding-top: 2px;
+    }
   }
 
   .day {
     margin-top: 15px;
     margin-bottom: 0;
-    font-size: 28px;
+    font-size: 32px;
 
     @include Responsive(S) {
       font-size: 20px;

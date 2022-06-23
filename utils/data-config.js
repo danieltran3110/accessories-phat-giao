@@ -702,16 +702,14 @@ export const dataNews = [
   {
     src: news1,
     alt: 'news 1',
-    day: '04',
-    month: 'April',
+    date: 'April, 04, 2021',
     title: 'The Storms of Spiritual Life',
     author: 'IMOGENE MARTIN',
   },
   {
     src: news2,
     alt: 'news 2',
-    day: '05',
-    month: 'March',
+    date: 'March, 05, 2021',
     title: 'Should I Believe in Rebirth?',
     author: 'IMOGENE MARTIN',
   },

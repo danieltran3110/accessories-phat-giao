@@ -28,7 +28,7 @@ const ComponentVideo = ({ _data }) => {
           >
             PLAY
           </figcaption>
-          <ComponentDay _data={_data} />
+          <ComponentDay _data={_data} padding={_data.video}/>
         </div>
       )}
       {isPlay && (

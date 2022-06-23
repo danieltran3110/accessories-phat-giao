@@ -17,20 +17,7 @@
     }
 
     .title {
-      font-family: 'reforma', sans-serif;
-      color: white;
-      font-size: 2.556rem;
-      font-weight: bold;
-      font-style: normal;
-      line-height: 1.45em;
-      text-decoration: none;
-      text-transform: none;
-      letter-spacing: 0;
-      width: 100%;
-      position: relative;
-      transition: 0.5s;
-      cursor: pointer;
-      display: block;
+      color: white !important;
 
       &:hover {
         color: #f16f23;
@@ -43,37 +30,11 @@
     }
 
     .author {
-      font-family: 'reforma', sans-serif;
-      font-weight: bold;
-      transition: 0.5s;
-      cursor: pointer;
-      letter-spacing: 2px;
       color: #7e7e7e;
-
-      span {
-        font-family: 'renner';
-      }
-
-      &:hover {
-        color: #f16f23;
-      }
-
-      @include Responsive(S) {
-        font-size: 12px;
-        letter-spacing: 1px;
-      }
     }
 
     .content {
-      color: white;
-      font-family: 'renner';
-      font-size: 18px;
-      white-space: pre-line;
-      line-height: 1.5;
-
-      @include Responsive(S) {
-        font-size: 14px;
-      }
+      color: white !important;
     }
   }
 
@@ -119,6 +80,8 @@
       transition: 0.5s;
       cursor: pointer;
       letter-spacing: 2px;
+      width: fit-content;
+      color: #7e7e7e;
 
       &:hover {
         color: #f16f23;
@@ -127,7 +90,6 @@
       span {
         font-family: 'renner';
         font-weight: normal;
-        color: #7e7e7e;
       }
 
       @include Responsive(S) {

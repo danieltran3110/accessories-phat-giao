@@ -18,6 +18,12 @@
     font-family: 'renner';
     font-size: 20px;
     font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+    
+    &:hover {
+      color: #f16f23;
+    }
   }
 
   .author {

@@ -40,7 +40,13 @@ const Posts = ({ currentItems }) => {
             <Link href={`/course/${_data.slug}`}>
               <a className={styles.title}>
                 {_data.titlePost}
-                {!_data.src && !_data.video && <ComponentDay _data={_data} />}
+                {!_data.src && !_data.video && (
+                  <ComponentDay
+                    _data={_data}
+                    colorRevert={_data.darkMode}
+                    padding={true}
+                  />
+                )}
               </a>
             </Link>
             <p className={styles.author}>
@@ -48,11 +54,13 @@ const Posts = ({ currentItems }) => {
             </p>
             {_data.content && <p className={styles.content}>{_data.content}</p>}
           </div>
-          <div
-            className={`${stylesGlobal.button2} ${stylesGlobal.normal} ${stylesGlobal.BGCBlack}`}
-          >
-            LEARN MORE
-          </div>
+          {!_data.darkMode && (
+            <div
+              className={`${stylesGlobal.button2} ${stylesGlobal.normal} ${stylesGlobal.BGCBlack}`}
+            >
+              LEARN MORE
+            </div>
+          )}
         </div>
       ))}
     </div>

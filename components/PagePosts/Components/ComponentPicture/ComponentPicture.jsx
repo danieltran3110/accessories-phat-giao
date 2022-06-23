@@ -14,7 +14,7 @@ const ComponentPicture = ({ _data, maxHeight }) => {
         height={9}
         layout={'responsive'}
       />
-      <ComponentDay _data={_data} />
+      <ComponentDay _data={_data} padding={_data.titlePost} />
         <figcaption className={styles.btnView}>VIEW</figcaption>
     </figure>
   );
