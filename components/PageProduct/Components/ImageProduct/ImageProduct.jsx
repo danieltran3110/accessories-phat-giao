@@ -12,6 +12,9 @@ const ImageProduct = ({ _data, showPopUp }) => {
         <Image
           src={_data.src}
           alt={_data.alt}
+          width={200}
+          height={300}
+          objectFit={'contain'}
         />
       </figure>
       <i

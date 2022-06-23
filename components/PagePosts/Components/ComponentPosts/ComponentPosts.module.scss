@@ -5,23 +5,18 @@
   max-width: 800px;
 
   .darkPost {
-    display: none;
     background-color: #282828;
     padding: 50px;
     color: white !important;
     margin-top: 0;
     position: relative;
 
-    &:first-child {
-      display: block;
-    }
-
     .title {
       color: white !important;
+      // transition: 0.5s;
 
-      @include Responsive(S) {
-        font-size: 1.356rem;
-        margin-top: 0;
+      &:hover {
+        color: #f16f23;
       }
     }
 
@@ -65,7 +60,7 @@
       position: relative;
       transition: 0.5s;
       cursor: pointer;
-      padding-right: 80px;
+      padding-right: 110px;
       display: block;
       padding-top: 20px;
       

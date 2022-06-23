@@ -12,18 +12,11 @@
   margin: 0;
 
   .picProduct {
-    padding: 80px 100px;
+    padding: 80px 0; 
+    position: relative;
 
     @include Responsive(S) {
       padding: 30px 40px;
-    }
-
-    img {
-      min-width: 200px;
-
-      @include Responsive(S) {
-        min-width: unset;
-      }
     }
   }
 

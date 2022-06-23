@@ -187,6 +187,12 @@ collections:
       - { label: 'Alt of Image', name: 'alt', widget: 'string' }
       - { label: 'Description', name: 'content', widget: 'text' }
       - { label: 'Money', name: 'money', widget: 'string' }
-      - { label: 'Number of stars', name: 'numStars', widget: 'number' }
+      - { label: 'Number of stars', name: 'numStars', widget: 'number', required: false }
       - { label: 'Product content', name: 'body', widget: 'markdown' }
+      - label: Related products
+            name: products
+            widget: list
+            fields:
+              - { label: 'Image', name: 'src', widget: 'image' }
+              - { label: 'Alt of Image', name: 'alt', widget: 'string' }
 

@@ -660,6 +660,7 @@ export const dataMayLike = [
 ];
 
 export const dataProductDetail = {
+  name: 'The Buddha’s Way of Happiness',
   src: book1,
   alt: 'book detail',
   money: '15.00',
