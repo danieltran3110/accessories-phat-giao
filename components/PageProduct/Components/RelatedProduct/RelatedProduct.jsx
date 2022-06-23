@@ -7,7 +7,7 @@ const RelatedProduct = ({ _data }) => {
   return (
     <>
       <SectionTitle title={'Related products'} />
-      <div className={styles.displayGrid4}>
+      <div className={styles.displayFlex}>
         {_data.products.map((_data, index) => (
           <Product
             _data={_data}

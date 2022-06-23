@@ -1,0 +1,16 @@
+.item {
+    transition: 0.5s;
+
+    &::after {
+        content:", "
+
+    }
+
+    &:last-child:after  {
+        content: '';
+    }
+
+    &:hover {
+        color: #f16f23;
+    }
+}

@@ -13,6 +13,10 @@
       grid-template-columns: 50% calc(50% - 30px);
       row-gap: 25px;
       column-gap: 30px;
+
+      & > div > a > div {
+        height: 385px;
+      }
     }
 
     @include Responsive(XXS) {

@@ -16,6 +16,15 @@ content: >-
 
   voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
 money: "9.00"
+productID: 555
+tags:
+  - item: HAPPINESS
+  - item: MEDITATION
+  - item: SOUL
+categories:
+  - item: BOOK
+  - item: BUDDHISM
+  - item: PHILOSOPHY
 products:
   - src: /img/book1.jpg
     alt: happiness

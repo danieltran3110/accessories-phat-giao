@@ -16,6 +16,14 @@ content: >-
 
   voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
 money: "12.00"
+productID: 789
+tags:
+  - item: BUDDHISM
+  - item: MEDITATION
+  - item: SOUL
+categories:
+  - item: PHILOSOPHY
+  - item: TEACHING
 numStars: 5
 products:
   - src: /img/book8.jpg

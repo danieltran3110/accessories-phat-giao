@@ -3,6 +3,7 @@ import styles from './InfoProduct.module.scss';
 import Stars from '../../../PageShop/Products/Component/ComponentStars';
 import ReadMore from '../../../ReadMore/ReadMore';
 import stylesGlobal from '../../../../assets/scss/global.module.scss';
+import ListTag from '../ListTag/ListTag';
 
 const InfoProduct = ({ _data }) => {
   const [numInput, setNumInput] = useState(0);
@@ -56,10 +57,10 @@ const InfoProduct = ({ _data }) => {
       </div>
       <div className={styles.type}>
         <p className={styles.typeDetail}>
-          <b>CATEGORIES:</b> {_data.categories}
+          <b>CATEGORIES:</b> <ListTag _data={_data.categories} />
         </p>
         <p className={styles.typeDetail}>
-          <b>TAGS:</b> {_data.tags}
+          <b>TAGS:</b> <ListTag _data={_data.tags} /> 
         </p>
         <p className={styles.typeDetail}>
           <b>PRODUCT ID:</b> {_data.productID}

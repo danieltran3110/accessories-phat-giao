@@ -16,6 +16,15 @@ content: >-
 
   voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
 money: "26.22"
+productID: 379
+tags:
+  - item: BUDDHISM
+  - item: MEDITATION
+  - item: SOUL
+categories:
+  - item: BOOK
+  - item: BUDDHISM
+  - item: TEACHING
 products:
   - src: /img/book7.jpg
     alt: tibetan

@@ -15,10 +15,9 @@ const Product = ({ _data, detail, version2, style }) => {
               <Image
                 src={_data.src}
                 alt={_data.alt}
-                width={2}
-                height={3}
-                layout={'responsive'}
-                objectFit={'cover'}
+                width={200}
+                height={300}
+                objectFit={'contain'}
               />
               <figcaption className={styles.detailInfo}>
                 <p className={`${styles.icon}`}>

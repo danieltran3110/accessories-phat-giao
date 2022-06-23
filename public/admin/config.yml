@@ -189,6 +189,17 @@ collections:
       - { label: 'Money', name: 'money', widget: 'string' }
       - { label: 'Number of stars', name: 'numStars', widget: 'number', required: false }
       - { label: 'Product content', name: 'body', widget: 'markdown' }
+      - label: Categories
+        name: categories
+        widget: list
+        fields:
+          - { label: 'Category', name: 'item', widget: 'string' }
+      - label: Tags
+        name: tags
+        widget: list
+        fields:
+          - { label: 'Tag', name: 'item', widget: 'string' }
+      - { label: 'Product ID', name: 'productID', widget: 'number' }
       - label: Related products
         name: products
         widget: list
